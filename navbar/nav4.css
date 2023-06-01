@@ -1,68 +1,70 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  body
-  {
-      font-family: 'Poppins', sans-serif;
-  }
-  div.container {
-    border: 2px solid rgba(0, 0, 0, 0.722);
-    height: auto;
-    padding: 0 1rem;
-  }
-  .nav
-  {
-      display :flex;
-      border-bottom: 2px solid rgba(0, 0, 0, 0.574);
-      padding: 10px;
-      justify-content: space-between;
-      align-items: center;
-      margin-left: 100px;
-      margin-right: 100px;
-      /*height: inherit; */
-  }
-  .nav ul
-  {
-      list-style-type: none;
-  }
-  .nav ul li
-  {
-      display: inline;
-  }
-  .sticker i
-  {
-      padding: 10px;
-      margin-left: 12px;
-  }
-  
-  .nav ul li a {
-      padding: 10px;
-      text-decoration: none;
-      margin-left: 12px;
-      color: black;
-    }
-  
-  .navdiv {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  background-color: #f3f3f3;
+}
+div.container {
+  width: 80%;
+  height: auto;
+  padding: 0 20px 0 20px;
+  background-color: #fff;
+}
+div.main
+{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
-  }
-  
-  .menu ul {
-    list-style-type: none;
-  }
-  .menu ul li {
-    display: inline;
-  }
-  .menu ul li a {
-    padding: 10px;
-    text-decoration: none;
-    margin-left: 12px;
-    color: black;
-  }
-  
-  
+    justify-content: space-around;
+}
+.nav {
+  display: flex;
+  border-bottom: 1px solid gray;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  /*height: inherit; */
+}
+.nav ul {
+  list-style-type: none;
+}
+.nav ul li {
+  display: inline;
+}
+.sticker i {
+  margin-left: 20px;
+  padding: 10px 0;}
+
+.nav ul li a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: gray;
+  font-size: 13px;
+}
+
+.navdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.searchbox
+{
+  line-height: 10px;
+}
+.menu ul {
+  list-style-type: none;
+}
+.menu ul li {
+  display: inline;
+}
+.menu ul li a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+}

@@ -2,46 +2,50 @@
   margin: 0;
   padding: 0;
 }
-body
-{
-    font-family: 'Poppins', sans-serif;
+body {
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  background-color: #f3f3f3;
 }
+
 div.container {
-  border: 2px solid rgba(0, 0, 0, 0.722);
+  width: 80%;
   height: auto;
-  padding: 0 1rem;
+  padding: 0 20px 0 20px;
+  background-color: #fff;
 }
-.nav
+div.main
 {
-    display :flex;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.574);
-    padding: 10px;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 100px;
-    margin-right: 100px;
-    /*height: inherit; */
+    display: flex;
+    justify-content: space-around;
 }
-.nav ul
-{
-    list-style-type: none;
+.nav {
+  display: flex;
+  border-bottom: 1px solid gray;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  /*height: inherit; */
 }
-.nav ul li
-{
-    display: inline;
+.nav ul {
+  list-style-type: none;
 }
-.sticker i
-{
-    padding: 10px;
-    margin-left: 12px;
+.nav ul li {
+  display: inline;
+}
+.sticker i {
+  margin-left: 20px;
+  padding: 10px 0;
 }
 
 .nav ul li a {
-    padding: 10px;
-    text-decoration: none;
-    margin-left: 12px;
-    color: black;
-  }
+  margin-right: 20px;
+  text-decoration: none;
+  color: gray;
+  font-size: 13px;
+}
 
 .navdiv {
   display: flex;
@@ -61,12 +65,12 @@ div.container {
 .menu ul li a {
   padding: 10px;
   text-decoration: none;
-  margin-left: 12px;
   color: black;
-  border-right:2px solid black;
+}
+.menu ul li+li::before
+{
+    color:black;
+    padding: 10px;
+    content:"|\00a0"
 }
 
-#con
-{
-    border-right: none;
-}

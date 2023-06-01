@@ -1,72 +1,80 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  body
-  {
-      font-family: 'Poppins', sans-serif;
-  }
-  div.container {
-    border: 2px solid rgba(0, 0, 0, 0.722);
-    height: auto;
-    padding: 0 1rem;
-  }
-  .nav
-  {
-      display :flex;
-      border-bottom: 2px solid rgba(0, 0, 0, 0.574);
-      padding: 10px;
-      justify-content: space-between;
-      align-items: center;
-      margin-left: 100px;
-      margin-right: 100px;
-      /*height: inherit; */
-  }
-  
-  .sticker i
-  {
-      padding: 10px;
-      margin-left: 12px;
-  }
-  
-  .nav ul li a {
-      padding: 10px;
-      text-decoration: none;
-      margin-left: 12px;
-      color: black;
-    }
-  
-  .navdiv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
-  }
-  
-  .menu ul {
-    list-style-type: none;
-  }
-  .menu ul li {
-    display: inline;
-  }
-  .menu ul li a {
-    padding: 10px;
-    text-decoration: none;
-    margin-left: 12px;
-    color: black;
-  }
-  
-  input[type="text"] {
-    padding: 4px 24px;
-    margin-top: 5px;
-    margin-left: 12px;
-    border-radius: 15px;
-    background-color: #fff;
-    background-image: url("search.svg");
-    background-position: 190px 5px;
-    background-size: 15px;
-    background-repeat: no-repeat;
-    border: 2px solid #ccc;
-  }
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  background-color: #f3f3f3;
+}
+div.container {
+  width: 80%;
+  height: auto;
+  padding: 0 20px 0 20px;
+  background-color: #fff;
+}
+div.main {
+  display: flex;
+  justify-content: space-around;
+}
+.nav {
+  display: flex;
+  border-bottom: 1px solid gray;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 75px;
+}
+
+.sticker i {
+  margin-right: 20px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: auto;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+.menu ul li {
+  display: inline;
+}
+.menu ul li a {
+  padding: 10px;
+  text-decoration: none;
+  margin-left: 12px;
+  color: black;
+}
+div.search {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+div.search img {
+  position: absolute;
+  right: 19px;
+  top: 9px;
+  filter: opacity(50%);
+}
+input[type="text"] {
+  padding: 10px 24px;
+
+  border-radius: 20px;
+  background-color: #fff;
+  font-style: italic;
+  border: 1px solid black;
+}

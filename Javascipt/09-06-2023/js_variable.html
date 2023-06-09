@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js_variable</title>
+  </head>
+  <body>
+    <p id="demo1"></p>
+    <button onclick="vrlet()">LET</button>
+    <p id="demo2"></p>
+    <button onclick="vrconst()">CONST</button>
+    <p id="demo3"></p>
+    <button onclick="vrvar()">VAR</button>
+  </body>
+  <script>
+    function vrlet() {
+      let a, b, c;
+      a = 12;
+      b = 23;
+      c = a + b;
+      window.alert(a + " + " + b + " = " + c);
+      //   document.getElementById("demo1").innerHTML  = a+" + "+b+" = "+c;
+
+      //   let a,b,c;           // in let same name not declare again and again only declare the variable one time only
+    }
+    function vrconst() {
+      //      const a, b, c;
+      //   a = 12;               // in const same name  not declare again and again & not declare this type because in const value define at the variable declaration time
+      //   b = 23;
+      //   c = a + b;
+
+      // const a;                //this type of variable call undefined
+      const a = 17;
+      const b = 34;
+      const c = a + b;
+      window.alert(a + " + " + b + " = " + c);
+
+      //   document.getElementById("demo2").innerHTML = a+" + "+b+" = "+c;
+    }
+    function vrvar() {
+      // in var multiple time declare and define the smae name variable
+
+      var a, b, c;
+      a = 19;
+      b = 23;
+      c = a + b;
+      window.alert(a + " + " + b + " = " + c);
+
+      //   document.getElementById("demo3").innerHTML  = a+" + "+b+" = "+c;
+    }
+  </script>
+</html>

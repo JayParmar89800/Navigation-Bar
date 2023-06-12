@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>X=12</h3>
+    <h3>X=14</h3>
+
+    <p id="demo"></p>
+    
+
+    <button onclick="myfm()">Addition</button>
+    <button onclick="myfm1()">Multiplication</button>
+    <button onclick="myfm2()">Subtraction</button>
+    <button onclick="myfm3()">Dividion</button>
+
+
+    <script>
+      function myfm()
+      {
+      let x, y, z;
+      x = 12;
+      y = 14;
+      z = x + y;
+      document.getElementById("demo").innerHTML =
+       "The value of Z is <br> "  + x+ " + " + y+ " = "+z + " .";
+      }
+      function myfm1()
+      {
+      let x, y, z;
+      x = 12;
+      y = 14;
+      z = x * y;
+      document.getElementById("demo").innerHTML =
+      "The value of Z is <br> "  + x+ " * " + y+ " = "+z + " .";
+      }
+      function myfm2()
+      {
+      let x, y, z;
+      x = 12;
+      y = 14;
+      z = x - y;
+      document.getElementById("demo").innerHTML =
+      "The value of Z is <br> "  + x+ " - " + y+ " = "+z + " .";
+      }
+      function myfm3()
+      {
+      let x, y, z;
+      x = 12;
+      y = 14;
+      z = x / y;
+      document.getElementById("demo").innerHTML =
+      "The value of Z is <br> "  + x+ " / " + y+ " = "+z + " .";
+      }
+
+
+    </script>
+  </body>
+</html>

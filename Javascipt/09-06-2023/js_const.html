@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JAVA SCRIPT CONST</h2>
+    <button onclick="fun1()">Try catch error</button>
+    <p id="demo"></p>
+
+    <button onclick="fun2()">Arr(change and push element)</button>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <button onclick="fun3()">Object(get object element)</button>
+    <p id="demo4"></p>
+
+
+</body>
+<script>
+  function fun1()
+  {
+    try
+    {
+        const pi=3.141587878473284729;
+        pi=3.14;
+    }
+    catch(jp)
+    {
+        document.getElementById("demo").innerHTML=jp;
+    }
+  }
+  function fun2()
+  {
+    const bike=["Shine","Rx-100","Suzuki"];
+    document.getElementById("demo2").innerHTML="Before : "+bike;
+
+    bike[0]="Hero-Honda";
+    bike.push("Activa");
+    document.getElementById("demo3").innerHTML="After : "+bike;
+  }
+  function fun3()
+  {
+    const vk={
+        ceo:"HET",emp:"RONAK",designer:"hil"
+    };
+    vk.ceo="JAYDEEP";//change
+    vk.peon="KARAN";//add object
+
+    document.getElementById("demo4").innerHTML="PEON : "+vk.peon+"<br>CEO :"+vk.ceo;
+   
+  }
+
+</script>
+</html>

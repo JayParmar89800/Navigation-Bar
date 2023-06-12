@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js_array.js"></script>
+    <style>
+      .container {
+        display: flex;
+        width: 100%;
+        border: 2px dashed lightblue;
+        height: 500px;
+        padding: 10px;
+      }
+      .btn {
+        width: 50%;
+        border: 2px solid lightcoral;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .output {
+        width: 50%;
+        border: 2px solid lightcoral;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="btn">
+        <h1 style="text-align: center">Click the Any button:</h1>
+        <button onclick="fn1()">BUTTON-1</button>
+        <button onclick="fn2()">BUTTON-2</button>
+        <button onclick="fn3()">BUTTON-3</button>
+        <button onclick="fn4()">BUTTON-4</button>
+        <button onclick="fn5()">BUTTON-5</button>
+        <button onclick="fn6()">BUTTON-6</button>
+        <button onclick="fn7()">BUTTON-7</button>
+        <button onclick="fn8()">BUTTON-8</button>
+        <button onclick="fn9()">BUTTON-9</button>
+        <button onclick="fn10()">BUTTON-10</button>
+        <button onclick="fn11()">BUTTON-11</button>
+        <button id="btn" onclick="fn11_1()" style="display: none">
+          CLICK ME
+        </button>
+        <button onclick="fn12()">BUTTON-12</button>
+        <button onclick="fn13()">BUTTON-13</button>
+      </div>
+      <div class="output">
+        <h1 style="text-align: center">Output</h1>
+        <h1 id="title"></h1>
+        <h3 id="opt"></h3>
+      </div>
+    </div>
+  </body>
+</html>

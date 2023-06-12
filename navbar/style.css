@@ -12,6 +12,7 @@ body
 {
     text-align: center;
     border-bottom: 2px solid black;
+    border-top: 2px solid black;
     margin-bottom: 10px;
     
 }
@@ -50,4 +51,5 @@ button:hover
 button:last-child(1)
 {
     border-bottom: 2px solid black;
+
 }

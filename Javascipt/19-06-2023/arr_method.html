@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="arr_method.js"></script>
+    <style>
+      .container {
+        display: flex;
+        width: 100%;
+        border: 2px dashed lightblue;
+        height: 500px;
+        padding: 10px;
+      }
+      .btn {
+        width: 50%;
+        border: 2px solid lightcoral;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        counter-reset: section;
+      }
+      .output {
+        width: 50%;
+        border: 2px solid lightcoral;
+      }
+      button {
+        width: 15%;
+      }
+      button::before {
+        counter-increment: section;
+        content:  counter(section) ": ";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="btn">
+        <h1 style="text-align: center">Click the Any button:</h1>
+        <button onclick="fn1()">foreach()</button>
+        <button onclick="fn2()">includes()</button>
+        <button onclick="fn3()">Array.isarray()</button>
+        <button onclick="fn4()">join()</button>
+        <button onclick="fn5()">keys()</button>
+        <button onclick="fn6()">length</button>
+        <button onclick="fn7()">push()</button>
+        <button onclick="fn8()">pop()</button>
+        <button onclick="fn9()">unshift()</button>
+        <button onclick="fn10()">shift()</button>
+      </div>
+      <div class="output">
+        <h1 style="text-align: center">Output</h1>
+        <h1 id="title"></h1>
+        <h3 id="opt"></h3>
+      </div>
+    </div>
+  </body>
+</html>
+

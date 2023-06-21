@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="arr_method.js"></script>
+    <style>
+      .container {
+        display: flex;
+        width: 100%;
+        border: 2px dashed lightblue;
+        height: 500px;
+        padding: 10px;
+      }
+      .btn {
+        width: 50%;
+        border: 2px solid lightcoral;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .output {
+        width: 50%;
+        border: 2px solid lightcoral;
+      }
+      button {
+        width: 15%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="btn">
+        <h1 style="text-align: center">Click the Any button:</h1>
+        <button onclick="fn1()">1.indexof()</button>
+
+        <button
+          id="anotherex"
+          style="display: none"
+          onclick="fn1_1()"
+          size="20"
+        >
+          1.1 Second ex.indexof()
+        </button>
+
+        <button onclick="fn2()">2.lastIndexOf()</button>
+        <button onclick="fn3()">3.reverse()</button>
+        <button onclick="fn4()">4.slice()</button>
+        <button onclick="fn5()">5.sort()</button>
+        <button onclick="fn6()">6.splice()</button>
+        <button onclick="fn7()">7.toString()</button>
+        <button onclick="fn8()">8.valueOf()</button>
+      </div>
+      <div class="output">
+        <h1 style="text-align: center">Output</h1>
+        <h1 id="title"></h1>
+        <h3 id="arr"></h3>
+        <h3 id="opt"></h3>
+      </div>
+    </div>
+  </body>
+</html>

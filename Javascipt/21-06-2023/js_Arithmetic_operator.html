@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="js_Arithmetic_operator.js"></script>
+    <table border="2px" width="50%">
+      <caption>
+        Arithmetic Operator
+      </caption>
+      <tr>
+        <td>
+          <input type="lable" value="Enter a first value" />
+        </td>
+        <td>
+          <input type="text" id="txt_a" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="lable" value="Enter a second value" />
+        </td>
+        <td>
+          <input type="text" id="txt_b" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="button" value="Addition" onclick="add()" />
+          <input type="button" value="Subtraction" onclick="sub()" />
+          <input type="button" value="Multiplication" onclick="mul()" />
+          <input type="button" value="Division" onclick="div()" />
+          <input type="button" value="Modular" onclick="mod()" />
+        </td>
+      </tr>
+    </table>
+
+    <table border="2px" width="50%">
+      <caption>
+        Another Arithmetic operator
+      </caption>
+      <tr>
+        <td>
+          <input type="lable" value="Enter a value" />
+        </td>
+        <td>
+          <input type="text" id="txt_incre" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button type="button" onclick="incre()">Increment (++)</button>
+          <button type="button" onclick="decre()">Decrement (--)</button>
+          <button type="button" onclick="expo()">Exponentiation (**)</button>
+        </td>
+      </tr>
+    </table>
+    <table border="2px" width="50%">
+      <caption>
+        Operator Precedence (a + b * c)
+      </caption>
+      <tr>
+        <td>
+          <input type="lable" value="Enter a First value" />
+        </td>
+        <td>
+          <input type="text" id="txt_va" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="lable" value="Enter a second value" />
+        </td>
+        <td>
+          <input type="text" id="txt_vb" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="lable" value="Enter a third value" />
+        </td>
+        <td>
+          <input type="text" id="txt_vc" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button type="button" onclick="p1()">a+b*c</button>
+          <button type="button" onclick="p2()">a+b-c</button>
+          <button type="button" onclick="p3()">a*b/c</button>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

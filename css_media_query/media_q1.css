@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+
+}
+.container {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding: 15px;
+}
+.logo img {
+  height: 40px;
+}
+.header {
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto, auto;
+  gap: 10px;
+  width: 90%;
+}
+.menu_btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav {
+  display: none;
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 2;
+  text-align: center;
+}
+.nav ul {
+  list-style-type: none;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: brown;
+  width: auto;
+}
+.nav ul li:hover {
+  background-color: rgb(111, 186, 211);
+  color: black;
+}
+.body {
+  background-image: url("background.webp");
+  background-size: cover;
+  height: 200px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 25px;
+}
+
+.body_content h2 {
+  color: lightcoral;
+}
+
+.container_content {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  row-gap: 15px;
+  width: 100%;
+}
+.content1,
+.content2,
+.content3 {
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 2px solid red;
+  background-color: #dddddd;
+  border-radius: 15px;
+  padding: 10px
+  
+}
+.img1 ,.img3 ,.img2{
+    display: grid;
+    place-items: center;
+
+}
+.content1 .img1 img {
+  width: 180px;
+}
+.content2 .img2 img {
+  width: 180px;
+}
+.content3 .img3 img {
+  width: 180px;
+}
+.text1,
+.text2,
+.text3 {
+  font-size: 9px;
+}
+
+@media screen and (min-width:425px)  {
+  body
+  {
+     width: fit-content;;
+  }
+    .body
+    {
+        width: 100%;
+    }
+    .container_content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 300px;
+        place-items : center;
+        column-gap: 15px;
+    }
+    .text1,.text2,.text3
+    {
+        font-size: 12px;
+    }
+    .nav
+    {
+        display: block;
+        grid-row: 1/span 1;
+        grid-column: 2/span 1;
+        display: grid;
+       
+    }
+    .nav ul
+    {
+        display: flex;
+        align-items: center;
+        
+    }
+    .nav ul li 
+    {
+        width: 100%;
+    }
+    .menu_btn
+    {
+        display: none;
+    }
+    .body
+    {
+      height:400px;
+    }
+    .body_content h2 {
+      font-size: xx-large;
+    }
+}

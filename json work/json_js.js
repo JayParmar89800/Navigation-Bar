@@ -12,12 +12,13 @@ fetch("product.json")
 
     for(var i=0;i<fillstar;i++)
     {
-      ratings+='<i class="fa-solid fa-star" style="color: #ffd166;"></i>';
+      ratings+='<i class="fa-solid fa-star fa-xs" style="color: #ffd166;"></i>';
     }
     for(var i=0;i<emptys;i++)
     {
-      ratings+='<i class="fa-solid fa-star" style="color: #ffd166;"></i>';
+      ratings+='<i class="fa-regular fa-star fa-xs" style="color: gray;"></i>';
     }
+   
     var card = document.createElement("div");
     card.innerHTML=` <div class="product-card">
     <div class="img">
@@ -33,7 +34,7 @@ fetch("product.json")
     
     <div class="time_rate">
       <div class="time">${date.toDateString()}</div>
-      <div class="rate"><i class="fa-solid fa-star fa-xs" style="color: #ffd166;"></i>${fillstar}</div>
+      <div class="rate">${ratings}</div>
     </div>
     </div>
   </div>`

@@ -6,7 +6,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f4f5f6;
-  width: fit-content;
+  
 }
 .btn
 {
@@ -18,13 +18,15 @@ body {
 }
 .but
 {
-  padding: 7px;
-  border-radius: 5px;
+  
+  padding: 10px;
+  border-radius: 20px;
   background-color: rgba(221, 220, 220, 0.667);
+
 }
 #productContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap:15px;
   padding: 15px;
@@ -54,6 +56,7 @@ body {
 {
     display: flex;
     justify-content: space-between;
+    padding-top: 10px;
     
 }
 .pr
@@ -71,6 +74,7 @@ body {
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
+
 .sc
 {
   padding: 15px;
@@ -87,9 +91,11 @@ body {
 {
   color: gray;
 }
-.time_rate
+.btn
 {
-  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  height: auto;
 }
 
 .res_image
@@ -98,30 +104,16 @@ body {
   width: 200px;
 }
 
-@media screen and (max-width:400px) {
-  #productContainer
+@media screen and (max-width:700px) {
+  .btn
   {
-      display: grid;
-      grid-template-columns: 1fr;
-      place-items: center;  
+      display: flex;
+      flex-direction: column;
+      align-items: center;
   }
-}
-@media screen and (min-width:400px) and (max-width:700px){
-#productContainer
-{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
-    
-}
-}
-@media screen and (min-width:700px) and (max-width:1000px){
-#productContainer
-{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
-    
-}
+  .but
+  {
+    width: 50%;
+  }
 }
 

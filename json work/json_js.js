@@ -3,45 +3,22 @@ fetch("product.json")
 .then((data) => {
   var result = data.result;
   var productContainer = document.getElementById("productContainer");
-
-
-  // All Product Approved
-  var cd=document.getElementById("btn_app");
-  var ap = result.filter(function (product) {
-      return product.status === "approved";
+    
+function updaterender(status, elementId) {
+  var countDisplay = document.getElementById(elementId);
+  var filteredProducts=result;
+  if (status !== "result") {
+    filteredProducts = result.filter(function (product) {
+      return product.status === status;
+    });
+  }
+  countDisplay.innerHTML = `${status} Status: ${filteredProducts.length}`;
+  countDisplay.addEventListener("click", function () {
+    return render(filteredProducts);
   });
-    cd.innerHTML = `Approve Status: ${ap.length}`;
-    cd.addEventListener("click", function () {
-      render(ap);
-    });
-
- // Only Show Reviews
-    var clickreview = document.getElementById("btn_good");
-    var emptyreview = result.filter(function (product) {
-      return product.status === "pending";
-    });
-    clickreview.innerHTML = `Pending status: ${emptyreview.length}`;
-    clickreview.addEventListener("click", function () {
-      render(emptyreview);
-    });
+}
 
 
-  // Only Show NoReviews
-    var clickShowBadReview = document.getElementById("btn_bad");
-    var badReviews = result.filter(function (product) {
-      return product.status === "decline";
-    });
-   clickShowBadReview.innerHTML = `Declinne status: ${badReviews.length}`;
-
-    clickShowBadReview.addEventListener("click", function () {
-      var noReviews = result.filter(function (product) {
-        return product.status === "decline";
-      });
-      render(noReviews);
-    });
-
-    
-    
 
 function render(products){
   productContainer.innerHTML="";
@@ -83,6 +60,10 @@ function render(products){
     productContainer.appendChild(card);
   });
 }
+updaterender("result", "btn_all")
+updaterender("approved", "btn_app");
+updaterender("pending", "btn_ped");
+updaterender("decline", "btn_dec");
 render(result);
 
  

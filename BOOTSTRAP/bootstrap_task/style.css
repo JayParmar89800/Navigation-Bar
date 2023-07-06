@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.t_col
+{
+    color:#fea116;
+}
+.nav_ul li a
+{
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+    font-weight: 500;
+}
+.bg_col
+{
+    background-color:#fea116;
+}
+.hotel{
+    background-image:linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)),  url("./BOOTSTRAP-TASK/hero-section/bg-hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}

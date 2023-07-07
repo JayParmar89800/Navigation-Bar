@@ -23,40 +23,73 @@
     ></script>
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-    </head>
-    <body>
-    
-    <div class="container-fluid hotel p-0" >
-        <div class="d-flex align-items-baseline justify-content-between py-2">
-            <h1 class="t_col">
-                <i class="fa fa-utensils me-3"></i>Restoran
-            </h1>
-            <div>
-                <ul class="d-flex align-items-center list-unstyled nav_ul ">
-                  <li>
-                    <a  href="#">HOME</a>
-                  </li>
-                  <li>
-                    <a  href="#">ABOUT</a>
-                  </li>
-                  <li>
-                    <a  href="#">SERVICE</a>
-                  </li>
-                  <li>
-                    <a  href="#">MENU</a>
-                  </li>
-                  <li>
-                    <a href="#">PAGES</a>
-                  </li>
-                  <li>
-                    <a  href="#">CONTACT</a>
-                  </li>
-                  <li>
-                   <button type="submit" class="fw-bold text-white border-0 px-3 py-2 bg_col">Book A Table</button>
-                  </li>
-                </ul>   
-              </div>
+  </head>
+  <body>
+    <div class="container-fluid p-0 hotel">
+      <div class="d-flex justify-content-between align-items-center py-2 mx-5">
+        <div>
+          <h1 class="t_col"><i class="fa fa-utensils me-3"></i>Restoran</h1>
         </div>
+        <div>
+          <ul class="nav nav_ul">
+            <li class="nav-item">
+              <a class="nav-link link-warning" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SERVICE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">MENU</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                >PAGES</a
+              >
+              <ul class="dropdown-menu sub_menu">
+                <li><a href="#" class="dropdown-item">Page - 1</a></li>
+                <li><a href="#" class="dropdown-item">Page - 2</a></li>
+                <li><a href="#" class="dropdown-item">Page - 3</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <button
+                type="submit"
+                class="fw-bold text-white border-0 px-3 py-2 bg_col"
+              >
+                BOOK A TABLE
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container-fluid row d-flex align-items-center">
+        <div class="col-6 text text-white ">
+          <h1 class="display-1 fw-bold">Enjoy Our Delicious Meal</h1>
+          <p>
+            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+            diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
+            lorem sit clita duo justo magna dolore erat amet
+          </p>
+          <button
+            type="submit"
+            class="fw-bold text-white border-0 px-5 py-3 bg_col"
+          >
+            BOOK A TABLE
+          </button>
+        </div>
+        <div class="col-6">
+          <img src="./BOOTSTRAP-TASK/hero-section/hero.png" class="rot" alt="logo" height="auto" width="100%">
+        </div>
+      </div>
     </div>
-    </body>
+  </body>
 </html>

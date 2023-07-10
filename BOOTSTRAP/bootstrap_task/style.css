@@ -23,17 +23,7 @@
 {
     background-color:#fea116;
 }
-.rot
-{
-    animation-name: rotate_img;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
-@keyframes rotate_img {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
-}
+
 .hotel{
     background-image:linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)),  url("./BOOTSTRAP-TASK/hero-section/bg-hero.jpg");
     background-repeat: no-repeat;

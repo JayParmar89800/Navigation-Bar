@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.t_col
+{
+    color:#fea116;
+}
+.nav_ul li a
+{
+    text-decoration: none;
+    color:white;
+    font-weight: 500;
+}
+.sub_menu li a
+{
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+}
+.bg_col
+{
+    background-color:#fea116;
+}
+.rot
+{
+    animation-name: rotate_img;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes rotate_img {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+.hotel{
+    background-image:linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)),  url("./BOOTSTRAP-TASK/hero-section/bg-hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+

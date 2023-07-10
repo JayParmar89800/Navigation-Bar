@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/f11cab3348.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="media_q1.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <script>
+    var clickCount = 0;
+
+    function btn() {
+      clickCount++;
+
+      if (clickCount === 1) {
+        // First click
+        firstFunction();
+      } else if (clickCount === 2) {
+        // Second click
+        secondFunction();
+        clickCount = 0; // Reset click count for future clicks
+      }
+    }
+
+    function firstFunction() {
+      document.getElementById("nav_btn").style.display = "block";
+    }
+
+    function secondFunction() {
+      document.getElementById("nav_btn").style.display = "none";
+    }
+  </script>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo">
+          <img src="logo.png" alt="logo" />
+        </div>
+        <div class="menu_btn" onclick="btn()">
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+        <div class="nav" id="nav_btn">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="body">
+      <div class="body_content">
+        <h2>Welcome To My WEbsite</h2>
+      </div>
+    </div>
+    <div class="container_content">
+      <div class="content1">
+        <div class="text1">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae
+          facilis totam nostrum dolorem eum iure aut distinctio sequi,
+          explicabo, minus sed cum non, vel necessitatibus. Eum inventore
+          laudantium optio error.
+        </div>
+        <div class="img1">
+          <img src="content1.png" alt="img1" />
+        </div>
+      </div>
+      <div class="content2">
+        <div class="img2"><img src="content2.png" alt="img2" /></div>
+        <div class="text2">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae
+          facilis totam nostrum dolorem eum iure aut distinctio sequi,
+          explicabo, minus sed cum non, vel necessitatibus. Eum inventore
+          laudantium optio error.
+        </div>
+      </div>
+      <div class="content3">
+        <div class="text3">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae
+          facilis totam nostrum dolorem eum iure aut distinctio sequi,
+          explicabo, minus sed cum non, vel necessitatibus. Eum inventore
+          laudantium optio error.
+        </div>
+        <div class="img3"><img src="content3.png" alt="img3" /></div>
+      </div>
+    </div>
+  </body>
+</html>

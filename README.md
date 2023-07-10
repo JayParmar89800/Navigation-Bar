@@ -1,7 +1,4 @@
-Language: Bootstrap
-Topic: navbar
-Task: Restoran Task
-Task Progress: 5%
-Task deadline: 10 Days
-PR link: https://github.com/JayParmar89800/Navigation-Bar/pull/21
-Live URL link: https://jayparmar89800.github.io/Navigation-Bar/
+Live URL Link : https://jayparmar89800.github.io/Navigation-Bar/
+
+Task : Bootstrap (color,images,typography,tables,alert)
+Task : In bootstrap task modify the navbar and create the first page and add animation 

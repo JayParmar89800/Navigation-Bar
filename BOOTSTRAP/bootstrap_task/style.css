@@ -1,7 +1,12 @@
+@import url(./SecondaRound-Medium/style.css);
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body
+{
+    font-family: 'Seconda Round';
 }
 .t_col
 {
@@ -30,5 +35,8 @@
     background-position: center center;
     background-size: cover;
 }
-
+.food_menu img
+{
+    height:90px;
+}
 

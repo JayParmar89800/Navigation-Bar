@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Intro Script Demo';
+    src: url('IntroScriptDemo-Medium.eot');
+    src: local('Intro Script Demo Medium'), local('IntroScriptDemo-Medium'),
+        url('IntroScriptDemo-Medium.eot?#iefix') format('embedded-opentype'),
+        url('IntroScriptDemo-Medium.woff2') format('woff2'),
+        url('IntroScriptDemo-Medium.woff') format('woff'),
+        url('IntroScriptDemo-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+

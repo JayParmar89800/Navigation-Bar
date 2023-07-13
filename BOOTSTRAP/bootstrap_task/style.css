@@ -40,7 +40,10 @@ body
 {
     height:90px;
 }
-
+.food_menu .card
+{
+    margin: 1rem 0;
+}
 .t_member img
 {
     height: 230px;
@@ -74,4 +77,21 @@ body
 {
     padding-left: 10px;
 }
-
+@media screen and (max-width:993px)
+ {
+    .main_p
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width:768px)
+ {
+    .youtube_video
+    {
+      height: 25rem;
+      margin-bottom: 3rem;
+    }
+}

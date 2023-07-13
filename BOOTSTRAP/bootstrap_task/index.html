@@ -31,13 +31,25 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container-fluid p-0 hotel">
-      <div class="d-flex justify-content-between align-items-center py-2 mx-5">
-        <div>
-          <h1 class="t_col"><i class="fa fa-utensils me-3"></i>Restoran</h1>
-        </div>
-        <div>
-          <ul class="nav nav_ul">
+    <div class="container-fluid hotel">
+      <nav class="navbar navbar-expand-lg nav_col">
+        <a class="navbar-brand fw-bold t_col fs-2" href="#"
+          ><i class="fa fa-utensils me-3"></i>Restoran</a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars" style="color: #fea116"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto nav_ul">
             <li class="nav-item">
               <a class="nav-link link-warning" href="#">HOME</a>
             </li>
@@ -76,26 +88,28 @@
             </li>
           </ul>
         </div>
-      </div>
+      </nav>
       <div class="container-fluid row d-flex align-items-center">
-        <div class="col-6 text text-white">
-          <h1 class="display-1 fw-bold">Enjoy Our <br />Delicious Meal</h1>
-          <p>
+        <div class="col-sm-12 col-md-6 text-white main_p">
+          <h1 class="display-1 text-center text-md-start fw-bold">
+            <span>Enjoy Our <br />Delicious Meal</span>
+          </h1>
+          <div class="text-center text-md-start mb-4">
             Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
             diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
             lorem sit clita duo justo magna dolore erat amet
-          </p>
+          </div>
           <button
             type="submit"
-            class="fw-bold text-white border-0 px-5 py-3 bg_col"
+            class="fw-bold text-white border-0 px-5 py-3 bg_col mb-5"
           >
             BOOK A TABLE
           </button>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-lg-6">
           <img
             src="./BOOTSTRAP-TASK/hero-section/hero.png"
-            class="my-5"
+            class="mb-5"
             alt="logo"
             height="auto"
             width="100%"
@@ -105,97 +119,106 @@
     </div>
     <div class="container-fluid p-0">
       <div class="row p-4 my-5">
-        <div class="col-3">
-          <div class="container gap-5 py-4 shadow bg-body-tertiary rounded">
-            <h1><i class="fa-solid fa-user-tie" style="color: #fea116"></i></h1>
-            <h4>Master chefs</h4>
-            <p>
-              Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet
-              diam
-            </p>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card m-2 py-4">
+            <div class="card-body">
+              <h1>
+                <i class="fa-solid fa-user-tie" style="color: #fea116"></i>
+              </h1>
+              <h4 class="card-title">Master chefs</h4>
+              <p class="card-text">
+                Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
+                amet diam
+              </p>
+            </div>
           </div>
         </div>
-        <div class="col-3">
-          <div class="container gap-5 py-4 shadow bg-body-tertiary rounded">
-            <h1><i class="fa fa-utensils me-3" style="color: #fea116"></i></h1>
-            <h4>Quality Food</h4>
-            <p>
-              Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet
-              diam
-            </p>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card m-2 py-4">
+            <div class="card-body">
+              <h1>
+                <i class="fa fa-utensils me-3" style="color: #fea116"></i>
+              </h1>
+              <h4 class="card-title">Quality Food</h4>
+              <p class="card-text">
+                Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
+                amet diam
+              </p>
+            </div>
           </div>
         </div>
-        <div class="col-3">
-          <div class="container gap-5 py-4 shadow bg-body-tertiary rounded">
-            <h1>
-              <i class="fa-solid fa-cart-plus" style="color: #fea116"></i>
-            </h1>
-            <h4>Online Order</h4>
-            <p>
-              Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet
-              diam
-            </p>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card m-2 py-4">
+            <div class="card-body">
+              <h1>
+                <i class="fa-solid fa-cart-plus" style="color: #fea116"></i>
+              </h1>
+              <h4 class="card-title">Online Order</h4>
+              <p class="card-text">
+                Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
+                amet diam
+              </p>
+            </div>
           </div>
         </div>
-        <div class="col-3">
-          <div class="container gap-5 py-4 shadow bg-body-tertiary rounded">
-            <h1>
-              <i
-                class="fa-solid fa-headphones-simple"
-                style="color: #fea116"
-              ></i>
-            </h1>
-            <h4>24/7 Service</h4>
-            <p>
-              Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet
-              diam
-            </p>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card m-2 py-4">
+            <div class="card-body">
+              <h1>
+                <i
+                  class="fa-solid fa-headphones-simple"
+                  style="color: #fea116"
+                ></i>
+              </h1>
+              <h4 class="card-title">24/7 Service</h4>
+              <p class="card-text">
+                Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
+                amet diam
+              </p>
+            </div>
           </div>
         </div>
       </div>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-6 p-4">
-            <div class="row">
-              <div
-                class="col-6 d-flex justify-content-end align-items-baseline"
-              >
-                <img
-                  src="./BOOTSTRAP-TASK/about/about-1.jpg"
-                  alt="img-1"
-                  height="300px"
-                />
-              </div>
-              <div class="col-6 d-flex flex-column justify-content-end">
-                <img
-                  src="./BOOTSTRAP-TASK/about/about-2.jpg"
-                  alt="img-1"
-                  height="200px"
-                  width="200px"
-                />
-              </div>
-            </div>
-            <div class="row mt-4">
-              <div
-                class="col-6 d-flex justify-content-end align-items-baseline"
-              >
-                <img
-                  src="./BOOTSTRAP-TASK/about/about-3.jpg"
-                  alt="img-1"
-                  height="200px"
-                />
-              </div>
-              <div class="col-6">
-                <img
-                  src="./BOOTSTRAP-TASK/about/about-4.jpg"
-                  alt="img-1"
-                  height="300px"
-                />
+          <div class="col-12 col-lg-6 col-md-6 text-center d-flex align-items-center">
+            <div class="container">
+              <div class="row d-flex justify-content-around g-4">
+                <div class="col-6 text-start">
+                  <img
+                    src="./BOOTSTRAP-TASK/about/about-1.jpg"
+                    alt="img-1"
+                    class="w-100 img-fluid rounded"
+                  />
+                </div>
+                <div class="col-6 text-start position-relative">
+                  <img
+                    src="./BOOTSTRAP-TASK/about/about-2.jpg"
+                    alt="img-1"
+                    class="position-absolute bottom-0 w-75 img-fluid rounded"
+                  />
+                </div>
+
+                <div class="col-6 text-end">
+                  <img
+                    src="./BOOTSTRAP-TASK/about/about-3.jpg"
+                    alt="img-1"
+                    class="w-75 img-fluid rounded"
+                  />
+                </div>
+                <div class="col-6 text-start">
+                  <img
+                    src="./BOOTSTRAP-TASK/about/about-4.jpg"
+                    alt="img-1"
+                    class="w-100 img-fluid rounded"
+                  />
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-6 d-flex align-items-center">
-            <div class="container">
+
+          <div class="col-12 col-lg-6 d-flex align-items-center">
+            <div class="container mt-sm-5">
               <h4
                 class="fw-bold"
                 style="color: #fea116; font-family: 'Fasthand', cursive"
@@ -218,7 +241,7 @@
                 sed stet lorem sit clita duo justo magna dolore erat amet
               </p>
               <div class="row">
-                <div class="col-6 d-flex">
+                <div class="col-md-6 d-flex">
                   <div class="border-5 border-start border-warning t_col">
                     <h1 class="fw-bold mx-3">15</h1>
                   </div>
@@ -227,7 +250,7 @@
                     <div class="fw-bold">EXPERIENCE</div>
                   </div>
                 </div>
-                <div class="col-6 d-flex">
+                <div class="col-md-6 d-flex">
                   <div class="border-5 border-start border-warning t_col">
                     <h1 class="fw-bold mx-3">50</h1>
                   </div>
@@ -248,19 +271,18 @@
             </div>
           </div>
         </div>
-        <div class="container-fluid row">
-          <div class="container col-6 d-flex flex-column align-items-center">
+        <div class="container-fluid mt-5">
+          <div class="container d-flex flex-column align-items-center">
             <h4
               class="fw-bold"
-              style="color: #fea116; font-family: 'Intro Script Demo';"
+              style="color: #fea116; font-family: 'Intro Script Demo'"
             >
               - Food Menu -
             </h4>
-            <h1>Most Popular Items</h1>
-            <div class="container d-flex justify-content-center p-3 mt-5">
-              <div
-                class="pe-3 p-0 border-bottom border-3 border-warning d-flex"
-              >
+
+            <h2>Most Popular Items</h2>
+            <div class="d-flex justify-content-center p-3 mt-4">
+              <div class="pe-3 p-0 border-bottom border-3 border-warning d-flex">
                 <div class="t_col">
                   <h1 class="fw-bold me-3">
                     <i class="fa-solid fa-mug-saucer"></i>
@@ -271,9 +293,7 @@
                   <div class="fw-bold">BreakFast</div>
                 </div>
               </div>
-              <div
-                class="pe-3 p-0 border-bottom border-3 border-secondary d-flex"
-              >
+              <div class="pe-3 p-0 border-bottom border-3 border-secondary d-flex">
                 <div class="t_col">
                   <h1 class="fw-bold me-3">
                     <i class="fa-solid fa-burger"></i>
@@ -297,133 +317,126 @@
           </div>
         </div>
         <div class="container-fluid food_menu mt-5">
-          <div class="row">
-            <div class="col-6">
-              <div class="row align-items-center">
-                <div class="col-2">
+          <div class="row d-flex justify-content-between">
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body d-flex">
                   <img src="BOOTSTRAP-TASK\menu\menu-1.jpg" alt="menu" />
-                </div>
-                <div class="col-10">
-                  <div class="d-flex justify-content-between w-100">
-                    <h3>Chicken Burger</h3>
-                    <h3 class="t_col fw-bold">$115</h3>
-                  </div>
-                  <div class="border-top border-secondary fst-italic">
-                    <p class="mt-2 text-secondary">
+                  <div class="d-flex flex-column w-100 ps-2">
+                    <div class="d-flex justify-content-between w-100">
+                      <span class="fw-bold h4">Chicken Burger</span>
+                      <span class="t_col h4 fw-bold">$115</span>
+                    </div>
+                    <hr>
+                    <p class="text-secondary">
                       Ipsum ipsum clita erat amet dolor justo diam
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="row mt-2 align-items-center">
-                <div class="col-2">
+              
+              <div class="card">
+                <div class="card-body d-flex">
                   <img src="BOOTSTRAP-TASK\menu\menu-3.jpg" alt="menu" />
-                </div>
-                <div class="col-10">
-                  <div class="d-flex justify-content-between w-100">
-                    <h3>Chicken Burger</h3>
-                    <h3 class="t_col fw-bold">$115</h3>
-                  </div>
-                  <div class="border-top border-secondary fst-italic">
-                    <p class="mt-2 text-secondary">
+                  <div class="d-flex flex-column w-100 ps-2">
+                    <div class="d-flex justify-content-between w-100">
+                      <span class="fw-bold h4">Chicken Burger</span>
+                      <span class="t_col h4 fw-bold">$115</span>
+                    </div>
+                    <hr>
+                    <p class="text-secondary">
                       Ipsum ipsum clita erat amet dolor justo diam
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="row mt-2 align-items-center">
-                <div class="col-2">
+              <div class="card">
+                <div class="card-body d-flex">
                   <img src="BOOTSTRAP-TASK\menu\menu-5.jpg" alt="menu" />
-                </div>
-                <div class="col-10">
-                  <div class="d-flex justify-content-between w-100">
-                    <h3>Chicken Burger</h3>
-                    <h3 class="t_col fw-bold">$115</h3>
-                  </div>
-                  <div class="border-top border-secondary fst-italic">
-                    <p class="mt-2 text-secondary">
+                  <div class="d-flex flex-column w-100 ps-2">
+                    <div class="d-flex justify-content-between w-100">
+                      <span class="fw-bold h4">Chicken Burger</span>
+                      <span class="t_col h4 fw-bold">$115</span>
+                    </div>
+                    <hr>
+                    <p class="text-secondary">
                       Ipsum ipsum clita erat amet dolor justo diam
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="row mt-2 align-items-center">
-                <div class="col-2">
+              <div class="card">
+                <div class="card-body d-flex">
                   <img src="BOOTSTRAP-TASK\menu\menu-7.jpg" alt="menu" />
-                </div>
-                <div class="col-10">
-                  <div class="d-flex justify-content-between w-100">
-                    <h3>Chicken Burger</h3>
-                    <h3 class="t_col fw-bold">$115</h3>
-                  </div>
-                  <div class="border-top border-secondary fst-italic">
-                    <p class="mt-2 text-secondary">
+                  <div class="d-flex flex-column w-100 ps-2">
+                    <div class="d-flex justify-content-between w-100">
+                      <span class="fw-bold h4">Chicken Burger</span>
+                      <span class="t_col h4 fw-bold">$115</span>
+                    </div>
+                    <hr>
+                    <p class="text-secondary">
                       Ipsum ipsum clita erat amet dolor justo diam
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-6">
-              <div class="row align-items-center">
-                <div class="col-2">
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body d-flex">
                   <img src="BOOTSTRAP-TASK\menu\menu-2.jpg" alt="menu" />
-                </div>
-                <div class="col-10">
-                  <div class="d-flex justify-content-between w-100">
-                    <h3>Chicken Burger</h3>
-                    <h3 class="t_col fw-bold">$115</h3>
-                  </div>
-                  <div class="border-top border-secondary fst-italic">
-                    <p class="mt-2 text-secondary">
+                  <div class="d-flex flex-column ps-2 w-100">
+                    <div class="d-flex justify-content-between w-100">
+                      <span class="fw-bold h4">Chicken Burger</span>
+                      <span class="t_col h4 fw-bold">$115</span>
+                    </div>
+                    <hr>
+                    <p class="text-secondary">
                       Ipsum ipsum clita erat amet dolor justo diam
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="row mt-2 align-items-center">
-                <div class="col-2">
+              <div class="card">
+                <div class="card-body d-flex">
                   <img src="BOOTSTRAP-TASK\menu\menu-4.jpg" alt="menu" />
-                </div>
-                <div class="col-10">
-                  <div class="d-flex justify-content-between w-100">
-                    <h3>Chicken Burger</h3>
-                    <h3 class="t_col fw-bold">$115</h3>
-                  </div>
-                  <div class="border-top border-secondary fst-italic">
-                    <p class="mt-2 text-secondary">
+                  <div class="d-flex flex-column w-100 ps-2">
+                    <div class="d-flex justify-content-between w-100">
+                      <span class="fw-bold h4">Chicken Burger</span>
+                      <span class="t_col h4 fw-bold">$115</span>
+                    </div>
+                    <hr>
+                    <p class="text-secondary">
                       Ipsum ipsum clita erat amet dolor justo diam
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="row mt-2 align-items-center">
-                <div class="col-2">
+              <div class="card">
+                <div class="card-body d-flex">
                   <img src="BOOTSTRAP-TASK\menu\menu-6.jpg" alt="menu" />
-                </div>
-                <div class="col-10">
-                  <div class="d-flex justify-content-between w-100">
-                    <h3>Chicken Burger</h3>
-                    <h3 class="t_col fw-bold">$115</h3>
-                  </div>
-                  <div class="border-top border-secondary fst-italic">
-                    <p class="mt-2 text-secondary">
+                  <div class="d-flex flex-column w-100 ps-2">
+                    <div class="d-flex justify-content-between w-100">
+                      <span class="fw-bold h4">Chicken Burger</span>
+                      <span class="t_col h4 fw-bold">$115</span>
+                    </div>
+                    <hr>
+                    <p class="text-secondary">
                       Ipsum ipsum clita erat amet dolor justo diam
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="row mt-2 align-items-center">
-                <div class="col-2">
+              <div class="card">
+                <div class="card-body d-flex">
                   <img src="BOOTSTRAP-TASK\menu\menu-8.jpg" alt="menu" />
-                </div>
-                <div class="col-10">
-                  <div class="d-flex justify-content-between w-100">
-                    <h3>Chicken Burger</h3>
-                    <h3 class="t_col fw-bold">$115</h3>
-                  </div>
-                  <div class="border-top border-secondary fst-italic">
-                    <p class="mt-2 text-secondary">
+                  <div class="d-flex flex-column w-100 ps-2">
+                    <div class="d-flex justify-content-between w-100">
+                      <span class="fw-bold h4">Chicken Burger</span>
+                      <span class="t_col h4 fw-bold">$115</span>
+                    </div>
+                    <hr>
+                    <p class="text-secondary">
                       Ipsum ipsum clita erat amet dolor justo diam
                     </p>
                   </div>
@@ -435,7 +448,7 @@
       </div>
       <div class="container-fluid mt-5">
         <div class="row">
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6 youtube_video">
             <iframe
               width="100%"
               height="100%"
@@ -447,16 +460,16 @@
             ></iframe>
           </div>
           <div class="col-12 col-md-6">
-            <div class="container p-5" style="background-color: #0f172b">
+            <div class="container-fluid p-5" style="background-color: #0f172b">
               <h4
                 class="fw-bold"
-                style="color: #fea116; font-family: 'Intro Script Demo';"
+                style="color: #fea116; font-family: 'Intro Script Demo'"
               >
                 Reservation
               </h4>
               <h1 class="text-white">Book A Table Online</h1>
               <div class="row">
-                <div class="col-6">
+                <div class="col-md-6 col-12 mt-3">
                   <input
                     type="text"
                     name="nm"
@@ -470,7 +483,7 @@
                     "
                   />
                 </div>
-                <div class="col-6">
+                <div class="col-md-6 col-12 mt-3">
                   <input
                     type="email"
                     name="email"
@@ -485,8 +498,8 @@
                   />
                 </div>
               </div>
-              <div class="row my-3">
-                <div class="col-6">
+              <div class="row">
+                <div class="col-md-6 col-12 mt-3">
                   <input
                     type="text"
                     name="nm"
@@ -500,7 +513,7 @@
                     "
                   />
                 </div>
-                <div class="col-6">
+                <div class="col-md-6 col-12 mt-3">
                   <select
                     name="nop"
                     id="nop"
@@ -550,77 +563,77 @@
         </div>
       </div>
       <div class="container-fluid mt-5">
-        <div class="container col-6 d-flex flex-column align-items-center">
+        <div class="container d-flex flex-column align-items-center">
           <h4
             class="fw-bold"
-            style="color: #fea116; font-family: 'Intro Script Demo';"
+            style="color: #fea116; font-family: 'Intro Script Demo'"
           >
             - Team Member -
           </h4>
           <h1>Our Master Chefs</h1>
         </div>
         <div class="container-fluid t_member">
-          <div class="row p-4">
-            <div class="col-3">
-              <div
-                class="container py-4 shadow rounded d-flex flex-column align-items-center"
-              >
-                <img
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-12 ">
+              <div class="card m-2">
+                <div class="card-body d-flex flex-column align-items-center">
+                  <img
                   src="BOOTSTRAP-TASK\team\team-1.jpg"
                   alt="team_member"
-                  class="rounded-circle"
-                />
-                <div class="h4 mt-3">Full Name</div>
-                <div class="text-secondary">Designation</div>
+                  class="rounded-circle img-fluid"
+                  />
+                <div class="card-title mt-3">Full Name</div>
+                <div class="card-text">Designation</div>
+                </div>
               </div>
             </div>
-            <div class="col-3">
-              <div
-                class="container py-4 shadow rounded d-flex flex-column align-items-center"
-              >
-                <img
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="card m-2">
+                <div class="card-body d-flex flex-column align-items-center">
+                  <img
                   src="BOOTSTRAP-TASK\team\team-2.jpg"
                   alt="team_member"
-                  class="rounded-circle"
-                />
-                <div class="h4 mt-3">Full Name</div>
-                <div class="text-secondary">Designation</div>
+                  class="rounded-circle img-fluid"
+                  />
+                <div class="card-title mt-3">Full Name</div>
+                <div class="card-text">Designation</div>
+                </div>
               </div>
             </div>
-            <div class="col-3">
-              <div
-                class="container py-4 shadow rounded d-flex flex-column align-items-center"
-              >
-                <img
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="card m-2">
+                <div class="card-body d-flex flex-column align-items-center">
+                  <img
                   src="BOOTSTRAP-TASK\team\team-3.jpg"
                   alt="team_member"
-                  class="rounded-circle"
-                />
-                <div class="h4 mt-3">Full Name</div>
-                <div class="text-secondary">Designation</div>
+                  class="rounded-circle img-fluid"
+                  />
+                <div class="card-title mt-3">Full Name</div>
+                <div class="card-text">Designation</div>
+                </div>
               </div>
             </div>
-            <div class="col-3">
-              <div
-                class="container py-4 shadow rounded d-flex flex-column align-items-center"
-              >
-                <img
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="card m-2">
+                <div class="card-body d-flex flex-column align-items-center">
+                  <img
                   src="BOOTSTRAP-TASK\team\team-4.jpg"
                   alt="team_member"
-                  class="rounded-circle"
-                />
-                <div class="h4 mt-3">Full Name</div>
-                <div class="text-secondary">Designation</div>
+                  class="rounded-circle img-fluid"
+                  />
+                <div class="card-title mt-3">Full Name</div>
+                <div class="card-text">Designation</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="container-fluid mt-5">
-        <div class="container col-6 d-flex flex-column align-items-center">
+        <div class="container d-flex flex-column align-items-center">
           <h4
             class="fw-bold"
-            style="color: #fea116;font-family: 'Intro Script Demo';"
+            style="color: #fea116; font-family: 'Intro Script Demo'"
           >
             - Testimonial -
           </h4>
@@ -628,57 +641,69 @@
         </div>
         <div class="container-fluid">
           <div class="row">
-            <div class="col-4">
+            <div class="col-md-4 col-12">
               <div class="card testimonial_hover m-2">
                 <div class="card-body">
                   <i class="fa-solid fa-quote-left fa-2xl"></i>
-                  <p class="card-text my-3 ">
-                    Dolor et eos labore, stet justo sed est sed. Diam sed sed
-                    dolor stet amet eirmod eos labore diam
-                  </p>
-                  <div class="row">
-                    <div class="col-3">
-                      <img src="BOOTSTRAP-TASK\testimonial\testimonial-3.jpg" alt="client_img" class="rounded-circle w-100">
-                    </div>
-                    <div class="col">
-                      <h3>Client Name</h3>
-                      <p>Profession</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="card testimonial_hover m-2">
-                <div class="card-body">
-                  <i class="fa-solid fa-quote-left fa-2xl" ></i>
-                  <p class="card-text my-3 ">
-                    Dolor et eos labore, stet justo sed est sed. Diam sed sed
-                    dolor stet amet eirmod eos labore diam
-                  </p>
-                  <div class="row">
-                    <div class="col-3">
-                      <img src="BOOTSTRAP-TASK\testimonial\testimonial-4.jpg" alt="client_img" class="rounded-circle w-100">
-                    </div>
-                    <div class="col">
-                      <h3>Client Name</h3>
-                      <p>Profession</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="card testimonial_hover m-2">
-                <div class="card-body">
-                  <i class="fa-solid fa-quote-left fa-2xl" ></i>
                   <p class="card-text my-3">
                     Dolor et eos labore, stet justo sed est sed. Diam sed sed
                     dolor stet amet eirmod eos labore diam
                   </p>
                   <div class="row">
                     <div class="col-3">
-                      <img src="BOOTSTRAP-TASK\testimonial\testimonial-1.jpg" alt="client_img" class="rounded-circle w-100">
+                      <img
+                        src="BOOTSTRAP-TASK\testimonial\testimonial-3.jpg"
+                        alt="client_img"
+                        class="rounded-circle w-100"
+                      />
+                    </div>
+                    <div class="col">
+                      <h3>Client Name</h3>
+                      <p>Profession</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="card testimonial_hover m-2">
+                <div class="card-body">
+                  <i class="fa-solid fa-quote-left fa-2xl"></i>
+                  <p class="card-text my-3">
+                    Dolor et eos labore, stet justo sed est sed. Diam sed sed
+                    dolor stet amet eirmod eos labore diam
+                  </p>
+                  <div class="row">
+                    <div class="col-3">
+                      <img
+                        src="BOOTSTRAP-TASK\testimonial\testimonial-4.jpg"
+                        alt="client_img"
+                        class="rounded-circle w-100"
+                      />
+                    </div>
+                    <div class="col">
+                      <h3>Client Name</h3>
+                      <p>Profession</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="card testimonial_hover m-2">
+                <div class="card-body">
+                  <i class="fa-solid fa-quote-left fa-2xl"></i>
+                  <p class="card-text my-3">
+                    Dolor et eos labore, stet justo sed est sed. Diam sed sed
+                    dolor stet amet eirmod eos labore diam
+                  </p>
+                  <div class="row">
+                    <div class="col-3">
+                      <img
+                        src="BOOTSTRAP-TASK\testimonial\testimonial-1.jpg"
+                        alt="client_img"
+                        class="rounded-circle w-100"
+                      />
                     </div>
                     <div class="col">
                       <h3>Client Name</h3>
@@ -691,11 +716,19 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid mt-5 pt-5 text-white" style="background-color: #0f172b">
+      <div
+        class="container-fluid mt-5 pt-5 text-white"
+        style="background-color: #0f172b"
+      >
         <div class="container-fluid">
           <div class="row">
-            <div class="col-3">
-              <h4 class="fw-bold" style="color: #fea116; font-family: 'Intro Script Demo'; ">Company -</h4>
+            <div class="col-lg-3 col-md-6 col-12 p-3">
+              <h4
+                class="fw-bold"
+                style="color: #fea116; font-family: 'Intro Script Demo'"
+              >
+                Company -
+              </h4>
               <ul class="list-unstyled remove_ul">
                 <li>About Us</li>
                 <li>Contact Us</li>
@@ -704,73 +737,109 @@
                 <li>Tearms & Condition</li>
               </ul>
             </div>
-            <div class="col-3">
-              <h4 class="fw-bold" style="color: #fea116; font-family: 'Intro Script Demo'; ">Contact -</h4>
+            <div class="col-lg-3 col-md-6 col-12 p-3">
+              <h4
+                class="fw-bold"
+                style="color: #fea116; font-family: 'Intro Script Demo'"
+              >
+                Contact -
+              </h4>
               <ul class="list-unstyled contact_p">
-                <li><i class="fa-sharp fa-solid fa-location-dot"></i><span>123 Street,Now York,USA</span></li>
-                <li><i class="fa-solid fa-phone"></i><span>+012 345 678900</span></li>
-                <li><i class="fa-sharp fa-solid fa-envelope"></i><span>info@example.com</span></li>
+                <li>
+                  <i class="fa-sharp fa-solid fa-location-dot"></i
+                  ><span>123 Street,Now York,USA</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-phone"></i><span>+012 345 678900</span>
+                </li>
+                <li>
+                  <i class="fa-sharp fa-solid fa-envelope"></i
+                  ><span>info@example.com</span>
+                </li>
               </ul>
               <div class="sticker">
-                <span class="rounded-circle border border-white p-2 "><i class="fa-brands fa-twitter"></i></span>
-                <span class="rounded-circle border border-white p-2 px-2 "><i class="fa-brands fa-facebook-f"></i></span>
-                <span class="rounded-circle border border-white p-2 px-2 "><i class="fa-brands fa-youtube"></i></span>
-                <span class="rounded-circle border border-white p-2 fw-bold">in</span>
+                <span class="rounded-circle border border-white p-2"
+                  ><i class="fa-brands fa-twitter"></i
+                ></span>
+                <span class="rounded-circle border border-white p-2 px-2"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></span>
+                <span class="rounded-circle border border-white p-2 px-2"
+                  ><i class="fa-brands fa-youtube"></i
+                ></span>
+                <span class="rounded-circle border border-white p-2 fw-bold"
+                  >in</span
+                >
               </div>
             </div>
-            <div class="col-3">
-              <h4 class="fw-bold" style="color: #fea116; font-family: 'Intro Script Demo'; ">Opening -</h4>
+            <div class="col-lg-3 col-md-6 col-12 p-3">
+              <h4
+                class="fw-bold"
+                style="color: #fea116; font-family: 'Intro Script Demo'"
+              >
+                Opening -
+              </h4>
               <ul class="list-unstyled">
                 <li><h5>Monday - Saturday</h5></li>
                 <li><h6>09AM - 09PM</h6></li>
-                <br>
+                <br />
                 <li><h5>Sunday</h5></li>
                 <li><h6>10AM - 08PM</h6></li>
               </ul>
             </div>
-            <div class="col-3">
-              <h4 class="fw-bold" style="color: #fea116; font-family: 'Intro Script Demo'; ">Newsletter -</h4>
+            <div class="col-lg-3 col-md-6 col-12 p-3">
+              <h4
+                class="fw-bold"
+                style="color: #fea116; font-family: 'Intro Script Demo'"
+              >
+                Newsletter -
+              </h4>
               <ul class="list-unstyled">
                 <li>Dolr amet sit justo amet elitr clita ipsum eliter est.</li>
                 <li>
                   <div class="d-flex mt-3 bg-white p-2">
                     <input
-                    type="email"
-                    name="em"
-                    id="em"
-                    placeholder="Your email"
-                    style="
-                      border: none;
-                      width: 100%;
-                      height: 3rem;
-                      padding-left: 1rem;
-                    "
-                  />
-                  <button
-                    type="submit"
-                    class="fw-bold text-white border-0 p-1 bg_col w-50">
-                    SIGN UP
-                  </button>
+                      type="email"
+                      name="em"
+                      id="em"
+                      placeholder="Your email"
+                      style="
+                        border: none;
+                        width: 100%;
+                        height: 3rem;
+                        padding-left: 1rem;
+                      "
+                    />
+                    <button
+                      type="submit"
+                      class="fw-bold text-white border-0 p-1 bg_col w-50"
+                    >
+                      SIGN UP
+                    </button>
                   </div>
-              </li>
+                </li>
               </ul>
             </div>
           </div>
         </div>
-        <hr>
-        <div class="container-fluid my-3 d-flex justify-content-between">
-            <div>
-              <p>&copy; <span class="border-bottom">Your Site Name</span> , All Right Reserved. Designed By ,<span  class="border-bottom">HTML Codex</span></p>
-              <p>Distributed By <span  class="border-bottom">ThemeWegon</span></p>
-            </div>
-            <div>
-              <ul class="list-unstyled nav nav_ul">
-                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Cookies</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">FQAa</a></li>
-              </ul>
-            </div>
+        <hr />
+        <div class="container-fluid my-3 d-flex justify-content-between flex-column flex-md-row justify-content-center align-items-center">
+          <div  class="text-center text-md-start">
+            <p>
+              &copy; <span class="border-bottom">Your Site Name</span> , All
+              Right Reserved. Designed By ,<span class="border-bottom"
+                >HTML Codex</span>
+            </p>
+            <p>Distributed By <span class="border-bottom">ThemeWegon</span></p>
+          </div>
+          <div>
+            <ul class="list-unstyled nav nav_ul">
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Cookies</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">FQAa</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

@@ -1,7 +1,13 @@
+@import url(./SecondaRound-Medium/style.css);
+@import url(./Intro_script_Heavy/stylesheet.css);
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body
+{
+    font-family: 'Seconda Round';
 }
 .t_col
 {
@@ -23,22 +29,69 @@
 {
     background-color:#fea116;
 }
-.rot
-{
-    animation-name: rotate_img;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
-@keyframes rotate_img {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
-}
+
 .hotel{
     background-image:linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)),  url("./BOOTSTRAP-TASK/hero-section/bg-hero.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }
+.food_menu img
+{
+    height:90px;
+}
+.food_menu .card
+{
+    margin: 1rem 0;
+}
+.t_member img
+{
+    height: 230px;
+    width: auto;
+}
+.testimonial_hover:hover
+{
+    background-color:#fea116;
+    color: white;
+}
+.testimonial_hover .card-body i:hover
+{   
+    color:#fea116;
+}
 
-
+.testimonial_hover .card-body i:hover
+{   
+    color: white;
+}
+.remove_ul
+{
+    counter-reset: section;
+}
+.remove_ul li::before {
+    counter-increment: section;
+    content:  "> ";
+    padding-right:5px;
+  }
+  
+.contact_p li span
+{
+    padding-left: 10px;
+}
+@media screen and (max-width:993px)
+ {
+    .main_p
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width:768px)
+ {
+    .youtube_video
+    {
+      height: 25rem;
+      margin-bottom: 3rem;
+    }
+}

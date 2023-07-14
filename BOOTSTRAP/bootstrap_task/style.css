@@ -43,6 +43,7 @@ body
 .food_menu .card
 {
     margin: 1rem 0;
+    border: none;
 }
 .t_member img
 {
@@ -77,6 +78,14 @@ body
 {
     padding-left: 10px;
 }
+.food_menu_hover:hover
+{
+    border-bottom: 3px solid #fea116;
+}
+.food_menu_hover:not(:hover)
+{
+    border-bottom: 3px solid gray;
+}
 @media screen and (max-width:993px)
  {
     .main_p
@@ -84,6 +93,10 @@ body
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+    }
+    .text_cen
+    {
         align-items: center;
     }
 }

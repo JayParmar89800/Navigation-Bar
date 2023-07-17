@@ -8,16 +8,31 @@
 body
 {
     font-family: 'Seconda Round';
+    background-color: hsl(0, 0%, 97%);
 }
 .t_col
 {
     color:#fea116;
 }
+.card
+{
+    border:none;
+}
+
+.nav_col a:hover{
+    color: #fea116;
+}
 .nav_ul li a
 {
     text-decoration: none;
     color:white;
-    font-weight: 500;
+    font-weight:bold;
+}
+.nav_footer li a
+{
+    text-decoration: none;
+    color:white;
+    
 }
 .sub_menu li a
 {
@@ -29,7 +44,15 @@ body
 {
     background-color:#fea116;
 }
-
+button
+{
+    border-radius: 2px;
+}
+button:hover
+{
+    background-color: #ffbb55;
+    
+}
 .hotel{
     background-image:linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)),  url("./BOOTSTRAP-TASK/hero-section/bg-hero.jpg");
     background-repeat: no-repeat;
@@ -38,7 +61,7 @@ body
 }
 .food_menu img
 {
-    height:90px;
+    height:95px;
 }
 .food_menu .card
 {
@@ -49,6 +72,10 @@ body
 {
     height: 230px;
     width: auto;
+}
+.testimonial_hover
+{
+    border:1px solid rgb(234, 234, 234) ;
 }
 .testimonial_hover:hover
 {
@@ -106,5 +133,13 @@ body
     {
       height: 25rem;
       margin-bottom: 3rem;
+    }
+}
+@media screen and (width:768px)
+ {
+    .youtube_video
+    {
+      height: 525px;
+      
     }
 }

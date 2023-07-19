@@ -2,4 +2,4 @@
 
  * Task = Bootstrap 5 Tutorial
 
- - Topic : nav and navbar example
+ - Topic : Nav and Navbar example

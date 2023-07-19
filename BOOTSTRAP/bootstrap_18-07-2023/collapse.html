@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .container {
+        padding: 2rem;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="text-center text-danger bg-warning p-2">Collapse</h1>
+    <div class="container bg-success-subtle mt-4">
+      <h2>Simple collapse</h2>
+      <p>Click on the button to toggle between showing and hiding content.</p>
+      <button
+        type="button"
+        class="btn btn-outline-danger"
+        data-bs-toggle="collapse"
+        data-bs-target="#demo1"
+      >
+        Simple collapsible
+      </button>
+      <div id="demo1" class="collapse">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse libero,
+        dolorem voluptatem repudiandae nam molestias facere distinctio pariatur
+        nesciunt quibusdam magnam maiores, ea quos? Doloribus facilis aut
+        consectetur nesciunt ad!
+      </div>
+    </div>
+    <div class="container bg-danger-subtle mt-4">
+      <h2>Collapse starting show</h2>
+      <p>Click on the button to toggle between showing and hiding content.</p>
+      <button
+        type="button"
+        class="btn btn-outline-danger"
+        data-bs-toggle="collapse"
+        data-bs-target="#demo2"
+      >
+        Simple collapsible
+      </button>
+      <div id="demo2" class="collapse show">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse libero,
+        dolorem voluptatem repudiandae nam molestias facere distinctio pariatur
+        nesciunt quibusdam magnam maiores, ea quos? Doloribus facilis aut
+        consectetur nesciunt ad!
+      </div>
+    </div>
+    <div class="container bg-success-subtle my-2">
+      <div class="card">
+        <div class="card-header">
+          <a href="#first" data-bs-toggle="collapse" class="btn">
+            Collapsible Group Item #1</a>
+        </div>
+        <div id="first" class="collapse" data-bs-parent="#abc">
+          <div class="card-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius,
+            placeat officia, sed minus quasi voluptatum sit velit quas
+            praesentium vitae repellendus tempora debitis! Eos dicta ut
+            repellendus voluptate voluptatum maiores?
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <a href="#second" data-bs-toggle="collapse" class="btn">
+            Collapsible Group Item #2</a>
+        </div>
+        <div id="second" class="collapse show" data-bs-parent="#abc">
+          <div class="card-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius,
+            placeat officia, sed minus quasi voluptatum sit velit quas
+            praesentium vitae repellendus tempora debitis! Eos dicta ut
+            repellendus voluptate voluptatum maiores?
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <a href="#third" data-bs-toggle="collapse" class="btn">
+            Collapsible Group Item #3</a>
+        </div>
+        <div id="third" class="collapse" data-bs-parent="#abc">
+          <div class="card-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius,
+            placeat officia, sed minus quasi voluptatum sit velit quas
+            praesentium vitae repellendus tempora debitis! Eos dicta ut
+            repellendus voluptate voluptatum maiores?
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

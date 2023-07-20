@@ -2,4 +2,4 @@
 
  * Task = Bootstrap 5 Tutorial
 
- - Topic : Nav and Navbar example
+ - Topic : Carousel , modal , scrollspy , offcanvas examle 

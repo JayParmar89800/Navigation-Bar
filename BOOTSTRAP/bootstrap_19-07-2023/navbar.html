@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .container {
+        padding: 1rem;
+      }
+      .navbar a{
+        font-weight: bold;
+      }
+    </style>
+    <title>Navbar</title>
+</head>
+<body>
+    <h1 class="text-center text-danger bg-warning p-2 sticky-top">Navbar</h1>
+    <div class="container bg-dark-subtle my-2">
+        <h3>Basic Navbar Example</h3>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contacts</a>
+                      </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container bg-dark-subtle my-2">
+        <h3>Verticle Navbar Example</h3>
+        <nav class="navbar  bg-light">
+            <div class="container-fluid ">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contacts</a>
+                      </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container bg-dark-subtle my-2">
+        <h3>Basic Navbar Example</h3>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container">
+                <img src="../bootstrap_18-07-2023/hanuman_dada.avif" class="rounded-circle" alt="logo" width="100px" height="105px">
+            </div>
+            <div class="container-fluid justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contacts</a>
+                      </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="container bg-dark-subtle my-2">
+        <h3>Basic Navbar Example</h3>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark px-2">
+                <a href="#" class="navbar-brand">JSR</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsible">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsible">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contacts</a>
+                      </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container bg-dark-subtle my-2">
+        <h3>Basic Navbar Example</h3>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark px-2">
+                <a href="#" class="navbar-brand">JSR</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsible2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsible2">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contacts</a>
+                      </li>
+                </ul>
+                <form class="d-flex">
+                    <input type="text" placeholder="Search" class="form-control me-2">
+                    <button class="btn btn-primary" type="button">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>

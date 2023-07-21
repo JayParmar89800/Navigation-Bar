@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/f11cab3348.js" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+<body>
+    <h1 class="text-center text-danger bg-warning p-2 sticky-top">Forms</h1>
+    <form action="#" >
+    <div class="container mt-3 bg-danger-subtle p-4 ">
+            <h2 class="text-center fw-bold bg-warning">Stacked form</h2>
+            <div class="my-3">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Enter email">
+            </div>
+            <div class="my-3">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name="password" id="password" placeholder="Enter Password">
+            </div>
+            <div class="form-check my-3">
+                <label class="form-check-label">
+                    <input type="checkbox" name="chk" id="chk" class="form-check-input">Remember Me
+                </label>
+            </div>
+            <button type="button" class="btn btn-primary">Sumit</button>
+    </div> 
+    <div class="container mt-3 bg-danger-subtle p-4">
+            <h2 class="text-center fw-bold bg-warning">Textarea form</h2>
+            <div class="my-3">
+                <label for="Comments">Comments :</label>
+                <textarea name="com" id="com" rows="5" class="form-control"></textarea>
+            </div>
+    </div>  
+    <div class="container mt-3 bg-danger-subtle p-4">
+            <h2 class="text-center fw-bold bg-warning">Inline Forms(Row/Grid)</h2>
+            <div class="row my-3">
+                <div class="col">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Enter email">
+                </div>
+                <div class="col">
+                    <input type="password" class="form-control" name="password" id="password" placeholder="Enter Password">
+                </div>
+            </div>
+    </div> 
+    <div class="container mt-3 bg-danger-subtle p-4">
+            <h2 class="text-center fw-bold bg-warning">Disable & Readonly</h2>
+            <input type="text" class="form-control my-3"  placeholder="Normal input">
+            <input type="text" class="form-control my-3" placeholder="Disabled input" disabled>
+            <input type="text" class="form-control my-3" placeholder="Readonly input" readonly>
+            <button type="button" class="btn btn-primary">Sumit</button>
+    </div> 
+    <div class="container mt-3 bg-danger-subtle p-4">
+        <h2 class="text-center fw-bold bg-warning">Select Menu</h2>
+        <div class="my-3">
+            <label for="sel1">Select list(1)</label>
+            <select name="sel1" id="sel1" class="form-select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+        </div>
+        <div class="my-3">
+            <label for="sel1">Select list(2)</label>
+            <select multiple name="sel1" id="sel1" class="form-select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+        </div>
+    </div> 
+    <div class="container mt-3 bg-danger-subtle p-4">
+        <h2 class="text-center fw-bold bg-warning">Select Menu</h2>
+        <div class="my-3">
+            <label for="browser" class="form-label">Choose your browser from the list:</label>
+            <input class="form-control" list="browsers" name="browser" id="browser">
+            <datalist id="browsers">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </datalist>
+        </div>
+    </div> 
+    <div class="container mt-3 bg-danger-subtle p-4">
+        <h2 class="text-center fw-bold bg-warning">CheckBox</h2>
+        <div class="my-3">
+           <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="chk1" name="opt1" value="Something" checked>
+            <label for="chk1" class="form-check-label">Option 1</label>
+           </div>
+           <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="chk2" name="opt2" value="Something">
+            <label for="chk2" class="form-check-label">Option 2</label>
+           </div>
+           <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="chk3" name="opt3" value="Something" disabled>
+            <label for="chk3" class="form-check-label">Option 3</label>
+           </div>
+        </div>
+    </div> 
+    <div class="container mt-3 bg-danger-subtle p-4">
+        <h2 class="text-center fw-bold bg-warning">Radio Button</h2>
+        <div class="my-3">
+           <div class="form-check">
+            <input type="radio" class="form-check-input" id="chk1" name="opt1" value="Something" checked>
+            <label for="chk1" class="form-check-label">Option 1</label>
+           </div>
+           <div class="form-check">
+            <input type="radio" class="form-check-input" id="chk2" name="opt1" value="Something">
+            <label for="chk2" class="form-check-label">Option 2</label>
+           </div>
+           <div class="form-check">
+            <input type="radio" class="form-check-input" id="chk3" name="opt1" value="Something">
+            <label for="chk3" class="form-check-label">Option 3</label>
+           </div>
+        </div>
+    </div> 
+    <div class="container mt-3 bg-danger-subtle p-4">
+        <h2 class="text-center fw-bold bg-warning">Input Groups</h2>
+        <div class="input-group mt-3">
+            <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+            <input type="email" name="email" id="email" class="form-control">
+        </div>
+        <div class="input-group mt-3">
+            <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+            <input type="password" name="password" id="password" class="form-control">
+        </div>
+    </div> 
+    <div class="container mt-3 bg-danger-subtle p-4">
+        <h2 class="text-center fw-bold bg-warning">Input Groups with checkbox & Radio button</h2>
+        <div class="input-group mt-3">
+            <div class="input-group-text"><input type="checkbox"></div>
+            <input type="text" placeholder="Some text" class="form-control">
+        </div>
+        <div class="input-group mt-3">
+            <div class="input-group-text"><input type="radio"></div>
+            <input type="text" placeholder="Some text" class="form-control">
+        </div>
+    </div> 
+    <div class="container mt-3 bg-danger-subtle p-4">
+        <h2 class="text-center fw-bold bg-warning">Input Groups with Button</h2>
+        <div class="input-group mt-3">
+            <button type="button" class="btn btn-primary">Basic Button</button>
+            <input type="text" placeholder="Some text" class="form-control">
+        </div>
+        <div class="input-group mt-3">
+            <input type="text" placeholder="Search" class="form-control">
+            <button type="submit" class="btn btn-success">Go</button>
+        </div>
+        <div class="input-group mt-3">
+            <input type="text" placeholder="Something Clever...." class="form-control">
+            <button type="submit" class="btn btn-success">Go</button>
+            <button type="submit" class="btn btn-danger">Cancel</button>
+        </div>
+    </div> 
+    <div class="container mt-3 bg-danger-subtle p-4">
+        <h2 class="text-center fw-bold bg-warning">Input With Dropdown</h2>
+        <div class="input-group mt-3">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropdown</button>
+            <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">Link 1</a></li>
+                <li><a href="#" class="dropdown-item">Link 2</a></li>
+                <li><a href="#" class="dropdown-item">Link 3</a></li>
+            </ul>
+            <input type="text" placeholder="User name" class="form-control">
+        </div>
+    </div> 
+    <div class="container mt-3 bg-danger-subtle p-4">
+        <h2 class="text-center fw-bold bg-warning">Floting label</h2>
+        <div class="form-floating">
+            <input type="email" placeholder="User name" class="form-control">
+            <label for="user">User Name</label>
+        </div>
+        <div class="form-floating">
+            <input type="password" placeholder="Password" class="form-control">
+            <label for="password">Password</label>
+        </div>
+    </div> 
+    </form>  
+</body>
+</html>

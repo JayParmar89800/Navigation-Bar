@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <title>Scrollspy</title>
+  </head>
+  <body>
+    <h1 class="text-center text-danger bg-warning p-2">Scrollspy</h1>
+    <div class="container-fluid p-0 position-relative" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+      <nav class="navbar bg-dark navbar-dark navbar-expand-lg sticky-top">
+        <div class="container">
+          <ul class="navbar-nav w-100 justify-content-between">
+            <li class="nav-item">
+              <a href="#section1" class="nav-link">Section 1</a>
+            </li>
+            <li class="nav-item">
+              <a href="#section2" class="nav-link">Section 2</a>
+            </li>
+            <li class="nav-item">
+              <a href="#section3" class="nav-link">Section 3</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div
+        id="section1"
+        class="container-fluid bg-warning text-dark"
+        style="padding: 100px 20px"
+      >
+        <h1>Section-1</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+          voluptatibus omnis soluta impedit, sunt quam labore quia cumque
+          quaerat nostrum, sapiente iusto itaque harum expedita corporis
+          laboriosam similique aliquid. Voluptate.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut natus
+          quod ea cupiditate, cumque, esse, ipsum doloremque et aperiam totam
+          officiis consequuntur velit laudantium sit amet dolorum quasi modi
+          deleniti.
+        </p>
+      </div>
+      <div
+        id="section2"
+        class="container-fluid bg-success text-dark"
+        style="padding: 100px 20px"
+      >
+        <h1>Section-2</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+          voluptatibus omnis soluta impedit, sunt quam labore quia cumque
+          quaerat nostrum, sapiente iusto itaque harum expedita corporis
+          laboriosam similique aliquid. Voluptate.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut natus
+          quod ea cupiditate, cumque, esse, ipsum doloremque et aperiam totam
+          officiis consequuntur velit laudantium sit amet dolorum quasi modi
+          deleniti.
+        </p>
+      </div>
+      <div
+        id="section3"
+        class="container-fluid bg-primary text-dark"
+        style="padding: 100px 20px"
+      >
+        <h1>Section-3</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+          voluptatibus omnis soluta impedit, sunt quam labore quia cumque
+          quaerat nostrum, sapiente iusto itaque harum expedita corporis
+          laboriosam similique aliquid. Voluptate.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut natus
+          quod ea cupiditate, cumque, esse, ipsum doloremque et aperiam totam
+          officiis consequuntur velit laudantium sit amet dolorum quasi modi
+          deleniti.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

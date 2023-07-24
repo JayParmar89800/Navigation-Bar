@@ -1,0 +1,12 @@
+@import url(../bootstrap_task/Intro_script_Heavy/stylesheet.css);
+.heavy_script
+{
+    font-family: 'Intro Script Demo';
+}
+.landing_bg{
+    background-image:url("./img/slide/slide-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}

@@ -2,5 +2,5 @@
 
  * Task = Bootstrap 5 Template
 
- - Topic : Half Landing Page Create in this page use the navbar and button
+ - Topic : In Bootstrap Template Landing Page Create with responsive in this page use the navbar, button ,media screen , toggle button , row & col
  

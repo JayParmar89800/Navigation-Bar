@@ -1,0 +1,41 @@
+nav ul li a
+{
+    color: white;
+    padding: 1cm;
+}
+@media screen and (min-width:600px) {
+    .main
+    {
+        padding: 0 5cm;
+    }
+  
+}
+.carousel-item .container-fluid
+{
+    height:45rem;
+}
+.mainpage_content h1
+{
+    font-size:2cm;
+    font-weight: bold;
+}
+@media screen and (max-width:780px)
+{
+    .pos_rel
+    {
+        position: relative;
+        z-index: 1;
+        display: flex;
+       justify-content: center;
+       padding-top: 3cm;  
+    }
+    .mainpage_content h1
+    {
+        font-size:3rem;
+    }
+    .pos_ab
+    {
+        position: absolute;
+        text-align: center;
+    }
+}

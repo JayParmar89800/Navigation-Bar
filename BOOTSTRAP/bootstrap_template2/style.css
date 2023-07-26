@@ -1,3 +1,7 @@
+body
+{
+    font-family: 'Poppins', sans-serif;
+}
 .body_page
 {
     height: 100vh;
@@ -32,10 +36,10 @@
 {
     padding: 6px;
 }
-@media screen and(min-width:1024px) {
+@media screen and (min-width:1024px) {
     .main1
     {
-        padding: 0 12rem !important;
+        padding: 0 12rem;
     }
 }
 @media screen and (max-width:768px)

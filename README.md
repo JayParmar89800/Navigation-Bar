@@ -1,6 +1,6 @@
-- Live URL Link :https://jayparmar89800.github.io/Navigation-Bar/BOOTSTRAP/bootstrap_template2/index.html
+- Live URL Link :https://jayparmar89800.github.io/Navigation-Bar/resume/index.html
 
- * Task = Bootstrap 5 Template
+ * Task = Resume
 
- - Topic : In Bootstrap Template first page create properly with responsive and second about page create also responsive & in this second page use the row,col,button,d-block,d-none,sticky,z-index
+ - Topic : Make Resume with responive & this resume use only html and css media query
  

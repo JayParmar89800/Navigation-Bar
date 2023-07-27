@@ -13,7 +13,7 @@
       src="https://kit.fontawesome.com/ad8097f5fe.js"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <title>My Resume</title>
     <style>
       * {
         margin: 0;
@@ -32,40 +32,53 @@
         display: grid;
         place-items: center;
       }
-      .nm
-      {
-        padding-bottom: 8rem;
-      }
+
       .body_con {
         height: auto;
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto auto;
       }
-      @media screen and (max-width:768px) {
+      @media screen and (max-width: 768px) {
         .body_con {
-        grid-template-columns: 1fr;
+          grid-template-columns: 1fr;
+        }
+        .box-3 {
+          grid-row: 1 / span 1;
+        }
+        .box1 {
+          grid-row: 2 / span 1;
+        }
+        .box2 {
+          grid-row: 4 / span 1;
+        }
+        .box-4 {
+          grid-row: 3 / span 1;
+        }
+       
       }
-      
-      }
-      .box1 {
+      .box1,
+      .box-3 {
         background-color: #545454;
-        padding: 2rem;
+        padding : 0 2rem;
         color: white;
       }
-      .box2 {
+      .box2,
+      .box-4 {
         padding: 2rem;
       }
       .contact_info span {
-        border-bottom: 2px solid white;
+        border-bottom: 3px solid white;
       }
       .contact_info {
         margin-top: 2rem;
       }
-      .dp .img {
+      .box3 .img {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 1rem;
       }
       .sidebar_info {
         padding: 1rem 0;
@@ -78,126 +91,134 @@
         font-size: 2rem;
         color: gray;
       }
-      .box2_title
-      {
-        border-bottom: 2px solid black;
+      .box2_info {
+        color: gray;
       }
-      .box2_info
-      {
-        color:gray;
-      }
-      .box2_details
-      {
+      .box2_details {
         display: flex;
         flex-direction: column;
         gap: 2rem;
       }
-      .padd
-      {
+      .padd {
         padding: 1rem 0;
       }
-      @media screen and (max-width: 400px) {
-        .body_con {
-          display: grid;
-          grid-template-columns: 2fr;
-        }
+      .box-3 {
+        grid-column: 0 / span 1;
+        place-items: center;
+      }
+      .img img {
+        width: 100%;
+        height: inherit;
+      }
+      .box-3 {
+        grid-column: 1 / span 1;
+        padding-top: 2rem;
+      }
+      .box2_title
+      {
+        border-bottom: 3px solid black;
       }
     </style>
   </head>
   <body>
     <div class="maincontaner">
       <div class="body_con">
+        <div class="box box-3">
+          <div class="img">
+            <img src="./myphoto.jpeg" alt="img"  />
+          </div>
+        </div>
+        <div class="box box-4">
+          <div class="nm">
+            <h1>Parmar Jay</h1>
+            <h4>Developer Freelancer</h4>
+          </div>
+        </div>
         <div class="box box1">
           <div class="dp">
-            <div class="img">
-              <img src="./avatar2.avif" alt="img" height="200px" width="300px" />
-            </div>
             <div class="contact_info">
-              <h2 class="sidebar_info"><span>Contact</span></h2>
+              <h2><span>Contact</span></h2>
               <div class="sidebar_info">
                 <h4>Email</h4>
-                <p>nipa.bhadja@gmail.com</p>
+                <p>jayp89800@gmail.com</p>
               </div>
               <div class="sidebar_info">
                 <div>
                   <h4>Phone</h4>
-                  <p>+918758064780</p>
+                  <p>+917894561236</p>
                 </div>
               </div>
               <div class="contact_info">
-                <h2 class="sidebar_info"><span>Details</span></h2>
+                <h2 class="sidebar_info"><span>Personal Details</span></h2>
                 <div class="sidebar_info">
                   <h4>Date Of Birth</h4>
-                  <p>nipa.bhadja@gmail.com</p>
+                  <p>12/08/2003</p>
                 </div>
                 <div class="sidebar_info">
                   <h4>Address</h4>
                   <p>
-                    JANE MILLER MILLER ASSOLCIATES 1980 W CHELSEA AVE STE 2006
-                    ALLENTOWN PA 18104 
+                    B-107 SHIVDARSHAN APPARTMENT , MODI-MOHALO ,
+                    ASHVANIKUMAR,SURAT-395008
                   </p>
                 </div>
                 <div class="sidebar_info">
                   <h4>Residence</h4>
-                  <p>bjdfjndfbjdsjfb</p>
+                  <p>
+                    B-107 SHIVDARSHAN APPARTMENT , MODI-MOHALO ,
+                    ASHVANIKUMAR,SURAT-395008
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="box box2">
-          <div class="nm">
-            <h1>Nipa Bhadja</h1>
-            <h4>Developer Freelancer</h4>
-          </div>
           <div class="box2_details">
-          <div class="about_details1">
-            <h2><span class="box2_title">About Me</span></h2>
-           <div class="padd">
-            <p class="box2_info">
-                I am friendly, helpful, and polite, have I am friendly, helpful,
-                and polite. I am punctual with an excellent attendance record. I
-                am able to motivate and direct my talents and skills to meet
-                objectives. I am outgoing and tactful, and able to listen
-                effectively when solving problems
-              </p>
-           </div>
-          </div>
-          <div class="about_details1">
-            <h2><span class="box2_title">Experience</span></h2>
-            <div class="box2_info">
+            <div class="about_details1">
+              <h2><span class="box2_title">About Me</span></h2>
+              <div class="padd">
+                <p class="box2_info">
+                  I am friendly, helpful, and polite, have I am friendly,
+                  helpful, and polite. I am punctual with an excellent
+                  attendance record. I am able to motivate and direct my talents
+                  and skills to meet objectives. I am outgoing and tactful, and
+                  able to listen effectively when solving problems
+                </p>
+              </div>
+            </div>
+            <div class="about_details1">
+              <h2><span class="box2_title">Experience</span></h2>
+              <div class="box2_info">
                 <div class="padd">
-                    <p>SULOK DIGITAL</p>
-                    <p>Developer</p>
-                    <p>2018-2019</p>
-                  </div>
-                  <div class="padd">
-                    <p>SULOK DIGITAL Pvt. Ltd.</p>
-                    <p>Developer</p>
-                    <p>2018-2019</p>
-                  </div>
+                  <p>SULOK DIGITAL</p>
+                  <p>Developer</p>
+                  <p>2018-2019</p>
+                </div>
+                <div class="padd">
+                  <p>SULOK DIGITAL Pvt. Ltd.</p>
+                  <p>Developer</p>
+                  <p>2018-2019</p>
+                </div>
+              </div>
+            </div>
+            <div class="about_details1">
+              <h2><span class="box2_title">Education</span></h2>
+              <div class="box2_info">
+                <div class="padd">
+                  <p>2013-2020</p>
+                  <p>BCA</p>
+                  <p>MCA</p>
+                </div>
+                <div class="padd">
+                  <p>2018-2021</p>
+                  <p>NIRMA UNIVERCITY</p>
+                  <p style="font-weight: bold">
+                    "A good beginning makes a good end."
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="about_details1">
-            <h2><span class="box2_title">Education</span></h2>
-            <div class="box2_info">
-                <div class="padd">
-                    <p>2013-2020</p>
-                    <p>sfsfsfs</p>
-                    <p>jkjjllljk</p>
-                  </div>
-                  <div class="padd">
-                    <p>2018-2021</p>
-                    <p style="font-size: 2rem">sfsfsfs</p>
-                    <p>jkjjllljk</p>
-                    <p>
-                      test test test test test test test test test test test test
-                      test test test test
-                    </p>
-                  </div>
-            </div>
-          </div>
-        </div>
         </div>
       </div>
     </div>

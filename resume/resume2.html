@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/f11cab3348.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      p,
+      .sticker h3 {
+        color: gray;
+      }
+      .maincontainer {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+      }
+      .box-1 {
+        background-color: #c5c8cf;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding: 2rem;
+      }
+      .subbox-1_1 img {
+        border: 2px solid black;
+        border-radius: 50%;
+      }
+      .subbox-1_1 .img {
+        text-align: center;
+      }
+      .subbox-1_3 h1,
+      .subbox-1_4 h1 {
+        background-color: black;
+        color: white;
+        text-align: center;
+      }
+      .contact {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto auto auto auto;
+        padding-top: 1rem;
+        gap: 1rem;
+      }
+      .contact .sticker {
+        padding-top: 10px;
+      }
+      .contact p,
+      .experience p,
+      .education p {
+        padding: 5px 0;
+      }
+      .box-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        padding: 3rem 2rem;
+      }
+      .subbox-2_1 h1,
+      .subbox-2_2 h1,
+      .subbox-2_3 h1,
+      .subbox-2_4 h1 {
+        border-bottom: 1px solid black;
+      }
+      .experience {
+        display: grid;
+        grid-template-columns: 0.5fr 3fr;
+        grid-template-rows: auto auto auto auto;
+        padding-top: 2rem;
+        gap: 2rem;
+      }
+      .skill {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        padding-top: 2rem;
+        gap: 2rem;
+      }
+      .education {
+        display: grid;
+        grid-template-columns: 0.5fr 3fr;
+        grid-template-rows: auto auto;
+        padding-top: 2rem;
+        gap: 2rem;
+      }
+      .skill .sticker .prog {
+        font-size: 17px;
+        font-weight: bold;
+      }
+      .skill .sticker {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+      progress {
+        accent-color: black;
+      }
+      .hobby {
+        padding-top: 2rem;
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+      }
+      .hobby .sub_hobby {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+      }
+      @media screen and (max-width: 786px) {
+        .maincontainer {
+          width: 100%;
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="maincontainer">
+      <div class="box box-1">
+        <div class="subbox-1_1">
+          <div class="img">
+            <img src="./myphoto.jpeg" alt="myimage" width="70%"/>
+
+            <h1>PARMAR JAY</h1>
+          </div>
+        </div>
+        <div class="subbox-1_2">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab
+            possimus saepe reprehenderit aliquam architecto. Dignissimos
+            quibusdam ab voluptas aliquid! Doloremque et fuga iure
+            necessitatibus, eligendi molestias earum hic quod a!
+          </p>
+        </div>
+        <div class="subbox-1_3">
+          <h1>CONTACT</h1>
+          <div class="contact">
+            <div class="sticker">
+              <i class="fa-solid fa-location-dot fa-xl"></i>
+            </div>
+            <div>
+              <h2>Address</h2>
+              <p>
+                B-107 SHIVDARSHAN APPARTMENT , MODI-MOHALO
+                ,ASHVANIKUMAR,SURAT-395008
+              </p>
+            </div>
+            <div class="sticker">
+              <i class="fa-solid fa-phone fa-xl"></i>
+            </div>
+            <div>
+              <h2>Phone</h2>
+              <p>+317894561236</p>
+            </div>
+            <div class="sticker">
+              <i class="fa-regular fa-envelope fa-xl"></i>
+            </div>
+            <div>
+              <h2>Email</h2>
+              <p>jayp89800@gmail.com</p>
+            </div>
+            <div class="sticker">
+              <i class="fa-solid fa-box fa-xl"></i>
+            </div>
+            <div>
+              <h2>Website</h2>
+              <p>bjsbhjfbhsdbhfb</p>
+            </div>
+          </div>
+        </div>
+        <div class="subbox-1_4">
+          <h1>SOCIAL</h1>
+          <div class="contact">
+            <div class="sticker">
+              <i class="fa-brands fa-skype fa-xl"></i>
+            </div>
+            <div>
+              <h2>Skype</h2>
+              <p>vfvsdvgfvsgdfvgh</p>
+            </div>
+            <div class="sticker">
+              <i class="fa-brands fa-twitter fa-xl"></i>
+            </div>
+            <div>
+              <h2>Twitter</h2>
+              <p>+dfghdsghfghs</p>
+            </div>
+            <div class="sticker">
+              <i class="fa-brands fa-invision fa-xl"></i>
+            </div>
+            <div>
+              <h2>Linkedin</h2>
+              <p>sndfjsbdjkf</p>
+            </div>
+            <div class="sticker">
+              <i class="fa-brands fa-facebook fa-xl"></i>
+            </div>
+            <div>
+              <h2>Facebook</h2>
+              <p>www.facebook.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box box-2">
+        <div class="subbox-2_1">
+          <h1>WORK EXPERIENCE</h1>
+          <div class="experience">
+            <div class="sticker">
+              <h3>2013-2014</h3>
+            </div>
+            <div>
+              <h2>UI Developer</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Laborum fugit nam voluptatem ipsam non minus. Placeat a
+                voluptatum quia? Totam reprehenderit doloremque optio ad
+                voluptate, neque enim exercitationem fugiat saepe?
+              </p>
+            </div>
+            <div class="sticker">
+              <h3>2014-2015</h3>
+            </div>
+            <div>
+              <h2>Design</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
+                perspiciatis voluptates itaque corporis cumque? Asperiores,
+                reiciendis quasi perspiciatis, adipisci libero temporibus
+                eveniet qui repellendus debitis, tenetur ea recusandae atque
+                repellat?
+              </p>
+            </div>
+            <div class="sticker">
+              <h3>2015-2016</h3>
+            </div>
+            <div>
+              <h2>Graphic Designer</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Delectus culpa amet dolores odio mollitia animi officiis quia
+                voluptatibus aliquam quos dolorum praesentium, suscipit adipisci
+                recusandae deserunt qui nostrum optio ut?
+              </p>
+            </div>
+            <div class="sticker">
+              <h3>2016-2017</h3>
+            </div>
+            <div>
+              <h2>Marketing Manager</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Inventore nesciunt asperiores praesentium nisi doloremque dolore
+                natus consectetur sunt ipsam fugit ratione molestiae eligendi,
+                accusamus deleniti modi saepe, sed tenetur. Corporis.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="subbox-2_2">
+          <h1>EDUCATION</h1>
+          <div class="education">
+            <div class="sticker">
+              <h3>2008-2011</h3>
+            </div>
+            <div>
+              <h2>Bachelor of computer application</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="sticker">
+              <h3>2011-2013</h3>
+            </div>
+            <div>
+              <h2>Bachelor of computer application</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="subbox-2_3">
+          <h1>SKILS</h1>
+          <div class="skill">
+            <div class="sticker">
+              <label for="file" class="prog">JAVA</label>
+              <progress id="file" value="80" max="100">80%</progress>
+            </div>
+            <div class="sticker">
+              <label for="file" class="prog">C++</label>
+              <progress id="file" value="90" max="100">80%</progress>
+            </div>
+            <div class="sticker">
+              <label for="file" class="prog">HTML</label>
+              <progress id="file" value="80" max="100">80%</progress>
+            </div>
+            <div class="sticker">
+              <label for="file" class="prog">CSS</label>
+              <progress id="file" value="90" max="100">80%</progress>
+            </div>
+            <div class="sticker">
+              <label for="file" class="prog">JAVASCRIPT</label>
+              <progress id="file" value="56" max="100">80%</progress>
+            </div>
+            <div class="sticker">
+              <label for="file" class="prog">BOOTSTRAP</label>
+              <progress id="file" value="78" max="100">80%</progress>
+            </div>
+            <div class="sticker">
+              <label for="file" class="prog">HTML5</label>
+              <progress id="file" value="89" max="100">80%</progress>
+            </div>
+            <div class="sticker">
+              <label for="file" class="prog">PHP</label>
+              <progress id="file" value="56" max="100">80%</progress>
+            </div>
+            <div class="sticker">
+              <label for="file" class="prog">WORDPRESS</label>
+              <progress id="file" value="67" max="100">80%</progress>
+            </div>
+            <div class="sticker">
+              <label for="file" class="prog">PYTHON</label>
+              <progress id="file" value="56" max="100">80%</progress>
+            </div>
+          </div>
+        </div>
+        <div class="subbox-2_4">
+          <h1>INTEREST & HOBBY</h1>
+          <div class="hobby">
+            <div class="sub_hobby">
+              <div><i class="fa-solid fa-camera fa-2xl"></i></div>
+              <h2>PHOTOGRAPHY</h2>
+            </div>
+            <div class="sub_hobby">
+              <div><i class="fa-solid fa-music fa-2xl"></i></div>
+              <h2>MUSIC</h2>
+            </div>
+            <div class="sub_hobby">
+              <div><i class="fa-solid fa-bicycle fa-2xl"></i></div>
+              <h2>CYCLE</h2>
+            </div>
+            <div class="sub_hobby">
+              <div><i class="fa-solid fa-clapperboard fa-2xl"></i></div>
+              <h2>MOVIE</h2>
+            </div>
+            <div class="sub_hobby">
+              <div><i class="fa-solid fa-bicycle fa-2xl"></i></div>
+              <h2>CYCLE</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

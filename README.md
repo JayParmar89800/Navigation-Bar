@@ -1,5 +1,6 @@
-- Live URL Link : https://jayparmar89800.github.io/Navigation-Bar/BOOTSTRAP/index.html
+- Live URL Link :https://jayparmar89800.github.io/Navigation-Bar/resume/index.html
 
- * Task = Bootstrap 5 Forms
+ * Task = Resume
 
- - Topic : web forms with validation effect & in bootstrap 5 tutorial make the aspect ratio property
+ - Topic : Make Resume with responive & this resume use only html and css media query
+ 

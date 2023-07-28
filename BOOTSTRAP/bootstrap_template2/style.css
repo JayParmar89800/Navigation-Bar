@@ -1,0 +1,67 @@
+body
+{
+    font-family: 'Poppins', sans-serif;
+}
+.web_nm
+{
+    font-weight: 900;
+    font-size: 24px;
+}
+.body_page
+{
+    height: 100vh;
+}
+.carousel-item .container-fluid
+{
+    height:auto;
+}
+.mainpage_content h1
+{
+    font-size:2cm;
+    font-weight: bold;
+}
+.pos_rel1
+{
+    height:inherit ;
+    background-image: url('./images/bg_1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+.pos_rel2
+{
+    height:inherit ;
+    background-image: url('./images/bg_2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+}
+.about_content .row
+{
+    padding: 6px;
+}
+@media screen and (min-width:1024px) {
+    .main1
+    {
+        padding: 0 12rem;
+    }
+}
+@media screen and (max-width:768px)
+{
+   
+    .pos_rel1,.pos_rel2
+    {
+        position: relative;
+    }
+    .pos_ab1,.pos_ab2
+    {
+        top: 12rem;
+        position: absolute;
+        z-index: 1;
+    }
+    .mainpage_content h1
+    {
+        font-size:3rem;
+    }
+}

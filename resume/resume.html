@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background-color: #37344e;
+      }
+      .container {
+        width: 100%;
+      }
+      .subcontainer {
+        height: 10rem;
+        width: inherit;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        background-color: #f3bea5;
+        margin-top: 10rem;
+      }
+      .subcontainer img {
+        border-radius: 50%;
+        border: 20px solid #f3bea5;
+      }
+
+      .rel {
+        position: relative;
+      }
+      .rel img {
+        position: absolute;
+        bottom: 1rem;
+      }
+      .subcontainer2 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+      }
+      .sub2_1 {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        margin-top: 2rem;
+        padding: 2rem;
+        gap: 2rem;
+        border-right: 1px solid #f3bea5;
+      }
+      .sub2_1 .sub-title {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+      .sub2_1 .title,
+      .sub2_2 .title {
+        margin: 1rem 0;
+      }
+
+      .sub2_2 {
+        color: white;
+        padding: 2rem;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+      .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        margin: 0 2rem;
+      }
+      .contact h2 {
+        padding: 1rem 0;
+      }
+      .experience {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        padding-top: 2rem;
+        gap: 2rem;
+      }
+      ul {
+        list-style-position: inside;
+      }
+      h2 {
+        text-transform: uppercase;
+      }
+      .sub2_2 h2 span,
+      .sub2_1 h2 span {
+        border-bottom: 2px solid white;
+      }
+      .education {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto auto;
+        padding-top: 2rem;
+        gap: 2rem;
+      }
+      .work {
+        margin-top: 2rem;
+      }
+      .work_img {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 1rem;
+      }
+      .work_details {
+        margin: 1rem 0;
+      }
+      .work .work3 p {
+        margin: 1rem 0;
+      }
+      .work .work3 .work3_img {
+        margin: 1rem;
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="subcontainer">
+        <div class="contact">
+          <h1>PARMAR JAY</h1>
+          <h2>freelancer developer</h2>
+        </div>
+        <div class="rel">
+          <img src="./avtar.webp" alt="" height="200px" width="200px" />
+        </div>
+      </div>
+      <div class="subcontainer2">
+        <div class="sub2_1">
+          <!-- contact -->
+          <div class="">
+            <h2 class="title"><span>CONTECT</span></h2>
+            <div class="sub-title">
+              <div class="sub-div">
+                <h4>Phone</h4>
+                <div>+91 94292 17721</div>
+              </div>
+              <div class="sub-div">
+                <h4>Email :</h4>
+                <div>madhavgediya1@gmail.com</div>
+              </div>
+            </div>
+          </div>
+          <!-- personal details -->
+          <div>
+            <h2 class="title"><span>PERSONAL DETAILS</span></h2>
+            <div class="sub-title">
+              <div class="sub-div">
+                <h4>Date of Birth :</h4>
+                <div>03 - April - 20231</div>
+              </div>
+              <div class="sub-div">
+                <h4>Address :</h4>
+                <div>B-107 shiv darshan appartment</div>
+              </div>
+              <div class="sub-div">
+                <h4>Residence :</h4>
+                <div>B-107 shiv darshan appartment</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sub2_2">
+          <!-- About us -->
+          <div>
+            <h2 class="title"><span>ABOUT US</span></h2>
+            <p>
+              A skilled makeup artist and licensed cosmetologist with 5+
+              experience and understanding in product and sales knowledge.
+              Expertise in creating client preferences look and providing a
+              visual representation that is satisfying and builds relationships
+              with clients for future references
+            </p>
+          </div>
+          <!-- EDUCATION -->
+          <div>
+            <div>
+              <h2 class="title"><span>EDUCATION</span></h2>
+            </div>
+            <div class="education">
+              <div class="sticker">
+                <h3>2008-2011</h3>
+              </div>
+              <div>
+                <h4>Bachelor of computer application</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+              <div class="sticker">
+                <h3>2011-2013</h3>
+              </div>
+              <div>
+                <h4>Bachelor of computer application</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+          <!-- WORK EXPERIENCE -->
+          <div>
+            <h2 class="title"><span>WORK EXPERIENCE</span></h2>
+            <div class="experience">
+              <div class="sticker">
+                <h3>2013-2014</h3>
+              </div>
+              <div>
+                <h4>UI Developer</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Laborum fugit nam voluptatem ipsam non minus. Placeat a
+                  voluptatum quia? Totam reprehenderit doloremque optio ad
+                  voluptate, neque enim exercitationem fugiat saepe?
+                </p>
+              </div>
+              <div class="sticker">
+                <h3>2014-2015</h3>
+              </div>
+              <div>
+                <h4>Design</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
+                  perspiciatis voluptates itaque corporis cumque? Asperiores,
+                  reiciendis quasi perspiciatis, adipisci libero temporibus
+                  eveniet qui repellendus debitis, tenetur ea recusandae atque
+                  repellat?
+                </p>
+              </div>
+              <div class="sticker">
+                <h3>2015-2016</h3>
+              </div>
+              <div>
+                <h4>Graphic Designer</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Delectus culpa amet dolores odio mollitia animi officiis quia
+                  voluptatibus aliquam quos dolorum praesentium, suscipit
+                  adipisci recusandae deserunt qui nostrum optio ut?
+                </p>
+              </div>
+              <div class="sticker">
+                <h3>2016-2017</h3>
+              </div>
+              <div>
+                <h4>Marketing Manager</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Inventore nesciunt asperiores praesentium nisi doloremque
+                  dolore natus consectetur sunt ipsam fugit ratione molestiae
+                  eligendi, accusamus deleniti modi saepe, sed tenetur.
+                  Corporis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- WORK -->
+          <div>
+            <h2 class="title"><span>WORKS</span></h2>
+            <div class="work">
+              <!-- WORK-1 -->
+              <div class="work1">
+                <h3 class="work_details">Work Details 1</h3>
+                <div class="work_img">
+                  <img src="./avtar.webp" alt="" width="200px" height="200px" />
+                </div>
+              </div>
+              <!-- WORK-2 -->
+              <div class="work2">
+                <h3 class="work_details">Work Details 2</h3>
+                <div class="work_img">
+                  <img src="./avtar.webp" alt="" width="200px" height="200px" />
+                  <img src="./avtar.webp" alt="" width="200px" height="200px" />
+
+                  <img src="./avtar.webp" alt="" width="200px" height="200px" />
+                  <img src="./avtar.webp" alt="" width="200px" height="200px" />
+                </div>
+              </div>
+              <!-- WORK-3 -->
+              <div class="work3">
+                <h3 class="work_details">Work Details 3</h3>
+                <div class="work3_img">
+                  <img src="./avtar.webp" alt="" height="200px" width="200px" />
+                </div>
+
+                <small>test_category</small>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Voluptatum, facere explicabo. Culpa maiores velit beatae,
+                  quasi perspiciatis nesciunt corporis! Eius alias quisquam
+                  saepe quidem? Unde ad est sint pariatur cupiditate. Lorem
+                  ipsum dolor sit amet consectetur, adipisicing elit. Eaque quo
+                  at ex vitae, hic molestiae, ut recusandae adipisci fugiat
+                  nihil velit consequatur! Lorem ipsum, dolor sit amet
+                  consectetur adipisicing elit. Facilis vero quas tenetur
+                  doloribus sapiente, aliquid illo aspernatur aperiam cumque.
+                  Excepturi nobis commodi eum cum, mollitia itaque ad minima.
+                  Est, minus! Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit. Ex eaque neque ea reiciendis, vitae, cumque
+                  illum dolorum dicta eos molestias odio tenetur enim, debitis
+                  eum voluptatibus doloribus quisquam doloremque autem? Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit. Rem dicta
+                  dolore repellat illum pariatur. Placeat maxime eum quos facere
+                  repellat similique natus, dolorem, sequi exercitationem hic
+                  eaque recusandae, ipsum illum? Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Animi ea corrupti quam
+                  laboriosam corporis aut illum eius, commodi a impedit rem
+                  ratione porro debitis recusandae repellat, modi quae
+                  asperiores provident.
+                  etur adipisicing elit. Facilis vero quas tenetur
+                  doloribus sapiente, aliquid illo aspernatur aperiam cumque.
+                  Excepturi nobis commodi eum cum, mollitia itaque ad minima.
+                  Est, minus! Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit. Ex eaque neque ea reiciendis, vitae, cumque
+                  illum dolorum dicta eos molestias odio tenetur enim, debitis
+                  eum voluptatibus doloribus quisquam doloremque autem? Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit. Rem dicta
+                  dolore repellat illum pariatur. Placeat maxime eum quos facere
+                  repellat similique natus, dolorem, sequi exercitationem hic
+                  eaque recusandae, ipsum illum? Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Animi ea corrupti quam
+                  laboriosam corporis aut illum eius, commodi a impedit rem
+                  ratione porro debitis recusandae repellat, modi quae
+                  asperiores provident.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

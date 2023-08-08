@@ -21,12 +21,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="./image/logo/figma-icon.png" type="image/png" sizes="16x16 32x32">
     <title>APOLLY</title>
@@ -35,6 +33,7 @@
     <div class="container-fluid p-0">
       <div class="container-fluid first_page">
         <div class="container pt-3 pt-md-0">
+          <!-- Upper navbar -->
           <div class="d-lg-block d-md-block d-none">
             <div class="d-flex justify-content-between">
               <ul class="nav">
@@ -80,67 +79,79 @@
               </ul>
             </div>
           </div>
-          <nav class="navbar navbar-expand-lg bg-white nav_bar mt-3">
-            <div class="container-fluid d-flex justify-content-between">
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#demo"
-              >
+
+          <!-- Nav bar -->
+
+          <nav class="navbar navbar-expand-lg bg-white p-0 mt-3">
+            <div class="container-fluid py-0 px-1 ">
+              
+              <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div
-                class="nav_inner w-100 d-lg-flex justify-content-between d-none"
-              >
-                <ul class="navbar-nav nav">
-                  <li class="nav-item mx-3">
+
+              <!-- Left side navbar -->
+
+              <div class="collapse navbar-collapse " >
+                <ul class="navbar-nav ">
+                  <li class="nav-item mx-lg-3 mx-xxl-5">
                     <a class="nav-link fs-5" href="#">HOME</a>
                   </li>
-                  <li class="nav-item mx-md-3 mx-xl-5">
+                  <li class="nav-item mx-lg-3">
                     <a class="nav-link fs-5" href="#">ABOUT</a>
                   </li>
-                  <li class="nav-item mx-3">
+                  <li class="nav-item mx-lg-3 mx-xxl-5">
                     <a class="nav-link fs-5" href="#">FEAUTURES</a>
-                  </li>
-                </ul>
-                <ul class="navbar-nav nav">
-                  <li class="nav-item mx-xl-6 mx-lg-3">
-                    <a class="nav-link fs-5" href="#">SCREENSHOT</a>
-                  </li>
-                  <li class="nav-item mx-xl-5 mx-lg-3">
-                    <a class="nav-link fs-5" href="#">BLOG</a>
-                  </li>
-                  <li class="nav-item align-self-center">
-                    <button
-                      type="button"
-                      class="btn rb text-white download_btn"
-                    >
-                      DOWNLOAD
-                    </button>
-                  </li>
+                  </li>    
                 </ul>
               </div>
-              <div class="position-absolute end-0 me-2">
-                <button type="button" class="btn rb text-white download_btn">
+
+            <!-- logo -->
+
+            <div class="bg-white logo">
+              <img src="./image/logo/Logo4 1.png" alt=""/>
+            </div>
+
+            <!-- Right side navbar -->
+
+            <div class="collapse navbar-collapse justify-content-end" >
+              <ul class="navbar-nav ">
+                <li class="nav-item ms-lg-5 ps-lg-5 ms-xl-5 ">
+                  <a class="nav-link fs-5 fw-bold text-black" href="#">SCREENSHOT</a>
+                </li>
+                <li class="nav-item  mx-xl-4 mx-xxl-5 px-xxl-3">
+                  <a class="nav-link fs-5 fw-bold text-black" href="#">BLOG</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Download Button -->
+
+              <a class="navbar-brand mx-0" href="#">
+                <button type="button" class="btn rb">
                   DOWNLOAD
                 </button>
-              </div>
-            </div>
-            <div class="bg-white logo py-4 px-2">
-              <img src="./image/logo/Logo4 1.png" alt="" />
+              </a>
             </div>
           </nav>
+          
+
+
+          
+          <!-- Offcanvas menu -->
+          
           <div class="offcanvas offcanvas-start" id="demo">
             <div class="offcanvas-header">
               <span class="rb ms-auto rounded-5 text-white">
                 <button
-                  type="buton"
+                type="buton"
                   class="btn-close m-0 btn-close-white"
                   data-bs-dismiss="offcanvas"
                 ></button>
               </span>
             </div>
+
+            <!-- Offcanvas body -->
+
             <div class="offcanvas-body">
               <ul class="navbar-nav nav">
                 <li class="nav-item">
@@ -161,38 +172,54 @@
               </ul>
             </div>
           </div>
+          
+          <!-- First page body part -->
+
           <div class="container mt-5 pt-5 ">
-            <div class="row">
-              <div class="col-md-8 col-12 d-flex align-items-center">
-                <div class="container-fluid main d-flex align-items-center justify-content-center ">
-                    <div class="home_inner p-4 d-flex flex-column gap-4 justify-content-center">
-                      <div class="rbt display-5 fw-bold">
-                        A GREAT APP MAKES YOUR LIFE BETTER
-                      </div>
-                      <p>
-                        Amet minim mollit non deserunt ullamco est sit aliqua
-                        dolor do amet sint. Velit officia consequat duis enim
-                        velit mollit. Exercitation veniam consequat sunt nostrud
-                        amet.
-                      </p>
-                      <div>
-                        <h1>DOWNLOAD APP NOW</h1>
-                        <img src="./image/logo/toppng 1.png" alt="google play store logo">
-                        <img src="./image/logo/PngItem_1144050 2.png" alt="apple store" class="ms-3">
-                      </div>
-                    </div>
-                    <div class="home_border"></div>
+
+            <!-- <div class="row">
+              <div class="col-7">
+               
+                <div class="home_text bg-white position-relative">
+                  <div class="back_border position-absolute start-0 top-0 end-0 bottom-0">
+                  
+                  </div>
                 </div>
               </div>
-              <div class="col-md-4 col-12">
-                <div class="container-fluid">
-                  <img src="./image/Mobile/home_page_phone.png" alt="home page cell-phone">
-                </div>
-              </div>
-            </div>
+            </div> -->
+
           </div>
         </div>
       </div>
     </div>
   </body>
 </html>
+
+        <!-- <div class="row">
+          <div class="col-md-8 col-12 d-flex align-items-center">
+            <div class="container-fluid main d-flex align-items-center justify-content-center ">
+                <div class="home_inner p-4 d-flex flex-column gap-4 justify-content-center">
+                  <div class="rbt display-5 fw-bold">
+                    A GREAT APP MAKES YOUR LIFE BETTER
+                  </div>
+                  <p>
+                    Amet minim mollit non deserunt ullamco est sit aliqua
+                    dolor do amet sint. Velit officia consequat duis enim
+                    velit mollit. Exercitation veniam consequat sunt nostrud
+                    amet.
+                  </p>
+                  <div>
+                    <h1>DOWNLOAD APP NOW</h1>
+                    <img src="./image/logo/toppng 1.png" alt="google play store logo">
+                    <img src="./image/logo/PngItem_1144050 2.png" alt="apple store" class="ms-3">
+                  </div>
+                </div>
+                <div class="home_border"></div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12">
+            <div class="container-fluid">
+              <img src="./image/Mobile/home_page_phone.png" alt="home page cell-phone">
+            </div>
+          </div>
+        </div> -->

@@ -1,6 +1,6 @@
-- Live URL Link :https://jayparmar89800.github.io/Navigation-Bar/resume/resume.html
+- Live URL Link :https://jayparmar89800.github.io/Navigation-Bar/BOOTSTRAP/bootstrap_figma_task_1/index.html
 
- * Task = Resume
+ * Task = Figma Task
 
- - Topic :  Make a Resume using css ( grid , flex , float) 
+ - Topic :  Make a Navbar with responsive using offcanvas , toggle button , navbar property
  

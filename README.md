@@ -2,5 +2,5 @@
 
  * Task = Figma Task
 
- - Topic :  Make a Navbar with responsive using offcanvas , toggle button , navbar property
+ - Topic :  Make first page with responsive only mobile screen and desktop screen using media query , position , flex , grid
  

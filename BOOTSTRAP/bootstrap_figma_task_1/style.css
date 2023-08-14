@@ -19,10 +19,35 @@ body
 .first_page
 {
     height: 1024px;
+    /* height: 100vh; */
     background-image: url('./image/BackgroundImage.png');
     background-repeat: no-repeat;
     background-size: cover;
     /* background-attachment: fixed; */
+}
+.first_page .inner-container
+{
+    height: inherit;
+}
+.third_page
+{
+    background-image: url('./image/BackgroundImage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fifth_page 
+{
+    background-image: url('./image/Fifth_page_background.png');
+    background-repeat: no-repeat;
+
+    background-size: cover;
+}
+.body_part
+{
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .rb
 {
@@ -71,6 +96,17 @@ body
 .navbar-brand .btn
 {
     color: var(--white);
+    background-color: var(--royal-blue);
+    font-family: Josefin Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    padding: 12px 16px;
+}
+.navbar-brand .btn
+{
+    color: var(--white);
     font-family: Josefin Sans;
     font-size: 20px;
     font-style: normal;
@@ -80,7 +116,7 @@ body
 }
 .first_page_body
 {
-    height: 50rem;
+    /* height: 50rem; */
     display: flex;
     align-items: center;
 }
@@ -97,7 +133,7 @@ body
     height: 535px;
     z-index: 0;
    
-    left:4rem;
+    left:3rem;
 }
 .home_text
 {
@@ -135,7 +171,77 @@ body
     line-height: 37.5px; 
     text-transform: uppercase;
 }
-@media screen and (max-width:400px) {
+.first_page_image img
+{
+        height: 723px;
+}
+
+/* Second page mobile bottom shadow */
+
+.second_page_shadow
+{
+    bottom: 0;
+}
+@media screen and (max-width:1400px) and (min-width:1200px)
+{
+    .second_page_shadow
+    {
+        bottom:2rem;
+    }
+}
+@media screen and (max-width:1200px) and (min-width:992px)
+{
+    .second_page_shadow
+    {
+        bottom:4rem;
+    }
+}
+@media screen and (max-width:992px) and (min-width:768px)
+{
+    .second_page_shadow
+    {
+        bottom:13rem;
+    }
+}
+@media screen and (width:768px)
+{
+    .second_page_shadow
+    {
+        bottom:13rem;
+    }
+}
+@media screen and (max-width:767px)
+{
+    .second_page_shadow
+    {
+        bottom:-2rem;
+    }
+}
+
+/* Forth page mobile bottom shadow */
+
+.forth_page_shadow
+{
+    bottom: -2rem;
+}
+
+@media screen and (max-width:992px) and (min-width:768px)
+{
+    .forth_page_shadow
+    {
+        bottom:4rem;
+    }
+}
+@media screen and (width:768px)
+{
+    .forth_page_shadow
+    {
+        bottom:13rem;
+    }
+}
+
+
+@media screen and (max-width:768px) {
     .first_page
     {
         height: 1300px;
@@ -198,11 +304,10 @@ body
     }
 }
 
-@media screen and (max-width:768px) and (min-width:400px) {
+@media screen and (max-width:1200px) and (min-width:769px) {
     .navbar-brand .btn
     {
         padding: 12px 6px;
-  
         font-size: 15px;
         line-height: normal;
     }
@@ -219,15 +324,15 @@ body
     }
     .home_text
     {
-        width: 368px;
-        height: 360px;
+        width: 350px;
+        height: 345px;
         flex-shrink: 0;
         padding: 14px 7px;  
     }
     .back_border
     {
-        width: 375px;
-        height: 444px;
+        width: 340px;
+        height: 410px;
         flex-shrink: 0;
     }
     .home_text h2{

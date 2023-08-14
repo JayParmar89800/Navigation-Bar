@@ -2,5 +2,5 @@
 
  * Task = Figma Task
 
- - Topic :  Make first page with responsive only mobile screen and desktop screen using media query , position , flex , grid
+ - Topic :  Make Second page and third page  with responsive mobile screen and desktop screen using media query , position , flex , grid , col , row , card
  

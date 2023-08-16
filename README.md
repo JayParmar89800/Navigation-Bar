@@ -2,5 +2,5 @@
 
  * Task = Figma Task
 
- - Topic :  Make Second page and third page  with responsive mobile screen and desktop screen using media query , position , flex , grid , col , row , card
+ - Topic :  Make last Second page and forth page  with responsive using media query , position , flex , grid , col , row , card and all card create in this template
  

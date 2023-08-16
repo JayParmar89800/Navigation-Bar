@@ -35,13 +35,47 @@ body
     background-repeat: no-repeat;
     background-size: cover;
 }
-.fifth_page 
+.fifth_page
+{
+    padding-bottom:9rem;
+}
+.fifth_page_inner
 {
     background-image: url('./image/Fifth_page_background.png');
     background-repeat: no-repeat;
-
     background-size: cover;
+    padding: 7rem 0 15rem 0;
+   
 }
+@media screen and (max-width:768px) and (min-width:500px){
+    .fifth_page
+    {
+        padding-bottom:9rem;
+    }
+    .fifth_page_inner
+    {
+        background-image: url('./image/Fifth_page_background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 7rem 0 12rem 0;
+    
+    }
+}
+@media screen and (max-width:500px){
+    .fifth_page
+    {
+        padding-bottom:5rem;
+    }
+    .fifth_page_inner
+    {
+        background-image: url('./image/Fifth_page_background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 4rem 0 7rem 0;
+    
+    }
+}
+
 .body_part
 {
     height: inherit;
@@ -356,8 +390,69 @@ body
         height: 423px;
     }
 }
+.team_member
+{
+    background-image: url('./image/Team_member/photo_border.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 11px;
+}
+ul.breadcrumb {
+    list-style: none;
+  }
+  
+/* ul.breadcrumb li {display: block;} */
+  
+ul.breadcrumb li+li:before {
+    color: black;
+}
+ul.breadcrumb li a 
+{
+    color:black;
+}
+ul.breadcrumb li a:hover
+{
+    color: var(--royal-blue);
+}
 
-
-
-
-
+/* Sixth page card */
+.sixth_page .card,.eight_page .card
+{
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.10);
+}
+/* Eight page */
+.eight_page .card .card-link
+{
+    color: var(--royal-blue);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 130%; 
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+/* Nine page */
+.ninth_page .border_right
+{
+    border-right: 5px solid #6C6C72;
+}
+@media screen and (max-width:786px) {
+    .ninth_page .border_right
+{
+    padding: 15px;
+    border-right: none;
+    border-bottom: 5px solid #6C6C72;
+}
+}
+.ninth_page
+{
+    z-index: 1;
+}
+.last_page
+{
+    background-color: var(--black);
+    padding-top: 4rem;
+    z-index: -1;
+}
+  

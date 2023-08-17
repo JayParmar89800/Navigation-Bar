@@ -27,6 +27,66 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@300&display=swap"
       rel="stylesheet"
     />
+    <!-- carasoule link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        function moveToSelected(element) {
+          if (element == "next") {
+            var selected = $(".selected").next();
+          } else if (element == "prev") {
+            var selected = $(".selected").prev();
+          } else {
+            var selected = element;
+          }
+
+          var next = $(selected).next();
+          var prev = $(selected).prev();
+          var prevSecond = $(prev).prev();
+          var nextSecond = $(next).next();
+
+          $(selected).removeClass().addClass("selected");
+
+          $(prev).removeClass().addClass("prev");
+          $(next).removeClass().addClass("next");
+
+          $(nextSecond).removeClass().addClass("nextRightSecond");
+          $(prevSecond).removeClass().addClass("prevLeftSecond");
+
+          $(nextSecond).nextAll().removeClass().addClass("hideRight");
+          $(prevSecond).prevAll().removeClass().addClass("hideLeft");
+        }
+
+        // Eventos teclado
+        $(document).keydown(function (e) {
+          switch (e.which) {
+            case 37: // left
+              moveToSelected("prev");
+              break;
+
+            case 39: // right
+              moveToSelected("next");
+              break;
+
+            default:
+              return;
+          }
+          e.preventDefault();
+        });
+
+        $("#carousel div").click(function () {
+          moveToSelected($(this));
+        });
+
+        $("#prev").click(function () {
+          moveToSelected("prev");
+        });
+
+        $("#next").click(function () {
+          moveToSelected("next");
+        });
+      });
+    </script>
 
     <link rel="stylesheet" href="style.css" />
     <link
@@ -37,12 +97,13 @@
     />
     <title>APOLLY</title>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
     <div class="container-fluid p-0">
       <div class="container-fluid first_page">
         <div class="container pt-3 pt-md-0 inner-container">
           <!-- Upper navbar -->
-          <div class="d-lg-block d-md-block d-none">
+
+          <div class="pt-3 d-lg-block d-md-block d-none">
             <div class="d-flex justify-content-between">
               <ul class="nav">
                 <li class="nav-item">
@@ -106,13 +167,19 @@
               <div class="collapse navbar-collapse">
                 <ul class="navbar-nav">
                   <li class="nav-item mx-lg-3 mx-xxl-5">
-                    <a class="nav-link fs-5" href="#">HOME</a>
+                    <a class="nav-link fs-5" href="#section1"
+                      ><span>HOME</span></a
+                    >
                   </li>
                   <li class="nav-item mx-lg-3">
-                    <a class="nav-link fs-5" href="#">ABOUT</a>
+                    <a class="nav-link fs-5" href="#section2"
+                      ><span>ABOUT</span></a
+                    >
                   </li>
                   <li class="nav-item mx-lg-3 mx-xxl-5">
-                    <a class="nav-link fs-5" href="#">FEAUTURES</a>
+                    <a class="nav-link fs-5" href="#section3"
+                      ><span>FEAUTURES</span></a
+                    >
                   </li>
                 </ul>
               </div>
@@ -128,13 +195,13 @@
               <div class="collapse navbar-collapse justify-content-end">
                 <ul class="navbar-nav">
                   <li class="nav-item ms-lg-5 ps-lg-5 ms-xl-5">
-                    <a class="nav-link fs-5 fw-bold text-black" href="#"
-                      >SCREENSHOT</a
+                    <a class="nav-link fs-5 fw-bold text-black" href="#section4"
+                      ><span>SCREENSHOT</span></a
                     >
                   </li>
                   <li class="nav-item mx-xl-4 mx-xxl-5 px-xxl-3">
-                    <a class="nav-link fs-5 fw-bold text-black" href="#"
-                      >BLOG</a
+                    <a class="nav-link fs-5 fw-bold text-black" href="#section5"
+                      ><span>BLOG</span></a
                     >
                   </li>
                 </ul>
@@ -166,19 +233,29 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav nav">
                 <li class="nav-item">
-                  <a class="nav-link fs-5" href="#">HOME</a>
+                  <a class="nav-link fs-5" href="#section1"
+                    ><span>HOME</span></a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fs-5" href="#">ABOUT</a>
+                  <a class="nav-link fs-5" href="#section2"
+                    ><span>ABOUT</span></a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fs-5" href="#">FEAUTURES</a>
+                  <a class="nav-link fs-5" href="#section3"
+                    ><span>FEAUTURES</span></a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fs-5" href="#">SCREENSHOT</a>
+                  <a class="nav-link fs-5" href="#section4"
+                    ><span>SCREENSHOT</span></a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fs-5" href="#">BLOG</a>
+                  <a class="nav-link fs-5" href="#section5"
+                    ><span>BLOG</span></a
+                  >
                 </li>
               </ul>
             </div>
@@ -186,7 +263,7 @@
 
           <!-- First page body part -->
 
-          <div class="container body_part">
+          <div id="section1" class="container body_part">
             <!-- row -->
             <div class="row gap-5 gap-md-0">
               <!-- col-7 -->
@@ -206,8 +283,16 @@
                     </p>
                     <h5>Download App Now</h5>
                     <div>
-                      <img src="./image/logo/Google_play_store.png" alt="" />
-                      <img src="./image/logo/Apple_store.png" alt="" />
+                      <img
+                        src="./image/logo/Google_play_store.png"
+                        alt=""
+                        class="googleplay"
+                      />
+                      <img
+                        src="./image/logo/Apple_store.png"
+                        alt=""
+                        class="applestore"
+                      />
                     </div>
                   </div>
                   <div class="back_border position-absolute"></div>
@@ -227,7 +312,7 @@
         </div>
       </div>
       <!-- Second-page -->
-      <div class="container-fluid">
+      <div id="section2" class="container-fluid">
         <div class="container mt-5">
           <!-- First row -->
           <div class="row d-flex justify-content-center">
@@ -343,7 +428,7 @@
         </div>
       </div>
       <!-- Third Page -->
-      <div class="container-fluid third_page">
+      <div id="section3" class="container-fluid third_page">
         <div class="container py-5 text-white d-flex flex-column row-gap-5">
           <!-- First row -->
           <div class="row d-flex justify-content-center">
@@ -471,8 +556,9 @@
           </div>
         </div>
       </div>
+
       <!-- Forth_page -->
-      <div class="container-fluid py-5">
+      <div id="section4" class="container-fluid py-5">
         <div class="row d-flex justify-content-center">
           <div class="col-md-6 col-12 text-center d-flex flex-column row-gap-2">
             <h1 class="fw-bold text-uppercase">
@@ -486,8 +572,49 @@
             </p>
           </div>
         </div>
+        <!-- carasoule -->
 
-       
+        <!-- <div class="container my-5 py-4 carousel_container">
+          <div class="container-fluid">
+            <main>
+              <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="prevLeftSecond">
+                  <img src="./image/Mobile/000.png" />
+                </div>
+
+                <div class="prev">
+                  <img src="./image/Mobile/003.png" />
+                </div>
+
+                <div class="selected">
+                  <img src="./image/Mobile/App.png" />
+                </div>
+
+                <div class="next">
+                  <img src="./image/Mobile/001.png" />
+                </div>
+
+                <div class="nextRightSecond">
+                  <img src="./image/Mobile/004.png" />
+                </div>
+              </div> -->
+
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev" id="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next" id="next">
+            <span class="carousel-control-next-icon"></span>
+          </button> -->
+
+        <!-- <div class="buttons">
+            <button class="buttons1" id="prev">Prev</button>
+            <button class="buttons1" id="next">Next</button>
+          </div> -->
+
+        <!-- </main>
+          </div>
+        </div> -->
+
         <div class="container my-5">
           <div class="row">
             <div
@@ -510,11 +637,9 @@
                 <div
                   class="col-3 rb text-center d-flex flex-column align-items-center row-gap-2 py-4 rounded-4"
                 >
-                  <img
-                    src="./image/icon/download-2-fill.png"
-                    alt=""
-                    style="width: 25%"
-                  />
+                  <div>
+                    <i class="fa-solid fa-download fa-xl"></i>
+                  </div>
                   <p class="m-0">59865</p>
                   <p class="m-0">DOWNLOAD</p>
                 </div>
@@ -620,27 +745,29 @@
                   class="card-body d-flex flex-column align-items-center row-gap-3"
                 >
                   <div>
-                    <h2 class="card-title fw-bold text-center ">CARLA PRESS</h2>
-                    <h5 class="card-title text-secondary text-center">APP DEVELOPER</h5>
+                    <h2 class="card-title fw-bold text-center">CARLA PRESS</h2>
+                    <h5 class="card-title text-secondary text-center">
+                      APP DEVELOPER
+                    </h5>
                   </div>
                   <p class="card-text text-center">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Viverra nunc ante velit vitae. Est tellus vitae.
                   </p>
-                  <ul class="w-100 d-flex justify-content-between breadcrumb">
-                    <li>
+                  <div class="row w-100 breadcrumb">
+                    <div class="col-3 text-center border-end border-black">
                       <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="col-3 text-center border-end border-black">
                       <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="col-3 text-center border-end border-black">
                       <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="col-3 text-center">
                       <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                    </li>
-                  </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -659,27 +786,29 @@
                   class="card-body d-flex flex-column align-items-center row-gap-3"
                 >
                   <div>
-                    <h2 class="card-title fw-bold   text-center ">CARLA PRESS</h2>
-                    <h5 class="card-title text-secondary text-center">UI/UX DESIGNER</h5>
+                    <h2 class="card-title fw-bold text-center">CARLA PRESS</h2>
+                    <h5 class="card-title text-secondary text-center">
+                      UI/UX DESIGNER
+                    </h5>
                   </div>
                   <p class="card-text text-center">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Viverra nunc ante velit vitae. Est tellus vitae.
                   </p>
-                  <ul class="w-100 d-flex justify-content-between breadcrumb">
-                    <li>
+                  <div class="row w-100 breadcrumb">
+                    <div class="col-3 text-center border-end border-black">
                       <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="col-3 text-center border-end border-black">
                       <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="col-3 text-center border-end border-black">
                       <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="col-3 text-center">
                       <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                    </li>
-                  </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -699,27 +828,29 @@
                 >
                   <div>
                     <h2 class="card-title text-center fw-bold">CARLA PRESS</h2>
-                    <h5 class="card-title text-center text-secondary">WEBSITE DEVELOPER</h5>
+                    <h5 class="card-title text-center text-secondary">
+                      WEBSITE DEVELOPER
+                    </h5>
                   </div>
                   <p class="card-text text-center">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Viverra nunc ante velit vitae. Est tellus vitae.
                   </p>
 
-                  <ul class="w-100 d-flex justify-content-between breadcrumb">
-                    <li>
+                  <div class="row w-100 breadcrumb">
+                    <div class="col-3 text-center border-end border-black">
                       <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="col-3 text-center border-end border-black">
                       <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="col-3 text-center border-end border-black">
                       <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="col-3 text-center">
                       <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                    </li>
-                  </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -729,8 +860,11 @@
       <!-- Seventh page -->
 
       <!-- Eight page  -->
-      <div class="container eight_page my-5 py-5 d-flex flex-column row-gap-5">
-        <div class="row d-flex justify-content-center ">
+      <div
+        id="section5"
+        class="container eight_page my-5 py-5 d-flex flex-column row-gap-5"
+      >
+        <div class="row d-flex justify-content-center">
           <div class="col-md-6 col-12 text-center d-flex flex-column row-gap-2">
             <h1 class="fw-bold text-uppercase">Our recent blog</h1>
             <p class="text-secondary">
@@ -751,7 +885,9 @@
                 alt="..."
               />
               <div class="card-body d-flex flex-column row-gap-3">
-                <h4 class="card-title text-uppercase fw-bold">The Snap Pixel: How It Works and How to Install</h4>
+                <h4 class="card-title text-uppercase fw-bold">
+                  The Snap Pixel: How It Works and How to Install
+                </h4>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Viverra nunc ante velit vitae. Est tellus vitae, nullam
@@ -769,7 +905,9 @@
                 alt="..."
               />
               <div class="card-body d-flex flex-column row-gap-3">
-                <h4 class="card-title text-uppercase fw-bold">Global Partner Solutions: A Partnership of Innovation</h4>
+                <h4 class="card-title text-uppercase fw-bold">
+                  Global Partner Solutions: A Partnership of Innovation
+                </h4>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Viverra nunc ante velit vitae. Est tellus vitae, nullam
@@ -787,7 +925,9 @@
                 alt="..."
               />
               <div class="card-body d-flex flex-column row-gap-3">
-                <h4 class="card-title text-uppercase fw-bold">2021: An opportunity for Snapchatters to start fresh</h4>
+                <h4 class="card-title text-uppercase fw-bold">
+                  2021: An opportunity for Snapchatters to start fresh
+                </h4>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Viverra nunc ante velit vitae. Est tellus vitae, nullam
@@ -800,33 +940,126 @@
         </div>
       </div>
       <!-- Ninth page -->
-      
-      <!-- <div class="container-fluid my-5 pt-5 position-relative d-flex justify-content-center p-0">
-        <div class="container text-white rounded-5 shadow p-5 ninth_page position-absolute top-0">
-          <div class="row px-3 row-gap-4">
-            <div class="col-md-6 col-12 px-3 border_right">
-              <div class="d-flex align-items-center column-gap-3 ">
-                <button type="button " class="p-4  rounded-circle border-0" style="background-color: #5956e9;">
-                  <i class="fa-solid fa-envelope fa-2xl" style="color: #ffffff;"></i>
-                </button>
-                <h5 class="text-black fw-bold m-0" style=" word-break: break-all;">info@yourmail.com</h5>
+
+      <div class="container-fluid nine_page text-white px-0 position-relative">
+        <div
+          class="container-fluid pt-5 position-relative d-flex justify-content-center p-0"
+        >
+          <div
+            class="container text-white rounded-5 shadow p-5 ninth_page position-absolute top-0"
+          >
+            <div class="row px-3 row-gap-4">
+              <div class="col-md-6 col-12 px-3 border_right">
+                <div class="d-flex align-items-center column-gap-3">
+                  <button
+                    type="button "
+                    class="p-4 rounded-circle border-0"
+                    style="background-color: #5956e9"
+                  >
+                    <i
+                      class="fa-solid fa-envelope fa-2xl"
+                      style="color: #ffffff"
+                    ></i>
+                  </button>
+                  <h5
+                    class="text-black fw-bold m-0"
+                    style="word-break: break-all"
+                  >
+                    info@yourmail.com
+                  </h5>
+                </div>
+              </div>
+              <div class="col-md-6 col-12 px-3">
+                <div class="d-flex align-items-center column-gap-3">
+                  <button
+                    type="button "
+                    class="p-4 rounded-circle border-0"
+                    style="background-color: #5956e9"
+                  >
+                    <i
+                      class="fa-solid fa-phone fa-2xl"
+                      style="color: #ffffff"
+                    ></i>
+                  </button>
+                  <h5 class="text-black fw-bold m-0">+880 321 655 9985</h5>
+                </div>
               </div>
             </div>
-            <div class="col-md-6 col-12 px-3">
-              <div class="d-flex align-items-center column-gap-3">
-                <button type="button " class="p-4  rounded-circle border-0" style="background-color: #5956e9;">
-                  <i class="fa-solid fa-phone fa-2xl" style="color: #ffffff;"></i>
-                </button>
-                <h5 class="text-black fw-bold m-0">+880 321 655 9985</h5>
+          </div>
+          <div class="container-fluid last_page text-white mt-5">
+            <div class="container pt-5">
+              <div class="row pt-5">
+                <div class="col-md-4 col-12 d-flex flex-column row-gap-2">
+                  <h2>LOGO</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Viverra nunc ante velit vitae. Est tellus vitae, nullam
+                    lobortis enim.
+                  </p>
+                  <div class="row w-100 last_icon">
+                    <div class="col-3 text-center border-end border-white">
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                    <div class="col-3 text-center border-end border-white">
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div class="col-3 text-center border-end border-white">
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <div class="col-3 text-center">
+                      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-12">
+                  <h2>QUICK LINK</h2>
+                  <p>About</p>
+                  <p>Features</p>
+                  <p>Screenshot</p>
+                  <p>Blog</p>
+                </div>
+                <div class="col-md-4 col-12">
+                  <h2>NEWS LETTER</h2>
+                  <p>
+                    Subscribe our newsletter to get our latest update & news
+                  </p>
+                  <div class="d-flex mt-3 bg-white p-1">
+                    <input
+                      type="email"
+                      name="em"
+                      id="em"
+                      placeholder="Your email address"
+                      style="
+                        border: none;
+                        width: 100%;
+                        height: 3rem;
+                        padding-left: 1rem;
+                      "
+                    />
+                    <button
+                      type="submit"
+                      class="fs-5 text-white border-0 p-1 w-25"
+                      style="background-color: #5956e9"
+                    >
+                      <i
+                        class="fa-solid fa-paper-plane"
+                        style="color: #ffffff"
+                      ></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 border-top border-white mt-2 py-2">
+                  <p class="text-center">
+                    @ Copyright 2021 .Ojjomedia. All Right Reserved.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="container-fluid last_page text-white mt-5 ">
-              sdfsdfdfdssdf
-        </div>
-      </div> -->
+      </div>
     </div>
   </body>
 </html>
-

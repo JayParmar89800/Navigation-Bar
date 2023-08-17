@@ -2,5 +2,5 @@
 
  * Task = Figma Task
 
- - Topic :  Make last Second page and forth page  with responsive using media query , position , flex , grid , col , row , card and all card create in this template
+ - Topic :  Make last page with responsive using  position , flex , grid , col , row and old some problem solve
  

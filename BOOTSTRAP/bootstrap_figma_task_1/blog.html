@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootsrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font awesome link -->
+    <script
+      src="https://kit.fontawesome.com/f11cab3348.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- style.css link -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- logo link -->
+    <link
+      rel="icon"
+      href="./image/logo/figma-icon.png"
+      type="image/png"
+      sizes="16x16 32x32"
+    />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>APOLLY/Blog</title>
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <div class="container-fluid first_blog_page">
+        <div class="container pt-3 pt-md-0 inner-container">
+          <!-- Upper navbar -->
+
+          <div class="pt-3 d-lg-block d-md-block d-none">
+            <div class="d-flex justify-content-between">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link"
+                    ><img src="./image/icon/mail-fill.png" alt="" /><span
+                      class="ps-4 text-light"
+                      >Info@youremail.com</span
+                    ></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link"
+                    ><i class="fa-solid fa-phone" style="color: #ffffff"></i
+                    ><span class="ps-4 text-light">(480) 555 0103</span></a
+                  >
+                </li>
+              </ul>
+              <ul class="nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link"
+                    ><i
+                      class="fa-brands fa-facebook-f"
+                      style="color: #ffffff"
+                    ></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link"
+                    ><img src="./image/icon/instagram-fill.png" alt=""
+                  /></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link"
+                    ><i class="fa-brands fa-twitter" style="color: #ffffff"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link"
+                    ><i class="fa-brands fa-youtube" style="color: #ffffff"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Nav bar -->
+
+          <nav class="navbar navbar-expand-lg bg-white p-0 mt-3">
+            <div class="container-fluid py-0 px-1">
+              <button
+                class="navbar-toggler border-0"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#demo"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- Left side navbar -->
+
+              <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                  <li class="nav-item mx-lg-3 mx-xxl-5">
+                    <a class="nav-link fs-5" href="./index.html"
+                      ><span>HOME</span></a
+                    >
+                  </li>
+                  <li class="nav-item mx-lg-3">
+                    <a class="nav-link fs-5" href="#section2"
+                      ><span>ABOUT</span></a
+                    >
+                  </li>
+                  <li class="nav-item mx-lg-3 mx-xxl-5">
+                    <a class="nav-link fs-5" href="#section3"
+                      ><span>FEAUTURES</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- logo -->
+
+              <div class="bg-white logo">
+                <img src="./image/logo/Logo4 1.png" alt="" />
+              </div>
+
+              <!-- Right side navbar -->
+
+              <div class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav">
+                  <li class="nav-item ms-lg-5 ps-lg-5 ms-xl-5">
+                    <a class="nav-link fs-5 fw-bold text-black" href="#section4"
+                      ><span>SCREENSHOT</span></a
+                    >
+                  </li>
+                  <li class="nav-item mx-xl-4 mx-xxl-5 px-xxl-3">
+                    <a
+                      class="nav-link fs-5 fw-bold text-black"
+                      href="./blog.html"
+                      ><span class="blog">BLOG</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Download Button -->
+
+              <a class="navbar-brand mx-0 py-1" href="#">
+                <button type="button" class="btn">DOWNLOAD</button>
+              </a>
+            </div>
+          </nav>
+
+          <!-- Offcanvas menu -->
+
+          <div class="offcanvas offcanvas-start" id="demo">
+            <div class="offcanvas-header">
+              <span class="rb ms-auto rounded-5 text-white">
+                <button
+                  type="buton"
+                  class="btn-close m-0 btn-close-white"
+                  data-bs-dismiss="offcanvas"
+                ></button>
+              </span>
+            </div>
+
+            <!-- Offcanvas body -->
+
+            <div class="offcanvas-body">
+              <ul class="navbar-nav nav">
+                <li class="nav-item">
+                  <a class="nav-link fs-5" href="./index.html"
+                    ><span>HOME</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-5" href="#section2"
+                    ><span>ABOUT</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-5" href="#section3"
+                    ><span>FEAUTURES</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-5" href="#section4"
+                    ><span>SCREENSHOT</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-5" href="./blog.html"
+                    ><span>BLOG</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- First page body part -->
+          <div class="container text-white first_blog_page_body">
+            <div>
+              <h1 class="text-center fw-bold">BLOG</h1>
+              <div class="text-center">
+                <a href="./index.html" class="nav-link text-white"
+                  ><i class="fa-solid fa-house"></i><span> Home/Blog</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid blog pt-5">
+        <div class="container mt-5">
+          <div class="row">
+
+            <!-- col-8 & all blog -->
+
+            <div class="col-md-8 col-12 d-flex flex-column row-gap-3">
+              <div class="card row-gap-4">
+                <img
+                  src="./image/Blog/Image (15).png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body d-flex flex-column row-gap-3 px-0">
+                  <h1 class="card-title text-uppercase fw-bold">
+                    The Snap Pixel: How It Works and How to Install
+                  </h1>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Molestie blandit nibh risus nisl, scelerisque. Fusce cursus
+                    massa ut egestas. Massa lorem turpis lectus viverra. Nulla
+                    volutpat urna eget velit vel at gravida fermentum, sem.Ut
+                    ullamcorper scelerisque interdum bibendum non tristique
+                    nullam. Netus nisl, leo nunc eu tincidunt vivamus nisi
+                    suspendisse. Non morbi eleifend sit ac.
+                  </p>
+                  <a href="#" class="card-link fw-bold h5">READ MORE</a>
+                </div>
+              </div>
+              <div class="card row-gap-4">
+                <img
+                  src="./image/Blog/Image (16).png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body d-flex flex-column row-gap-3 px-0">
+                  <h1 class="card-title text-uppercase fw-bold">
+                    Have brands given up on International Women's Day?
+                  </h1>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Molestie blandit nibh risus nisl, scelerisque. Fusce cursus
+                    massa ut egestas. Massa lorem turpis lectus viverra. Nulla
+                    volutpat urna eget velit vel at gravida fermentum, sem.Ut
+                    ullamcorper scelerisque interdum bibendum non tristique
+                    nullam. Netus nisl, leo nunc eu tincidunt vivamus nisi
+                    suspendisse. Non morbi eleifend sit ac.
+                  </p>
+                  <a href="#" class="card-link fw-bold h5">READ MORE</a>
+                </div>
+              </div>
+              <div class="card row-gap-4">
+                <img
+                  src="./image/Blog/Image (17).png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body d-flex flex-column row-gap-3 px-0">
+                  <h1 class="card-title text-uppercase fw-bold">
+                    6 Designers On The Brands Empowering Women Today
+                  </h1>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Molestie blandit nibh risus nisl, scelerisque. Fusce cursus
+                    massa ut egestas. Massa lorem turpis lectus viverra. Nulla
+                    volutpat urna eget velit vel at gravida fermentum, sem.Ut
+                    ullamcorper scelerisque interdum bibendum non tristique
+                    nullam. Netus nisl, leo nunc eu tincidunt vivamus nisi
+                    suspendisse. Non morbi eleifend sit ac.
+                  </p>
+                  <a href="#" class="card-link fw-bold h5">READ MORE</a>
+                </div>
+              </div>
+              <div class="card row-gap-4">
+                <img
+                  src="./image/Blog/Image (18).png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body d-flex flex-column row-gap-3 px-0">
+                  <h1 class="card-title text-uppercase fw-bold">
+                    Gillette Launches Planet KIND, A Slightly More Sustainable
+                    Line Of Personal Care.
+                  </h1>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Molestie blandit nibh risus nisl, scelerisque. Fusce cursus
+                    massa ut egestas. Massa lorem turpis lectus viverra. Nulla
+                    volutpat urna eget velit vel at gravida fermentum, sem.Ut
+                    ullamcorper scelerisque interdum bibendum non tristique
+                    nullam. Netus nisl, leo nunc eu tincidunt vivamus nisi
+                    suspendisse. Non morbi eleifend sit ac.
+                  </p>
+                  <a href="#" class="card-link fw-bold h5">READ MORE</a>
+                </div>
+              </div>
+              <div class="card row-gap-4">
+                <img
+                  src="./image/Blog/Image (19).png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body d-flex flex-column row-gap-3 px-0">
+                  <h1 class="card-title text-uppercase fw-bold">
+                    The Snap Pixel: How It Works and How to Install
+                  </h1>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Molestie blandit nibh risus nisl, scelerisque. Fusce cursus
+                    massa ut egestas. Massa lorem turpis lectus viverra. Nulla
+                    volutpat urna eget velit vel at gravida fermentum, sem.Ut
+                    ullamcorper scelerisque interdum bibendum non tristique
+                    nullam. Netus nisl, leo nunc eu tincidunt vivamus nisi
+                    suspendisse. Non morbi eleifend sit ac.
+                  </p>
+                  <a href="#" class="card-link fw-bold h5">READ MORE</a>
+                </div>
+              </div>
+
+              <hr>
+
+              
+                <ul class="nav justify-content-center blog_link">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">1</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">2</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">3</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">4</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">5</a>
+                  </li>
+                </ul>
+              
+            </div>
+
+            <!-- col-4 and all post -->
+
+            <div class="col-md-4 col-12 d-flex flex-column row-gap-3">
+              <div
+                class="d-flex bg-white p-1 border border-secondary rounded"
+              >
+                <div class="my-auto mx-3">
+                  <i
+                    class="fa-solid fa-magnifying-glass fa-xl"
+                    style="color: gray"
+                  ></i>
+                </div>
+                <input
+                  type="email"
+                  name="em"
+                  id="em"
+                  placeholder="Search for..."
+                  style="
+                    border: none;
+                    width: 100%;
+                    height: 3rem;
+                    padding-left: 1rem;
+                  "
+                />
+              </div>
+
+              <hr />
+
+              <div class="d-flex flex-column row-gap-2">
+                <h2 class="fw-bold">RECENT POST</h2>
+                <div class="card">
+                  <img
+                    src="./image/post/Image (5).png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body px-0">
+                    <h4 class="card-title text-uppercase">
+                      Irina Rozovsky captures Brooklyn's Prospect Park in a
+                      romantic light
+                    </h4>
+                  </div>
+                </div>
+                <div class="card">
+                  <img
+                    src="./image/post/Image (6).png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body px-0">
+                    <h4 class="card-title text-uppercase">
+                      A new online show is tracing leading artists' early
+                      commer- cial practice
+                    </h4>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img
+                    src="./image/post/Image (7).png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body px-0">
+                    <h4 class="card-title text-uppercase">
+                      Think Food Bank project uses stickers to prompt people to
+                      contribute
+                    </h4>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img
+                    src="./image/post/Image (8).png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body px-0">
+                    <h4 class="card-title text-uppercase">
+                      A new photo book is celebra ting LA's vibrant lowrider
+                      culture
+                    </h4>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img
+                    src="./image/post/Image (9).png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body px-0">
+                    <h4 class="card-title text-uppercase">
+                      The indie publishers adapting to the pandemic
+                    </h4>
+                  </div>
+                </div>
+              </div>
+
+              <hr />
+
+              <div class="d-flex flex-column row-gap-2">
+                <h2 class="fw-bold">CATEGORY</h2>
+                <div class="d-flex flex-column row-gap-3">
+                  <div>
+                    <details>
+                      <summary class="text-secondary">E-COMMARS APP</summary>
+                      <p>
+                        Ecommerce is a method of buying and selling goods and
+                        services online.
+                      </p>
+                    </details>
+                  </div>
+                  <div>
+                    <details>
+                      <summary class="text-secondary">BANKING APP</summary>
+                      <p>
+                        Mobile banking apps allow you to access your banking
+                        accounts and conduct financial transactions using a
+                        mobile device, anytime and from anywhere.
+                      </p>
+                    </details>
+                  </div>
+                  <div>
+                    <details>
+                      <summary class="text-secondary">BUSINESS APP</summary>
+                      <p>
+                        Most mobile app businesses make money through a business
+                        model that is a combination of advertising and in-app
+                        purchases or subscriptions.
+                      </p>
+                    </details>
+                  </div>
+                  <div>
+                    <details>
+                      <summary class="text-secondary">VIDEO APP</summary>
+                      <p>
+                        Video Info Viewer is an open source app that allows you
+                        to view metadata about videos on your Android device.
+                      </p>
+                    </details>
+                  </div>
+                  <div>
+                    <details>
+                      <summary class="text-secondary">E-COMMARS APP</summary>
+                      <p>
+                        Ecommerce is a method of buying and selling goods and
+                        services online.
+                      </p>
+                    </details>
+                  </div>
+                </div>
+              </div>
+
+              <hr>
+
+              <div>
+                <h2 class="fw-bold">TAGS</h2>
+                <div class="d-flex flex-wrap column-gap-5">
+                  <h5 class="border-bottom">ECOMMARCE APP</h5>
+                  <h5 class="border-bottom">MUSIC APP</h5>
+                  <h5 class="border-bottom">BANK APP</h5>
+                  <h5 class="border-bottom">SOCIAL APP</h5>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="container-fluid last_page text-white mt-5">
+        <div class="container pt-5">
+          <div class="row row-gap-5">
+            <div class="col-md-4 col-12 d-flex flex-column row-gap-2">
+              <h2>LOGO</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Viverra nunc ante velit vitae. Est tellus vitae, nullam
+                lobortis enim.
+              </p>
+              <div class="row w-100 last_icon">
+                <div class="col-3 text-center border-end border-white">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <div class="col-3 text-center border-end border-white">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="col-3 text-center border-end border-white">
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="col-3 text-center">
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <h2>QUICK LINK</h2>
+              <p>About</p>
+              <p>Features</p>
+              <p>Screenshot</p>
+              <p>Blog</p>
+            </div>
+            <div class="col-md-4 col-12">
+              <h2>NEWS LETTER</h2>
+              <p>
+                Subscribe our newsletter to get our latest update & news
+              </p>
+              <div class="d-flex mt-3 bg-white p-1">
+                <input
+                  type="email"
+                  name="em"
+                  id="em"
+                  placeholder="Your email address"
+                  style="
+                    border: none;
+                    width: 100%;
+                    height: 3rem;
+                    padding-left: 1rem;
+                  "
+                />
+                <button
+                  type="submit"
+                  class="fs-5 text-white border-0 p-1 w-25"
+                  style="background-color: #5956e9"
+                >
+                  <i
+                    class="fa-solid fa-paper-plane"
+                    style="color: #ffffff"
+                  ></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 border-top border-white mt-2 py-2">
+              <p class="text-center">
+                @ Copyright 2021 .Ojjomedia. All Right Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

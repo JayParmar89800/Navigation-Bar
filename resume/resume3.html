@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .maincontainer {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 20rem auto;
+      }
+      .box1 {
+        grid-column: 1 / span 2;
+        display: grid;
+        align-items: center;
+        background-color: black;
+        /* background-image: url('./background_img.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:center; */
+        padding: 3rem;
+        color: white;
+      }
+      .box1 .h1
+      {
+        font-size: 5rem;
+        font-weight: bolder;
+      }
+      .box2 {
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 1;
+        display: flex;
+        flex-direction: column;
+        gap: 7rem;
+        padding: 3rem 2rem;
+      }
+      .work,
+      .edu {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+      .inner_edu,
+      .inner_work {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      .inner_edu .h3,
+      .inner_work .h3 {
+        font-size: 17px;
+      }
+      .inner_edu .h2,
+      .inner_work .h2 {
+        font-size: 19px;
+        font-weight: 600;
+      }
+      .box3 {
+        background-color: #fb6f4c;
+        grid-row: 2 / span 1;
+        grid-column: 2 / span 1;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        padding: 3rem 2rem;
+      }
+      .box3 .subbox h1
+      {
+        padding-bottom: 1rem;
+      }
+      .img_center
+      {
+        display: flex;
+        justify-content: center;
+      }
+      .box3
+      {
+        position: relative;
+      }
+      .box3 .img
+      {
+        position: absolute;
+        top:-14rem;
+        height: 230px;
+        width:230px;
+      }
+      .box3 .img img
+      {
+        border-radius: 50%;
+        border: 6px solid white;
+        width: 100%;
+      }
+    </style>
+    <title>Resume</title>
+  </head>
+  <body>
+    <div class="maincontainer">
+      <div class="box box1">
+        <div>
+          <p class="h1">Parmar Jay</p>
+          <h2>COLLEGE STUDENT</h2>
+        </div>
+      </div>
+      <div class="box box2">
+        <div class="subbox">
+          <div class="work">
+            <h1>Work History</h1>
+            <div class="inner_work">
+              <p class="h2">PERSONAL TRAINER</p>
+              <p class="h3">Jung BAKS Membership Gym | 2018 - present</p>
+              <p>
+                Assisted a number of clients through daily workout programs
+                geared toward their personal fitness goals with accompanying
+                well-researched diet plans.
+              </p>
+            </div>
+            <div class="inner_work">
+              <p class="h2">FOOTBALL TEAM CAPTAIN</p>
+              <p class="h3">Beechtown High School | 2016 - 17</p>
+              <p>
+                Ensured high morale and quality sportsmanship among all members
+                of the football team and assisted in making appropriate
+                strategies and training regimens.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="subbox">
+          <div class="edu">
+            <h1>Education History</h1>
+            <div class="inner_edu">
+              <p class="h2">AH Bijou State University</p>
+              <p class="h3">Football Varsity Player | 2018 - present</p>
+              <div>
+                <p>
+                  - Currently majoring in Business Administration with a minor
+                  in Sociology
+                </p>
+                <p>- Joined the ABSU Business Society in 2018</p>
+                <p>- Joined the ABSU Business Society in 2018</p>
+              </div>
+            </div>
+            <div class="inner_edu">
+              <p class="h2">Beechtown High School</p>
+              <p class="h3">BFootball Team Captain | 2013 - 2017</p>
+              <div>
+                <p>- Graduated with a 3.7 GPA</p>
+                <p>- Football Team Captain from 2015-2017</p>
+                <p>- Won 3rd Place in the 11th BHS Science Fair</p>
+                <p>- Named Most Likely to Succeed in Class of 2017</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box box3">
+        <div class="img_center">
+            <div class="img">
+                <img src="./avtar.webp" alt="bio_image" >
+            </div>
+        </div>
+        <div class="subbox">
+          <h2>Personal Profile</h2>
+          <p>
+            I am a college student with a great passion for all things football
+            on and off the field, and I intend on working towards a career in
+            the same industry.
+          </p>
+        </div>
+        <div class="subbox">
+            <h2>Contact Details</h2>
+            <div>
+                <p>Address : B-107 Shiv-darshan Appartment surat-395008</p>
+                <p>jayp89800@gmailcom</p>
+                <p>https://github.com/JayParmar89800</p>
+                <p>Mobile No.: 123-456-7890</p>
+                <p>Home No.: 123-456-7890</p>
+            </div>
+        </div>
+        <div class="subbox">
+            <h2>Championship Wins</h2>
+            <div>
+                <p>- Silton North Football Cup Champion (2018 - 20)</p>
+                <p>- Kedding State Football Championship Winner (2015 - 17)</p>
+                <p>- Most Valuable Player of Beechtown High School (2016)</p>
+            </div>
+        </div>
+        <div class="subbox">
+            <h2>Notable Skills</h2>
+            <div>
+                <p>- Football refereeing and coaching</p>
+                <p>- Speaking about mental toughness and freedom</p>
+                <p>- Working knowledge about start-up businesses</p>
+                <p>- Fitness and health training</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

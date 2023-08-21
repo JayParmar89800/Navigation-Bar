@@ -1,6 +1,8 @@
-- Live URL Link :https://jayparmar89800.github.io/Navigation-Bar/resume/index.html
+- Live URL Link :https://jayparmar89800.github.io/Navigation-Bar/BOOTSTRAP/bootstrap_figma_task_1/index.html
 
- * Task = Resume
+ * Task = Figma Task
 
- - Topic : Make Resume with responive & this resume use only html and css media query
+ - Topic :  create the blog page all over and in homepage last page create perfectly and when click any person on Blog also redirect the blog page
+
+ -Blog page Live Link : https://jayparmar89800.github.io/Navigation-Bar/BOOTSTRAP/bootstrap_figma_task_1/blog.html  
  

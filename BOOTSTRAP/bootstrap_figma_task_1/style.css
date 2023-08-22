@@ -83,7 +83,23 @@ body
     padding: 7rem 0 15rem 0;
    
 }
+.fifth_page video{
+    height: 350px;
+    width: 90%;
+}
+@media screen and (max-width:600px) and (min-width:450px) {
+    .fifth_page video{
+        width:70%;
+        height: auto;
 
+    }
+}
+@media screen and (max-width:450px) {
+    .fifth_page video{
+        width: 90%;
+        height: auto;
+    }
+}
 
 @media screen and (max-width:768px) and (min-width:500px){
     .fifth_page
@@ -98,6 +114,7 @@ body
         padding: 7rem 0 12rem 0;
     
     }
+    
 }
 @media screen and (max-width:500px){
     .fifth_page
@@ -112,6 +129,15 @@ body
         padding: 4rem 0 7rem 0;
     
     }
+    .video_outer_icon
+    {
+        top: 34% !important;;
+    }
+    .video_inner_icon
+    {
+        top:46% !important;
+    }
+    
 }
 
 .body_part
@@ -533,6 +559,20 @@ body
     color: var(--royal-blue);
 }
 
+
+
+
+/* fifth_page */
+
+.video_outer_icon
+{
+    top: 50% ;
+}
+.video_inner_icon
+{
+    top:55%;
+}
+
 /* Sixth page card */
 .sixth_page .card,.eight_page .card
 {
@@ -634,7 +674,7 @@ main {
      height: inherit;
      top: 50%;
     transform: translateY(-50%);
-    z-index: 99999999;
+    z-index: 99;
     /* overflow: hidden; */
   }
   
@@ -676,7 +716,8 @@ main {
   }
   
   #carousel div.prev img {
-    width: 225px;
+    width: 15rem;
+    height: 29.5rem;
   }
   
   #carousel div.prevLeftSecond {
@@ -704,7 +745,8 @@ main {
   }
   
   #carousel div.next img {
-    width: 225px;
+    width: 15rem;
+    height: 30rem;
   }
   
   #carousel div.nextRightSecond {
@@ -719,12 +761,85 @@ main {
     height: 29.5rem;
   }
   
+  .carousel_container .carousel_btn
+  {
+    top:37%;
+  }
+.carousel_btn .btn1
+{
+    background-color: transparent;
+    color: #5956E9;
+}
+.carousel_btn .btn1:hover
+{
+    background-color: #5956E9;
+   color: white;
+}
+
   .buttons {
     position: relative;
     text-align: center;
-    top: 40rem;
-    
+    top: 40rem; 
+  }
+  
+  @media  screen and (max-width:1400px) and (min-width:1000px) {
+    #carousel div.prevLeftSecond {
+        left: 22%;
+      }
+  }
+  @media  screen and (max-width:1200px) and (min-width:1000px)
+  {
+    #carousel div.prevLeftSecond {
+        left: 24%;
+      }
+  }
+  @media  screen and (max-width:1000px) and (min-width:768px)
+  {
+    #carousel div.prevLeftSecond {
+        left: 28%;
+      }
+  }
+  @media screen and (width:768px) {
+    #carousel div.prevLeftSecond {
+        left: 30% !important;
+      }
+  }
+  @media screen and (max-width:768px) and (min-width:576px){
+      #carousel div.prevLeftSecond {
+        left: 38%;
+      } 
+      #carousel div.hideRight {
+        left: 50%;  
+      }
   } 
+  @media screen and (max-width:576px) {
+    
+    #carousel div.next {
+        left: 70%;
+      } 
+      #carousel div.nextRightSecond {     
+        left: 100%;      
+    }  
+    #carousel div.hideRight {
+        left: 50%;  
+      } 
+  }
+  @media screen and (max-width:400px) {
+    #carousel div img {
+        width: 280px;
+        transition: width 1s;
+      }
+    #carousel div.next {
+        left: 63%;
+      } 
+    
+  }
+
+
+
+
+  
+ 
   
   
 

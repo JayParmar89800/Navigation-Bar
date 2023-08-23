@@ -1,7 +1,7 @@
-- Live URL Link :https://jayparmar89800.github.io/Navigation-Bar/BOOTSTRAP/bootstrap_figma_task_1/index.html
+- Live URL Link :https://jayparmar89800.github.io/Navigation-Bar/index.html
 
- * Task = Figma Task
+ * Task = Index page
 
- - Topic : Add the video in figma template with responsive, carsoual set properly and full task complete & when the any person click on the blog at that time also open blog page
- -Blog page Live Link : https://jayparmar89800.github.io/Navigation-Bar/BOOTSTRAP/bootstrap_figma_task_1/blog.html  
+ - Topic : Modify the index.html and style.css file using with grid,text-shadow,mediaquery,font-family with responsive
+
  

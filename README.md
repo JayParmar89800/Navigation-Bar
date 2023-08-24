@@ -1,7 +1,7 @@
-- Live URL Link :https://jayparmar89800.github.io/Navigation-Bar/index.html
+- Live URL Link :https://jayparmar89800.github.io/Navigation-Bar/Js/index.html
 
- * Task = Index page
+ * Task = JavaScript Basic
 
- - Topic : Modify the index.html and style.css file using with grid,text-shadow,mediaquery,font-family with responsive
+ - Topic : In Javascript create basic program as like Function calling , property 
 
  

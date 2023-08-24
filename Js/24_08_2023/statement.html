@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Js Tag -->
+    <script>
+      var No1 = 0;
+      var No2 = 0;
+
+      function myfunction1() {
+        var demoElement = document.getElementById("demo5");
+        demoElement.innerHTML = "Hello Js👦";
+        demoElement.style.fontSize = "35px";
+      }
+      function storevariable() {
+        No1 = parseInt(document.getElementById("no1").value);
+        No2 = parseInt(document.getElementById("no2").value);
+      }
+      function addition() {
+        storevariable();
+        var answer = No1 + No2;
+        document.getElementById("ans").value = answer;
+      }
+      function subtraction() {
+        storevariable();
+        var answer = No1 - No2;
+        document.getElementById("ans").value = answer;
+      }
+      function multiplicatioon() {
+        storevariable();
+        var answer = No1 * No2;
+        document.getElementById("ans").value = answer;
+      }
+      function division() {
+        storevariable();
+        var answer = No1 / No2;
+        document.getElementById("ans").value = answer;
+      }
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="text-bg-warning fw-bold text-center">Inline Script</h1>
+    <div class="container my-3 bg-info-subtle p-3">
+      <h1 class="text-warning">Click the below button</h1>
+      <button
+        type="button"
+        class="btn btn-outline-primary fw-bold"
+        onclick="document.getElementById('demo').innerHTML=Date()"
+      >
+        Click me & display the current date and time
+      </button>
+      <p id="demo" class="text-danger fw-bold"></p>
+    </div>
+    <div class="container my-3 py-3 bg-info-subtle">
+      <button
+        class="btn btn-outline-primary fw-bold"
+        onclick="document.getElementById('demo2').innerHTML='Hello Js'"
+      >
+        Click me!
+      </button>
+      <p id="demo2" class="text-danger fw-bold">
+        javascript can change elements content
+      </p>
+    </div>
+    <div class="container my-3 py-3 bg-info-subtle">
+      <p class="text-warning fw-bold">
+        JavaScript can change HTML attribute values.
+      </p>
+      <p class="text-warning fw-bold">
+        In this case JavaScript changes the value of the src (source) attribute
+        of an image.
+      </p>
+      <button
+        class="btn btn-outline-primary fw-bold"
+        onclick="document.getElementById('imagebulb').src='./pic_bulboff.gif'"
+      >
+        Bulb Off
+      </button>
+      <img id="imagebulb" src="./pic_bulboff.gif" alt="bulb" />
+      <button
+        class="btn btn-outline-primary fw-bold"
+        onclick="document.getElementById('imagebulb').src='./pic_bulbon.gif'"
+      >
+        Bulb on
+      </button>
+    </div>
+    <div class="container my-3 py-3 bg-info-subtle">
+      <p id="demo3" class="text-warning fw-bold">
+        JavaScript can change the style of an HTML element.
+      </p>
+      <button
+        class="btn btn-outline-primary fw-bold"
+        onclick="document.getElementById('demo3').style.fontSize='35px'"
+      >
+        Click me!
+      </button>
+    </div>
+    <div class="container my-3 py-3 bg-info-subtle">
+      <p id="demo4" class="text-warning fw-bold">
+        JavaScript can hide HTML elements.
+      </p>
+      <button
+        class="btn btn-outline-primary fw-bold"
+        onclick="document.getElementById('demo4').style.display='none'"
+      >
+        Hide Text
+      </button>
+      <button
+        class="btn btn-outline-primary fw-bold"
+        onclick="document.getElementById('demo4').style.display='block'"
+      >
+        Show Text
+      </button>
+    </div>
+    <h1 class="text-bg-warning fw-bold text-center">Internal Script</h1>
+    <div class="container my-3 bg-info-subtle p-3">
+      <h1 class="text-warning">Click the below button</h1>
+      <button
+        type="button"
+        class="btn btn-outline-primary fw-bold"
+        onclick="myfunction1()"
+      >
+        Click Me!
+      </button>
+      <p id="demo5" class="text-danger fw-bold">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+        consequatur voluptate inventore hic iure quo explicabo recusandae
+        maiores velit magnam rem esse, aperiam earum vero facere. Numquam,
+        molestiae animi! Nam!
+      </p>
+    </div>
+
+    <div class="container my-3 bg-info-subtle p-3">
+      <h1 class="text-danger bg-warning-subtle text-center fs-1 fw-bold">
+        Arithmetic Operation
+      </h1>
+
+      <p class="text-warning fw-bold">Enter value Of A</p>
+      <input type="text" class="form-control" id="no1" placeholder="Enter value of A"/>
+      <p class="text-warning fw-bold">Enter value Of B</p>
+      <input type="text" class="form-control" id="no2" placeholder="Enter value of B"/>
+      <p class="text-warning fw-bold">Ans</p>
+      <input type="text" class="form-control" id="ans" placeholder="Your Answer" readonly />
+      <div class="text-center mt-3">
+        <button
+          type="button"
+          class="btn btn-outline-primary fw-bold"
+          onclick="addition()"
+        >
+          Addition
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-primary fw-bold"
+          onclick="subtraction()"
+        >
+          Subtraction
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-primary fw-bold"
+          onclick="multiplicatioon()"
+        >
+          Multiplication
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-primary fw-bold"
+          onclick="division()"
+        >
+          Division
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

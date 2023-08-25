@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+       function fun1()
+       {
+        
+        
+        let firstnm=document.getElementById('fnm').value,lastnm=document.getElementById('lnm').value;
+        
+       
+
+
+        let fullnm=firstnm + " " +lastnm; 
+        var nm="Hello " + fullnm + ",<br>How can i help!";
+        document.getElementById('demo1').innerHTML=nm; 
+
+        
+       }
+       function repeat() {
+            const element = document.getElementById("demo2");
+            element.innerHTML += element.innerHTML;
+        }
+
+        function bg()
+        {
+            var r=Math.floor(Math.random()*256);
+            var g=Math.floor(Math.random()*256);
+            var b=Math.floor(Math.random()*256);
+            var bg="rgb(" + r + "," + g + "," + b +")";
+            document.getElementById('cont').style.backgroundColor=bg;
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="text-warning text-center bg-danger p-2">JavaScript Variables</h1>
+    <div class="container my-3 bg-info-subtle p-3">
+        
+        
+
+        <h2 class="text-success fw-bold text-center bg-warning">let</h2>
+
+        <div class="bg-dark-subtle rounded-3 p-2 my-2">
+            <p class="fw-bold">Note :</p>
+            <p>Variables defined with <span class="text-danger fw-bold">let</span> cannot be <span class="fw-bold">Redeclared</span></p>
+
+            <p>Variables defined with <span class="text-danger fw-bold">let</span> must be Declared <span class="fw-bold">before use</span></p>
+
+            <p>Variables defined with <span class="text-danger fw-bold">let</span> have <span class="fw-bold">Block Scope</span></p>
+        </div>
+
+        <p class="text-danger fw-bold">You can declare many variables in one statement.</p>
+
+        <p class="text-warning fw-bold">Enter Your First Name :-</p>
+        <input type="text" class="form-control" id="fnm" placeholder="Enter Your First Name"/>
+
+        <p class="text-warning fw-bold">Enter Your Last Name :-</p>
+
+        <input type="text" class="form-control" id="lnm" placeholder="Enter Your Last Name"/>
+
+     
+
+        <p id="demo1" class="text-danger fw-bold"></p>
+        <button
+        type="button"
+        class="btn btn-outline-primary fw-bold" onclick="fun1()">
+        Click
+      </button>
+    </div>
+    <div class="container my-3 bg-info-subtle p-3">
+        <h2 class="text-success fw-bold text-center bg-warning">Const</h2>
+        <div class="bg-dark-subtle rounded-3 p-2 my-2">
+            <p class="fw-bold">Note :</p>
+            <p>Variables defined with <span class="text-danger fw-bold">const</span> cannot be <span class="fw-bold">Redeclared</span></p>
+
+            <p>Variables defined with <span class="text-danger fw-bold">const</span>  cannot be <span class="fw-bold">Reassigned</span></p>
+
+            <p>Variables defined with <span class="text-danger fw-bold">const</span> have <span class="fw-bold">Block Scope</span></p>
+        </div>
+        <p id="demo2" class="text-danger fw-bold">If you print this value again and again click below button</p>
+        <button
+            type="button"
+            class="btn btn-outline-primary fw-bold" onclick="repeat()">
+            Click
+        </button>
+    </div>
+
+    <div class="container my-3  p-3" id="cont" style="background-color:#cff4fc;">
+        <h2 class="text-success fw-bold text-center bg-warning">Var</h2>
+        
+        <p id="demo2" class="text-danger fw-bold">Click the below button and generate randowm backgroun color</p>
+        <button
+            type="button"
+            class="btn btn-outline-primary fw-bold" onclick="bg()">
+            Click
+        </button>
+    </div>
+    
+</body>
+</html>

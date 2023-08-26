@@ -1,7 +1,7 @@
-- Live URL Link :https://jayparmar89800.github.io/Navigation-Bar/Js/index.html
+- Live URL Link :https://jayparmar89800.github.io/Navigation-Bar/Js/26_08_2023/operator.html
 
- * Task = JavaScript Basic
+ * Task = JavaScript Operator
 
- - Topic : javascript variable var,let,const & in math function math.floor,math.random
+ - Topic : javascript Arithmetic,Comparison Operator,if-else statements 
 
  

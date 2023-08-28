@@ -86,19 +86,22 @@
             }
             function oddeven()
             {
-                var num=parseInt(document.getElementById('numb'));
-                var odd_even
+                let num=parseInt(document.getElementById('numb').value);
+               
+                if(num === "")
+                {
+                  alert("Please Enter the Number");
+                }
                 if(num % 2 == 0)
                 {
-                    odd_even="Your Number Is Even";
+                  alert("Your Number Is Even");
+                    
                 }
                 else
                 {
-                    odd_even="Your Number Is Odd";
+                    alert("Your number is Odd");
                 }
-                document.getElementById('numb').value=odd_even;
-                document.getElementById('numb').style.color="Red";
-                document.getElementById('numb').style.fontSize="20px";
+                
             }
             
 
@@ -108,7 +111,7 @@
 <body>
     <div class="container-fluid px-0">
         <h1 class="text-danger bg-warning text-center py-2">Operator</h1>
-        <div class="container my-3 bg-info-subtle p-3">
+          <div class="container my-3 bg-info-subtle p-3">
             <h1 class="text-danger bg-warning-subtle text-center fs-1 fw-bold">
               Arithmetic Operation
             </h1>
@@ -119,7 +122,7 @@
             <input type="text" class="form-control" id="Ano2" placeholder="Enter value of B"/>
             <p class="text-warning fw-bold">Ans</p>
             <input type="text" class="form-control" id="Aans" placeholder="Your Answer" readonly />
-            <div class="text-center mt-3">
+            <div class="text-center mt-3 d-flex flex-md-row justify-content-md-center column-gap-2 row-gap-2 flex-column">
               <button type="button" class="btn btn-outline-primary fw-bold" onclick="addition()">Addition</button>
               <button type="button" class="btn btn-outline-primary fw-bold" onclick="subtraction()" >Subtraction</button>
               <button type="button" class="btn btn-outline-primary fw-bold" onclick="multiplicatioon()" > Multiplication </button>
@@ -135,27 +138,27 @@
             <input type="text" class="form-control" id="Comp_no1" placeholder="Enter value of A"/>
             <p class="text-warning fw-bold">Enter value Of B</p>
             <input type="text" class="form-control" id="Comp_no2" placeholder="Enter value of B"/>
-            <div class="text-center mt-3">
+            <div class="text-center mt-3 d-flex flex-md-row justify-content-md-center column-gap-2 row-gap-2 flex-column">
               <button type="button" class="btn btn-outline-primary fw-bold" onclick="Comp()">Done</button>
             </div>
 
               <h3 class="text-success text-center fw-bold mt-3 bg-primary-subtle p-2">
-                 Second Example of Comparison Operation
+                 Second Example of Check Age for Job
               </h3>
               
               <p class="text-warning fw-bold">Enter Your Age</p>
               <input type="text" class="form-control" id="val" />
-              <div class="text-center mt-3">
+              <div class="text-center mt-3 d-flex flex-md-row justify-content-md-center column-gap-2 row-gap-2 flex-column">
                 <button type="button" class="btn btn-outline-primary fw-bold" onclick="age()">Done</button>
               </div>
 
               <h3 class="text-success text-center fw-bold mt-3 bg-primary-subtle p-2">
-                 Third Example of Comparison Operation
+                 Third Example of Odd & Even
               </h3>
               
               <p class="text-warning fw-bold">Enter Any Number</p>
               <input type="text" class="form-control" id="numb" />
-              <div class="text-center mt-3">
+              <div class="text-center mt-3 d-flex flex-md-row justify-content-md-center column-gap-2 row-gap-2 flex-column">
                 <button type="button" class="btn btn-outline-primary fw-bold" onclick="oddeven()">Done</button>
               </div>
           </div>

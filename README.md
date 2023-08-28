@@ -2,6 +2,6 @@
 
  * Task = JavaScript Operator
 
- - Topic : javascript Arithmetic,Comparison Operator,if-else statements 
+ - Topic : javascript Datatype Of String & String method toUpperCase & check the string length 
 
  

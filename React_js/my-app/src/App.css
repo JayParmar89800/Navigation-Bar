@@ -36,20 +36,25 @@
     transform: rotate(360deg);
   }
 } */
-main
+/* main
 {
   height: 100vh;
   display: grid;
   place-items: center;
-}
+} */
 button
 {
   background-color: bisque;
-  /* padding: 10px; */
   border: none;
-  height: 2rem;
-  width:2rem;
+  height: 3rem;
+  min-width:3rem;
+  max-width: auto;
+  color: red;
+  font-weight: bold;
+  border: 1px solid red;
+  font-size:x-large;
   /* margin: 3px; */
+  /* padding: 10px; */
 }
 .row
 {

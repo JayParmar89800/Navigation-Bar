@@ -21,6 +21,36 @@ function Doubl() {
     </div>
   );
 }
+function Foreach() {
+  const numbers = [1, 2, 3, 4, 5];
+  const number_list=[];
+
+  numbers.forEach((no) => {
+    number_list.push(<li > {no} </li>);
+  });
+  
+  return (
+    <div>
+      <h1>foreach loops:</h1>
+      <ul>
+        {number_list}
+      </ul>
+    </div>
+  );
+}
+function Propex(props)
+{
+  return <h2>Hello My self { props.brand }!</h2>;
+}
+function Garage() {
+  const nm = "Jay Parmar";
+  return (
+    <>
+        <h1>Who lives in my garage?</h1>
+        <Propex brand={ nm } />
+    </>
+  );
+}
 function App()
 {
   return(
@@ -30,14 +60,10 @@ function App()
       <Welcome name="gp"/>
       <br />
       <Doubl  />
+      <br />
+      <Foreach />
+      <Garage/>
     </div>
-
-   
-
-
-
-
-
   );
 
 }

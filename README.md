@@ -2,6 +2,6 @@
 
  * Task = React - Js
 
- - Topic : In react learn the common component and map()
+ - Topic : In react learn the foreach() and props
 
  

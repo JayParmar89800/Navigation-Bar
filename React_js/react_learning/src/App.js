@@ -1,7 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
 
-
 function Welcome(props)
 {
   return <h1>Hello ,{props.name}</h1>;
@@ -43,7 +42,7 @@ function Propex(props)
   return <h2>Hello My self { props.brand }!</h2>;
 }
 function Garage() {
-  const nm = "Jay Parmar";
+  const nm = "Jay Parmar...";
   return (
     <>
         <h1>Who lives in my garage?</h1>

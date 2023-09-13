@@ -2,6 +2,6 @@
 
  * Task = React - Js
 
- - Topic : In react learn the foreach() and props
+ - Topic : Create component and that component pass another page , how to add bootstrap link in react, props,propsTypes and Defaultprops state, onchange and onclick event and toUpperCase()
 
  

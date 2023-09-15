@@ -1,3 +1,22 @@
+.container .grid_link
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 1rem;
+}
+@media screen and (max-width:768px) and (min-width:576px) {
+  .container .grid_link
+  { 
+      grid-template-columns: auto auto auto;
+  }
+}
+@media screen and (max-width:576px) {
+  .container .grid_link
+  { 
+      grid-template-columns: auto;
+  }
+}
+
 /* .App {
   text-align: center;
 }

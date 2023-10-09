@@ -1,7 +1,7 @@
-- Live URL Link :https://jayparmar89800.github.io/Navigation-Bar/React/my-app/src/index.js
+- Live URL Link :https://jayparmar89800.github.io/Navigation-Bar/Js/09_10_2023/string_method.html
 
- * Task = React - Js
+ * Task = Js
 
- - Topic : toLowerCase(),split(), reverse() ,join() ,text word count,text letter count ,text read time , clear text & preview text 
+ - Topic : Javascript method { slice(),trim(),indexOf(),lastIndexOf(),match(),include() }
 
  

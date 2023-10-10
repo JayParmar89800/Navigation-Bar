@@ -46,7 +46,7 @@ export default function Textform(props) {
       <div className="bg-secondary p-3 my-3 rounded-3 fw-bold h5 border border-black">
         <div>{text.split(" ").length} Words</div>
         <div>{text.length} Characters</div>
-        <div>{(0.008 * text.split(" ").length).toFixed(2)} Minutes Read</div>
+        <div>{(0.008 * text.split(" ").length)} Minutes Read</div>
       </div>
       <div className='grid_link'>
       <button

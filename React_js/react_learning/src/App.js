@@ -1,14 +1,16 @@
 // import logo from './logo.svg';
 import './App.css';
+import About from './components/About';
 import Navbar from './components/Navbar';
-import Textform from './components/Textform';
+// import Textform from './components/Textform';
 
 function App()
 {
   return(
     <div>
     <Navbar title="TextUtils" abouttext="About Of TextUtils"/>
-    <Textform heading="Counter"/>
+    {/* <Textform heading="Counter"/> */}
+    <About />
     {/* <Navbar /> */}
 
     </div>

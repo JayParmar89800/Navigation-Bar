@@ -1,16 +1,32 @@
 // import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
-import About from './components/About';
+// import About from './components/About';
 import Navbar from './components/Navbar';
-// import Textform from './components/Textform';
+import Textform from './components/Textform';
+
 
 function App()
 {
+  const [mode,setmode]=useState('light');
+
+  const toggleMode = () => 
+  {
+    if(mode === 'light')
+    {
+      setmode('dark');
+    }
+    else
+    {
+      setmode('light');
+    }
+  }
+
   return(
     <div>
-    <Navbar title="TextUtils" abouttext="About Of TextUtils"/>
-    {/* <Textform heading="Counter"/> */}
-    <About />
+    <Navbar title="TextUtils" abouttext="About" mode={mode} toggleMode={toggleMode}/>
+    <Textform heading="Counter" mode={mode} toggleMode={toggleMode}/>
+    {/* <About /> */}
     {/* <Navbar /> */}
 
     </div>

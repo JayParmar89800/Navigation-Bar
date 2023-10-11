@@ -23,9 +23,13 @@ export default function Textform(props) {
   const handleChange = (event) => {
     setText(event.target.value); // Update the text state as the user types
   };
+  const handleExtraSpaces = () =>{
+    let newtext=text.split(/[ ]+/);
+    setText(newtext.join(" "))
+  }
 
   return (
-    <div className="container my-4">
+    <div className={`container my-4 p-5 bg-${props.mode} text-${props.mode==='dark'?'light':'dark'} rounded-2` }>
       <h1>{props.heading}</h1>
       <div className="mb-3 d-flex column-gap-3">
           <textarea
@@ -73,10 +77,18 @@ export default function Textform(props) {
       <button
         type="button"
         className="btn btn-outline-warning fw-bold mx-2"
+        onClick={handleExtraSpaces}
+      >
+        Remove Extra Spaces
+      </button>
+      <button
+        type="button"
+        className="btn btn-outline-warning fw-bold mx-2"
         onClick={handleClearClick}
       >
         Clear
       </button>
+     
       </div>
     </div>
   );

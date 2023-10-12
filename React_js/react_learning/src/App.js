@@ -4,28 +4,47 @@ import './App.css';
 // import About from './components/About';
 import Navbar from './components/Navbar';
 import Textform from './components/Textform';
+import Alert from './components/Alert';
 
 
 function App()
 {
   const [mode,setmode]=useState('light');
+  const [alert,setAlert]=useState(null);
+
+  const showAlert = (message,type) => {
+    setAlert(
+      {
+        msg:message,
+        type:type
+      }
+    )
+    setTimeout(() => {
+      setAlert(null);
+    }, 1500);
+  }
 
   const toggleMode = () => 
   {
     if(mode === 'light')
-    {
+    { 
       setmode('dark');
+      showAlert("Dark Mode has been enabled ","success");
+      document.body.style.backgroundColor='grey';
     }
     else
     {
       setmode('light');
+      showAlert ("Light Mode has been enabled ","success");
+      document.body.style.backgroundColor='white';
     }
   }
 
   return(
     <div>
     <Navbar title="TextUtils" abouttext="About" mode={mode} toggleMode={toggleMode}/>
-    <Textform heading="Counter" mode={mode} toggleMode={toggleMode}/>
+    <Alert alert={alert}/>
+    <Textform showAlert={showAlert} heading="Counter" mode={mode} toggleMode={toggleMode}/>
     {/* <About /> */}
     {/* <Navbar /> */}
 

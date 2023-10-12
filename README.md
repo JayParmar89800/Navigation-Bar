@@ -2,4 +2,4 @@
 
  * Task : React Js
 
- - Topic : In textform.js page create remove extra space method for the text and create one toggle switch button for enable darkmode 
+ - Topic : Create Alert Message ,add inline css in js file,setTimeout() method ,toLowerCase(),charAt(),toUpperCase(),slice(),change the favicon icon and title

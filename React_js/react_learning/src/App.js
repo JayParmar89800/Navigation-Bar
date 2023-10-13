@@ -1,10 +1,12 @@
 // import logo from './logo.svg';
 import { useState } from 'react';
 import './App.css';
-// import About from './components/About';
+import About from './components/About';
 import Navbar from './components/Navbar';
 import Textform from './components/Textform';
 import Alert from './components/Alert';
+import { BrowserRouter as Main , Route,Routes } from 'react-router-dom';
+import ErrorPage from './components/ErrorPage';
 
 
 function App()
@@ -21,7 +23,7 @@ function App()
     )
     setTimeout(() => {
       setAlert(null);
-    }, 1500);
+    }, 4000);
   }
 
   const toggleMode = () => 
@@ -41,14 +43,26 @@ function App()
   }
 
   return(
-    <div>
-    <Navbar title="TextUtils" abouttext="About" mode={mode} toggleMode={toggleMode}/>
-    <Alert alert={alert}/>
-    <Textform showAlert={showAlert} heading="Counter" mode={mode} toggleMode={toggleMode}/>
-    {/* <About /> */}
-    {/* <Navbar /> */}
 
-    </div>
+    <Main>
+      <Navbar title="TextUtils" abouttext="About" mode={mode} toggleMode={toggleMode}/>
+      <Alert alert={alert}/>
+
+      <Routes>
+
+        <Route exact path='/' element={ <Textform showAlert={showAlert} heading="Counter" mode={mode} toggleMode={toggleMode}/>}/>
+        <Route exact path='/about' element={ <About />}/>
+        <Route  path='/*' element={ <ErrorPage />}/>
+
+      </Routes>
+    </Main>
+    // <div>
+   
+   
+    
+    // {/* <Navbar /> */}
+
+    // </div>
   );
 }
 

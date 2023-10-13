@@ -54,7 +54,7 @@ export default function Textform(props) {
             style={{backgroundColor:props.mode==='light'?'#e2e3e5':'white',resize:'none'}}
           ></textarea>        
       </div>
-      <div className="bg-secondary-subtle p-3 my-3 rounded-3 fw-bold h5 border border-black">
+      <div className="bg-secondary-subtle text-black p-3 my-3 rounded-3 fw-bold h5 border border-black">
         <div>{text.split(" ").length} Words</div>
         <div>{text.length} Characters</div>
         <div>{(0.008 * text.split(" ").length)} Minutes Read</div>

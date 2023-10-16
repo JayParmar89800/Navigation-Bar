@@ -2,4 +2,4 @@
 
  * Task : React Js
 
- - Topic :  Redirect one page to another page using react routing,install react-router-dom & add animation link and use animation property bulid project in netlify.
+ - Topic :  Read the React-js documentation and revision

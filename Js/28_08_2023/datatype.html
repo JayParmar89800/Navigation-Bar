@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap link -->
+     <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+     crossorigin="anonymous"
+    />
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"
+    ></script>
+    <!-- logo link -->
+    <link rel="icon" href="../js_logo.png" type="image/png"/>
+    <!-- internal Script -->
+    <script>
+       function String_demo()
+       {
+        let demo=document.getElementById("val").value;
+        document.getElementById("demo").innerHTML ="Your Text Length is "+demo.length;
+       }
+       function String_Upper()
+       {
+            let demo2=document.getElementById("val2").value;
+            document.getElementById("demo2").innerHTML = demo2.toUpperCase();
+            
+
+       }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid px-0">
+        <h1 class="text-danger bg-warning text-center py-2">Data type</h1>
+        <div class="container my-3 bg-info-subtle p-3">
+            <h1 class="text-danger bg-warning-subtle text-center fs-1 fw-bold">
+              Check the String Lenght
+            </h1>
+            
+            <p class="text-warning fw-bold">Strings are written with quotes. You can use single or double quotes:</p>
+            <p class="text-warning fw-bold">Enter Any Text</p>
+            <input type="text" class="form-control" id="val" />
+            
+            <div class="text-center mt-3 d-flex flex-md-row justify-content-md-start column-gap-2 row-gap-2 flex-column">
+                <button type="button" class="btn btn-outline-primary fw-bold" onclick="String_demo()">Done</button>
+            </div>
+            <p id="demo" class="text-success"></p>
+           
+          </div>
+          <div class="container my-3 bg-info-subtle p-3">
+            <h1 class="text-danger bg-warning-subtle text-center fs-1 fw-bold">
+              Convert Your text in Upper Text
+            </h1>
+            
+            <p class="text-warning fw-bold">Enter Any Text</p>
+
+            <input type="text" class="form-control" id="val2" placeholder="Enter A text"/>
+            
+            
+            <div class="text-center mt-3 d-flex flex-md-row justify-content-md-start column-gap-2 row-gap-2 flex-column">
+                <button type="button" class="btn btn-outline-primary fw-bold" onclick="String_Upper()">Done</button>
+            </div>
+            <p id="demo2" class="text-success"></p>
+           
+          </div>
+    </div>
+</body>
+</html>

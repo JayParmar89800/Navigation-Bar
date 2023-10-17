@@ -5,160 +5,130 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css" />
+
     <title>Index</title>
   </head>
   <body>
-    <div class="container">
-      <div class="header">
-        <h1>1-9 NAVIGATION BAR</h1>
-      </div>
-      <div class="content">
-        <button><a href="./navbar/nav1.html">NAVIGATION BAR-1</a></button>
-        <button><a href="./navbar/nav2.html">NAVIGATION BAR-2</a></button>
-        <button><a href="./navbar/nav3.html">NAVIGATION BAR-3</a></button>
-        <button><a href="./navbar/nav4.html">NAVIGATION BAR-4</a></button>
-        <button><a href="./navbar/nav5.html">NAVIGATION BAR-5</a></button>
-        <button><a href="./navbar/nav6.html">NAVIGATION BAR-6</a></button>
-        <button><a href="./navbar/nav7.html">NAVIGATION BAR-7</a></button>
-        <button><a href="./navbar/nav8.html">NAVIGATION BAR-8</a></button>
-        <button><a href="./navbar/nav9.html">NAVIGATION BAR-9</a></button>
-      </div>
-      <hr />
-      <div class="header">
-        <h1>GRID TASK</h1>
-      </div>
-      <div class="content">
-        <button>
-          <a href="./gridtask/gridtask1.html">GRIDTASK-1(05-06)</a>
-        </button>
-        <button><a href="./gridtask/grid6.html">GRIDTASK-2(06-06)</a></button>
-        <button><a href="./gridtask/grid1.html">GRIDTASK-3(08-06)</a></button>
-      </div>
-      <hr />
-      <div class="header">
-        <h1>FLEX-BOX</h1>
-      </div>
-      <div class="content">
-        <button><a href="./flexbox/flexbox.html">FLEXBOX-1(07-06)</a></button>
-      </div>
-    </div>
+    <div class="container-fluid">
+      <div class="container text-white my-3">
+        <!-- navbar task (first task)  -->
+        <div class="topic">
+          <h1 class="my-4">NAVIGATION BAR 1-9</h1>
+          <div class="grid_link ">
+            <a href="./navbar/nav1.html" class="btn btn-outline-light">NAVIGATION BAR-1</a>
+            <a href="./navbar/nav2.html" class="btn btn-outline-light">NAVIGATION BAR-2</a>
+            <a href="./navbar/nav3.html" class="btn btn-outline-light">NAVIGATION BAR-3</a>
+            <a href="./navbar/nav4.html" class="btn btn-outline-light">NAVIGATION BAR-4</a>
+            <a href="./navbar/nav5.html" class="btn btn-outline-light">NAVIGATION BAR-5</a>
+            <a href="./navbar/nav6.html" class="btn btn-outline-light">NAVIGATION BAR-6</a>
+            <a href="./navbar/nav7.html" class="btn btn-outline-light">NAVIGATION BAR-7</a>
+            <a href="./navbar/nav8.html" class="btn btn-outline-light">NAVIGATION BAR-8</a>
+            <a href="./navbar/nav9.html" class="btn btn-outline-light">NAVIGATION BAR-9</a>
+          </div>
+        </div>
+        <!-- grid -->
+        <div class="topic">
+          <h1 class="my-4">GRID TASK</h1>
+          <div class="grid_link ">
+            <a href="./gridtask/gridtask1.html" class="btn btn-outline-light">GRIDTASK-1(05-06)</a>           
+            <a href="./gridtask/grid6.html" class="btn btn-outline-light">GRIDTASK-2(06-06)</a>
+            <a href="./gridtask/grid1.html" class="btn btn-outline-light">GRIDTASK-3(08-06)</a>            
+          </div>
+        </div>
+        <!-- flexbox -->
+        <div class="topic">
+          <h1 class="my-4">FLEX-BOX</h1>
+          <div class="grid_link ">
+            <a href="./flexbox/flexbox.html" class="btn btn-outline-light">FLEXBOX-1(07-06)</a>
+          </div>
+        </div>
+        <!-- Javascipt Old -->
+        <!-- <div class="topic">
+          <h1 class="my-4">JAVASCRIPT</h1>
+          <div class="grid_link ">
+            <a href="./Javascipt/08-06-2023/js_statement.html" class="btn btn-outline-light">JAVASCRIPT(08-06)</a>
+            <a href="./Javascipt/09-06-2023/js_const.html" class="btn btn-outline-light">JS CONST VARIABLE(09-06)</a>
+            <a href="./Javascipt/09-06-2023/js_variable.html" class="btn btn-outline-light">JS VARIABLE(09-06)</a>
+            <a href="./Javascipt/12-06-2023/js_all_method.html" class="btn btn-outline-light">JS Array Method(12-06)</a>
+            <a href="./Javascipt/19-06-2023/arr_method.html" class="btn btn-outline-light">JS Array Method(19-06)</a>
+            <a href="./Javascipt/20-06-2023/arr_method.html" class="btn btn-outline-light">JS Array Method(20-06)</a>
+            <a href="./Javascipt/21-06-2023/js_Arithmetic_operator.html" class="btn btn-outline-light">JS Arithmetic Operator(21-06)</a>
+            <a href="./Javascipt/21-06-2023/js_comparison_operator.html" class="btn btn-outline-light">JS Comparison Operator(21-06)</a>
+          </div>
+        </div> -->
+        <!-- Css -->
+        <div class="topic">
+          <h1 class="my-4">Css</h1>
+          <div class="grid_link ">
+            <a href="./css_media_query/media_q1.html" class="btn btn-outline-light">Mediaquery-1(22-06)</a>
+            <a href="./css_media_query/media_query/template1.html" class="btn btn-outline-light">Mediaquery-2(23-06)</a>
+            <a href="./template/web_template1/horizontalnav.html" class="btn btn-outline-light">Template-1(26-06)</a>
+            <a href="./template/web_template2/index.html" class="btn btn-outline-light">Template-2(30-06)</a>
+          </div>
+        </div>
+        <!-- json Task -->
+        <div class="topic">
+          <h1 class="my-4">Json task</h1>
+          <div class="grid_link ">
+            <a href="./json work/jp.html" class="btn btn-outline-light">Json task-1(27-06)</a>
+          </div>
+        </div>
+        <!-- Bootstrap -->
+        <div class="topic">
+          <h1 class="my-4">BOOTSTRAP</h1>
+          <div class="grid_link ">
+            <a href="./BOOTSTRAP/index.html" class="btn btn-outline-light">Bootstrap-All_Work</a>
+            <a href="./BOOTSTRAP/bootstrap_task/index.html" class="btn btn-outline-light">Bootstrap Task(06-07)</a>
+            <a href="./BOOTSTRAP/bootstrap_figma_task_1/index.html" class="btn btn-outline-light">Bootstrap figma Task(04-08)</a>
+          </div>
+        </div>
+        <!-- Resume -->
+        <div class="topic">
+          <h1 class="my-4">Resume</h1>
+          <div class="grid_link ">
+            <a href="./resume/index.html" class="btn btn-outline-light">Resume(27/07/2023)</a>
+            <a href="./resume/resume2.html" class="btn btn-outline-light">Resume(28/07/2023)</a>
+            <a href="./resume/resume3.html" class="btn btn-outline-light">Resume(31/07/2023)</a>
+            <a href="./resume/resume.html" class="btn btn-outline-light">Resume(07/08/2023)</a>
+          </div>
+        </div>
 
-    <div class="header">
-      <h1>JAVASCRIPT</h1>
-    </div>
-    <div class="content">
-      <button>
-        <a href="../Javascript/08-06-2023/js_statement.html"
-          >JAVASCRIPT(08-06)</a
-        >
-      </button>
-      <button>
-        <a href="./Javascipt/09-06-2023/js_const.html"
-          >JS CONST VARIABLE(09-06)</a
-        >
-      </button>
-      <button>
-        <a href="./Javascipt/09-06-2023/js_variable.html">JS VARIABLE(09-06)</a>
-      </button>
-      <button>
-        <a href="./Javascipt/12-06-2023/js_all_method.html"
-          >JS Array Method(12-06)</a
-        >
-      </button>
-      <button>
-        <a href="./Javascipt/19-06-2023/arr_method.html"
-          >JS Array Method(19-06)</a
-        >
-      </button>
-      <button>
-        <a href="./Javascipt/20-06-2023/arr_method.html"
-          >JS Array Method(20-06)</a
-        >
-      </button>
-      <button>
-        <a href="./Javascipt/21-06-2023/js_Arithmetic_operator.html"
-          >JS Arithmetic Operator(21-06)</a
-        >
-      </button>
-      <button>
-        <a href="./Javascipt/21-06-2023/js_comparison_operator.html"
-          >JS Comparison Operator(21-06)</a
-        >
-      </button>
-    </div>
-    <div class="header">
-      <h1>Css</h1>
-    </div>
-    <div class="content">
-      <button>
-        <a href="./css_media_query/media_q1.html">Mediaquery-1(22-06)</a>
-      </button>
-      <button>
-        <a href="./css_media_query/media_query/template1.html"
-          >Mediaquery-2(23-06)</a
-        >
-      </button>
-    </div>
-    <div class="content">
-      <button>
-        <a href="./template/web_template1/horizontalnav.html"
-          >Template-1(26-06)</a
-        >
-      </button>
-      <button>
-        <a href="./template/web_template2/index.html">Template-2(30-06)</a>
-      </button>
-    </div>
-    <div class="header">
-      <h1>Json task</h1>
-    </div>
-    <div class="content">
-      <button>
-        <a href="./json work/jp.html">Json task-1(27-06)</a>
-      </button>
-    </div>
-    <div class="header">
-      <h1>BOOTSTRAP</h1>
-    </div>
-    <div class="content">
-      <button>
-        <a href="./BOOTSTRAP/index.html">Bootstrap-All_Work</a>
-      </button>
-    </div>
-    <div class="content">
-      <button>
-        <a href="./BOOTSTRAP/bootstrap_task/index.html"
-          >Bootstrap Task(06-07)</a>
-      </button>
-    </div>
-    <div class="content">
-      <button>
-        <a href="./BOOTSTRAP/bootstrap_figma_task_1/index.html"
-          >Bootstrap figma Task(04-08)</a>
-      </button>
-    </div>
-    <div class="header">
-      <h1>Resume</h1>
-    </div>
-    <div class="content">
-      <button>
-        <a href="./resume/index.html">Resume(27/07/2023)</a>
-      </button>
-      <button>
-        <a href="./resume/resume2.html">Resume(28/07/2023)</a>
-      </button>
-      <button>
-        <a href="./resume/resume3.html">Resume(31/07/2023)</a>
-      </button>
-      <button>
-        <a href="./resume/resume.html">Resume(07/08/2023)</a>
-      </button>
+        <!-- Javascript -->
+        <div class="topic">
+          <h1 class="my-4">JAVASCRIPT</h1>
+          <div class="grid_link ">
+            <a href="./Js/index.html" class="btn btn-outline-light">All Javascript Program</a>
+          </div>
+        </div>
+        <!-- React js -->
+        <div class="topic">
+          <h1 class="my-4">React</h1>
+          <div class="grid_link ">
+            <a href="./React_js/my-app/src/App.js" class="btn btn-outline-light">Tic Tac Toe</a>
+          </div>
+        </div>
+
+      </div>
     </div>
   </body>
 </html>

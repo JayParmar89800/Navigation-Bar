@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <!-- logo link -->
+    <link rel="icon" href="../js_logo.png" type="image/png" />
+    <!-- internal Script -->
+    <script>
+      function String_slice() {
+        let val1 = document.getElementById("val").value;
+        let val2 = parseInt(document.getElementById("val2").value);
+        let val3 = parseInt(document.getElementById("val3").value);
+
+        let Result = val1.slice(val2, val3);
+        document.getElementById("demo").innerHTML = Result;
+      }
+      function String_trim() {
+        let val = document.getElementById("trim_val").value;
+
+        let Result = val.trim();
+
+        document.getElementById("trim_result").innerHTML =
+          "Before Trim Length : " +
+          val.length +
+          "<br>Your String : " +
+          Result +
+          "<br>After Trim Length : " +
+          Result.length;
+      }
+      function String_indexOf() {
+        let val1 = document.getElementById("indexOf_val1").value;
+        let val2 = document.getElementById("indexOf_val2").value;
+
+        let Result = val1.indexOf(val2);
+        // let Result2=val1.lastIndexOf(val2);
+
+        document.getElementById("indexOf_result").innerHTML =
+          "Starting At : " + Result;
+      }
+      function String_match() {
+        let val1 = document.getElementById("match_val1").value;
+        const val2 = document.getElementById("match_val2").value;
+
+        const Result = val1.match(new RegExp(val2, "gi"));
+
+
+        document.getElementById("match_result").innerHTML =
+          Result.length + " " + Result;
+      }
+      function String_include()
+      {
+        let val1 = document.getElementById("include_val1").value;
+        let val2 = document.getElementById("include_val2").value;
+
+        let Result=val1.includes(val2);
+
+        document.getElementById("include_result").innerHTML=Result;
+      }
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-fluid px-0">
+      <h1 class="text-danger bg-warning text-center py-2">String Method</h1>
+      <div class="container my-3 bg-info-subtle p-3">
+        <h3 class="text-danger bg-warning-subtle text-center fs-1 fw-bold">
+          Slice method
+        </h3>
+
+        <p class="text-warning fw-bold">Enter Any String</p>
+        <input type="text" class="form-control" id="val" />
+        <p class="text-warning fw-bold my-3">Enter Starting Position Number</p>
+        <input type="text" class="form-control" id="val2" />
+
+        <p class="text-warning fw-bold my-3">Enter Ending Position Number</p>
+        <input type="text" class="form-control" id="val3" />
+
+        <div
+          class="text-center mt-3 d-flex flex-md-row justify-content-md-start column-gap-2 row-gap-2 flex-column"
+        >
+          <button
+            type="button"
+            class="btn btn-outline-primary fw-bold"
+            onclick="String_slice()"
+          >
+            Done
+          </button>
+        </div>
+        <p class="text-warning fw-bold my-3">Result :</p>
+        <p id="demo" class="text-success"></p>
+      </div>
+
+      <div class="container my-3 bg-info-subtle p-3">
+        <h3 class="text-danger bg-warning-subtle text-center fs-1 fw-bold">
+          trim method
+        </h3>
+
+        <p class="text-warning fw-bold">Enter Any String</p>
+        <input type="text" class="form-control" id="trim_val" />
+
+        <div
+          class="text-center mt-3 d-flex flex-md-row justify-content-md-start column-gap-2 row-gap-2 flex-column"
+        >
+          <button
+            type="button"
+            class="btn btn-outline-primary fw-bold"
+            onclick="String_trim()"
+          >
+            Done
+          </button>
+        </div>
+        <p class="text-warning fw-bold my-3">Result :</p>
+        <p id="trim_result" class="text-success"></p>
+      </div>
+
+      <div class="container my-3 bg-info-subtle p-3">
+        <h3 class="text-danger bg-warning-subtle text-center fs-1 fw-bold">
+          indexOf method
+        </h3>
+
+        <p class="text-warning fw-bold">Enter Any String</p>
+        <input type="text" class="form-control" id="indexOf_val1" />
+
+        <p class="text-warning fw-bold">Enter Search Word Position Of String</p>
+        <input type="text" class="form-control" id="indexOf_val2" />
+
+        <div
+          class="text-center mt-3 d-flex flex-md-row justify-content-md-start column-gap-2 row-gap-2 flex-column"
+        >
+          <button
+            type="button"
+            class="btn btn-outline-primary fw-bold"
+            onclick="String_indexOf()"
+          >
+            Done
+          </button>
+        </div>
+        <p class="text-warning fw-bold my-3">Result :</p>
+        <p id="indexOf_result" class="text-success"></p>
+      </div>
+
+      <div class="container my-3 bg-info-subtle p-3">
+        <h3 class="text-danger bg-warning-subtle text-center fs-1 fw-bold">
+          indexOf method
+        </h3>
+
+        <p class="text-warning fw-bold">Enter Any String</p>
+        <input type="text" class="form-control" id="indexOf_val1" />
+
+        <p class="text-warning fw-bold">Enter Search Word Position Of String</p>
+        <input type="text" class="form-control" id="indexOf_val2" />
+
+        <div
+          class="text-center mt-3 d-flex flex-md-row justify-content-md-start column-gap-2 row-gap-2 flex-column"
+        >
+          <button
+            type="button"
+            class="btn btn-outline-primary fw-bold"
+            onclick="String_indexOf()"
+          >
+            Done
+          </button>
+        </div>
+        <p class="text-warning fw-bold my-3">Result :</p>
+        <p id="indexOf_result" class="text-success"></p>
+      </div>
+
+      <div class="container my-3 bg-info-subtle p-3">
+        <h3 class="text-danger bg-warning-subtle text-center fs-1 fw-bold">
+          match method
+        </h3>
+        <p class="text-warning fw-bold">Enter Any String</p>
+        <input type="text" class="form-control" id="match_val1" />
+
+        <p class="text-warning fw-bold">Enter Search Word Of String</p>
+        <input type="text" class="form-control" id="match_val2" />
+
+        <div class="text-center mt-3 d-flex flex-md-row justify-content-md-start column-gap-2 row-gap-2 flex-column">
+          <button
+            type="button"
+            class="btn btn-outline-primary fw-bold"
+            onclick="String_match()"
+          >
+            Done
+          </button>
+        </div>
+        <p class="text-warning fw-bold my-3">Result :</p>
+        <p id="match_result" class="text-success"></p>
+      </div>
+
+      
+      <div class="container my-3 bg-info-subtle p-3">
+        <h3 class="text-danger bg-warning-subtle text-center fs-1 fw-bold">
+          include method
+        </h3>
+        <p class="text-warning fw-bold">Enter Any String</p>
+        <input type="text" class="form-control" id="include_val1" />
+
+        <p class="text-warning fw-bold">Enter Search Word Of String</p>
+        <input type="text" class="form-control" id="include_val2" />
+
+        <div class="text-center mt-3 d-flex flex-md-row justify-content-md-start column-gap-2 row-gap-2 flex-column">
+          <button
+            type="button"
+            class="btn btn-outline-primary fw-bold"
+            onclick="String_include()"
+          >
+            Done
+          </button>
+        </div>
+        <p class="text-warning fw-bold my-3">Result :</p>
+        <p id="include_result" class="text-success"></p>
+      </div>
+    </div>
+  </body>
+</html>

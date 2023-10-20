@@ -55,13 +55,14 @@ export default function Textform(props) {
           ></textarea>        
       </div>
       <div className="bg-secondary-subtle text-black p-3 my-3 rounded-3 fw-bold h5 border border-black">
-        <div>{text.split(" ").length} Words</div>
+        <div>{text.split(" ").filter((element)=>{return element.length!==0}).length} Words</div>
         <div>{text.length} Characters</div>
-        <div>{(0.008 * text.split(" ").length)} Minutes Read</div>
+        <div>{(0.008 * text.split(" ").filter((element)=>{return element.length!==0}).length)} Minutes Read</div>
       </div>
       <div className='grid_link'>
       <button
         type="button"
+        disabled={text.length===0}
         className="btn btn-outline-warning fw-bold mx-2"
         onClick={handleUpClick}
       >
@@ -69,6 +70,7 @@ export default function Textform(props) {
       </button>
       <button
         type="button"
+        disabled={text.length===0}
         className="btn btn-outline-warning fw-bold mx-2"
         onClick={handleLoClick}
       >
@@ -76,6 +78,7 @@ export default function Textform(props) {
       </button>
       <button
         type="button"
+        disabled={text.length===0}
         className="btn btn-outline-warning fw-bold mx-2"
         onClick={handlerevClick}
       >
@@ -83,6 +86,7 @@ export default function Textform(props) {
       </button>
       <button
         type="button"
+        disabled={text.length===0}
         className="btn btn-outline-warning fw-bold mx-2"
         onClick={handleExtraSpaces}
       >

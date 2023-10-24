@@ -3,17 +3,17 @@ import React, { Component } from "react";
 export class NewsItems extends Component {
    
   render() {
-    let {title,description,imageUrl}=this.props;
+    let {title,description,imageUrl,newsurl}=this.props;
     return (
       <div className="my-3">
-        <div className="card" style={{width:"18rem"}}>
-          <img src={imageUrl} className="card-img-top" alt="..." />
+        <div className="card" >
+          <img src={imageUrl?imageUrl:"https://www.livemint.com/lm-img/img/2023/10/23/1600x900/India-Cricket-WCup-10_1698051548060_1698051577688.jpg"} className="card-img-top" alt="..." />
           <div className="card-body">
-            <h5 className="card-title">{title}</h5>
+            <h5 className="card-title">{title}...</h5>
             <p className="card-text">
-             {description}
+             {description}...
             </p>
-            <a href="/" className="btn btn-sm btn-primary">
+            <a href={newsurl} target="blank" className="btn btn-dark btn-sm btn-primary">
               Read more
             </a>
           </div>

@@ -1,5 +1,5 @@
-- Live URL Link :https://textconvertor3158.netlify.app/
+- Live URL Link :https://jayparmar89800.github.io/Navigation-Bar/
 
  * Task : React Js 
 
- - Topic :  Add loader effect when the page refresh , rounting with class component , install react-router-dom , use propstype & defaultProps.
+ - Topic :  Add a badge and Add author name ,date ,time, remove the next and previous button and add the vertical scroll the news and create the Update() function 

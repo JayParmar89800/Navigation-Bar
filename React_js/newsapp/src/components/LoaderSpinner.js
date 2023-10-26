@@ -4,8 +4,8 @@ import loader from './loader.gif';
 export class LoaderSpinner extends Component {
   render() {
     return (
-      <div className='text-center'>
-        <img src={loader} alt='Loading' style={{mixBlendMode:'multiply'}}/>
+      <div className='d-flex justify-content-center align-items-center'>
+        <img src={loader} alt='Loading' style={{mixBlendMode:'multiply'}} height={'150px'}/>
       </div>
     )
   }

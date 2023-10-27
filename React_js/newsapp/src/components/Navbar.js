@@ -6,8 +6,8 @@ export class Navbar extends Component {
 
   render() {
     return (
-      <div>
-        <nav className="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div className="sticky-top ">
+        <nav className="navbar navbar-expand-lg bg-dark " data-bs-theme="dark">
           <div className="container-fluid">
             <Link className="navbar-brand" to="/">
               NewsMonkey

@@ -9,10 +9,13 @@ export class NewsItems extends Component {
           className="card shadow"
           style={{ minHeight: "400px", maxHeight: "auto" }}
         >
-          <span className="position-absolute top-0 translate-middle badge rounded-pill bg-danger" style={{left:'80%',zIndex:'3'}}>
+          <div className="d-flex justify-content-end end-0 position-absolute">
+          <span className="badge rounded-pill bg-danger">
             {source}
             <span className="visually-hidden">unread messages</span>
           </span>
+          </div>
+         
           <img
             src={
               imageUrl

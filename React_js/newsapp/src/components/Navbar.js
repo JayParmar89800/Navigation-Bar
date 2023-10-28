@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 // import PropTypes from 'prop-types'
 
-export class Navbar extends Component {
+const Navbar=()=> {
 
-  render() {
+ 
     return (
       <div className="sticky-top ">
         <nav className="navbar navbar-expand-lg bg-dark " data-bs-theme="dark">
@@ -74,7 +74,7 @@ export class Navbar extends Component {
         </nav>
       </div>
     );
-  }
+  
 }
 
 export default Navbar;

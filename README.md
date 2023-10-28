@@ -2,5 +2,5 @@
 
  * Task : React Js 
 
- - Topic :  Install react-top-loading-bar Liabrary also implement this liabrary in our project & fetch the .env.local file variable value and this variable is used in another page
+ - Topic :  In newsapp project classbase component converte into functionbase component , create new project in this project fetch json file data 
  

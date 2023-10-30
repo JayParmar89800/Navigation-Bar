@@ -2,5 +2,5 @@
 
  * Task : React Js 
 
- - Topic :  In newsapp project classbase component converte into functionbase component , create new project in this project fetch json file data 
+ - Topic :  Complete json task using Link,useParam,useLocation hooks & filter(),map() function and fetch data 
  

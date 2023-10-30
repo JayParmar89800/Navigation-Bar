@@ -276,6 +276,7 @@ const { id } = useParams();
                 {PostData.map((item) => (
                   <li className="nav-item" key={item.id}>
                     <Link
+                    target='_blank'
                       className="nav-link"
                       to={`/${item.id}`}
                     >

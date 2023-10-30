@@ -29,9 +29,7 @@ function NewsItems(props) {
                 <div className="col">{props.website}</div>
             </div>
           </div>
-          <a href="/" className="btn btn-primary">
-            Go somewhere
-          </a>
+          
         </div>
       </div>
     </div>

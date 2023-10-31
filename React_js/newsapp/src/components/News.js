@@ -13,33 +13,21 @@ const News = (props) =>{
   const [totalResults,setTotalResults] = useState(0);
   // document.title=`${capitalizeFirstsLetter(props.category)}-NewsMokey`;
 
-
-
-
   // capitalizeFirstsLetter=(string)=>{
   //   return string.charAt(0).toUpperCase()+string.slice(1);
   // }
 
   const updateNews = async () => {
-
     props.setProgress(10);
-    
     const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page}&pageSize=${props.pagesize}`;
-
     setLoading(true);
-
     let data = await fetch(url);
-
     props.setProgress(30);
-
     let parsedData = await data.json();
-
     props.setProgress(70);
-
     setArticles(parsedData.articles);
     setTotalResults(parsedData.totalResults);
     setLoading(false);
-
     props.setProgress(100);
   }
   useEffect(()=>{
@@ -57,9 +45,10 @@ const News = (props) =>{
   // };
   const fetchMoreData = async () => {
   
-    setPage(page+1);
-   const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page}&pageSize=${props.pagesize}`;
+    
+   const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page+1}&pageSize=${props.pagesize}`;
   //  this.setState({ loading: true });
+  setPage(page+1);
    let data = await fetch(url);
    let parsedData = await data.json();
   setArticles(articles.concat(parsedData.articles));

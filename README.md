@@ -2,5 +2,5 @@
 
  * Task : React Js 
 
- - Topic :  fetch the data from api & create a task in this task user input value fetch and this value we print on another table  
+ - Topic :  fetch api online in jsonplaceholder show all data and also view particular selected data using useEffect , useState & useParam 
  

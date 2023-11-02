@@ -1,14 +1,16 @@
 import React from 'react';
 // import Navbar from './component/Navbar';
 import { BrowserRouter as Main , Route,Routes } from 'react-router-dom';
-import News from './component/News';
+// import News from './component/News';
+import Page from './component/Page';
+
 
 function App() {
   return (
     <Main>
     <Routes>
-          <Route path="/" element={<News />} />
-          <Route exact path='/:id' element={<News />} />   
+          <Route path="/" element={<Page />} />
+          <Route exact path='/page/:id' element={<Page />} />   
         </Routes>
     </Main>
   );

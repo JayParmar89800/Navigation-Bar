@@ -2,5 +2,5 @@
 
  * Task : React Js 
 
- - Topic :  fetch api online in jsonplaceholder show all data and also view particular selected data using useEffect , useState & useParam 
+ - Topic : Learn the  useEffect and Its type , useParam & useLocation  
  

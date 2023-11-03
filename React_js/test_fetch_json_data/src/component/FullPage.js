@@ -1,33 +1,25 @@
-import React, { useState, useEffect } from "react";
-import { useLocation, useParams } from "react-router-dom";
-import FullPage from "./FullPage";
-// import Navbar from './Navbar';
+import React, { useState, useEffect } from 'react';
+import {Link, useLocation } from 'react-router-dom';
 
-function Page() {
-  const location = useLocation();
-  console.log(location);
 
-  const params = useParams();
-  const id = params.id;
-  const [employee, setEmployee] = useState([]);
-  useEffect(() => {
-    async function fetchEmployee() {
-      if (id) {
-        const response = await fetch(
-          `https://jsonplaceholder.typicode.com/users?id=${id}`
-        );
-        const fetchedEmployee = await response.json();
-        setEmployee(fetchedEmployee);
+function FullPage() {
+    const [employees, setEmployees] = useState([]);
+    const location = useLocation();
+    useEffect(() => {
+      async function fetchEmployees() {
+        const response = await fetch('https://jsonplaceholder.typicode.com/users');
+        const fetchedEmployees = await response.json();
+        setEmployees(fetchedEmployees);
       }
-    }
-    fetchEmployee();
-  }, [id]);
-  return (
-    <>
-      <FullPage />
-      <div className="container">
-        <div className="row row-gap-4">
-          {employee.map((employee, index) => {
+      fetchEmployees();
+    }, []);
+  
+    const AllPost=()=>
+    {
+      return(
+        <div className='container'>
+          <div className="row row-gap-4">
+          { employees.map((employee, index) => {
             return (
               <div className="col-lg-4 col-md-6 col-12" key={index}>
                 <div className="card bg-dark-subtle border border-0 shadow">
@@ -70,10 +62,47 @@ function Page() {
               </div>
             );
           })}
+        </div> 
         </div>
-      </div>
-    </>
-  );
-}
+      );
+    }
+    return (
+      <>
+        <nav className="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+          <div className="container-fluid">
+            <Link className="navbar-brand" to="/">
+              Json Data
+            </Link>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon" ></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                {employees.map((item) => (
+                  <li className="nav-item" key={item.id}>
+                    <Link target='_blank' className="nav-link" path=":id" to={`/Page/${item.id}`} >
+                      {item.id}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <h2 className="text-center text-danger fw-bold scroll-text py-3">
+        Json Data Fetching
+      </h2>           
+      {location.pathname === '/' ? AllPost() : null}
+      </>
+    );
+  }
 
-export default Page;
+export default FullPage

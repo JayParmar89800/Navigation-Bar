@@ -2,15 +2,17 @@ import React from 'react';
 // import Navbar from './component/Navbar';
 import { BrowserRouter as Main , Route,Routes } from 'react-router-dom';
 // import News from './component/News';
+// import Page from './component/Page';
 import Page from './component/Page';
+import FullPage from './component/FullPage';
 
 
 function App() {
   return (
     <Main>
     <Routes>
-          <Route path="/" element={<Page />} />
-          <Route exact path='/page/:id' element={<Page />} />   
+          <Route path="/" element={<FullPage />} />
+          <Route exact path='/Page/:id' element={<Page />} />   
         </Routes>
     </Main>
   );

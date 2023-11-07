@@ -2,4 +2,5 @@
 
  * Task : React Js 
 
- - Topic : Make new Project in this project fetch api , api data store in one state,print all user image & name 
+ - Topic :In the API fetch the All department values in the dropdown list using flat()function and Set object,routing,useLocation & when any Visitor click any user view profile button at that time seleted Profile information open in another page
+ 

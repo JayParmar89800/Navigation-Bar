@@ -4,6 +4,8 @@ import { Link, useLocation } from "react-router-dom";
 function Fullpage() {
   const [user, setUser] = useState([]);
   const [department, setDepartment] = useState([]);
+  const [selectedDepartment, setSelectedDepartment] = useState("");
+  const [searchQuery, setSearchQuery] = useState("");
 
   const location = useLocation();
 
@@ -13,28 +15,61 @@ function Fullpage() {
       .then((data) => setUser(data.users))
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
+
   useEffect(() => {
     const departments = user.map((userData) => userData.company.department);
     const uniqueDepartments = [...new Set(departments.flat())];
     setDepartment(uniqueDepartments);
   }, [user]);
 
+  const handleSearch = (e) => {
+    setSearchQuery(e.target.value);
+  };
   const AllCard = () => {
+    const filteredUsers = selectedDepartment
+      ? user.filter((user) =>
+          user.company.department.includes(selectedDepartment)
+        )
+      : user;
+    // const filteredUsersWithSearch = searchQuery.trim()
+    //   ? filteredUsers.filter((user) => user.id.toString() === searchQuery)
+    //   : filteredUsers;
+
+    const filteredUsersWithSearch = searchQuery.trim()
+      ? filteredUsers.filter((user) => {
+          const searchLower = searchQuery.toLowerCase();
+          const idMatch = user.id.toString() === searchLower;
+          const firstNameMatch = user.firstName.toLowerCase().includes(searchLower);
+          const lastNameMatch = user.lastName.toLowerCase().includes(searchLower);
+          
+          return idMatch || firstNameMatch || lastNameMatch;
+        })
+      : filteredUsers;
+
     return (
       <div className="container mt-3">
         <div className="row row-gap-4">
-          {user.map((users, index) => {
+          {filteredUsersWithSearch.map((users, index) => {
             return (
               <div className="col-lg-3 col-md-4 col-12" key={index}>
-                <div className="card border border-0 shadow">
-                  <img src={users.image} className="card-img-top" alt="..." />
+                <div className="card border border-0 shadow bg-warning">
                   <div className="card-body text-center">
-                    <h5 className="card-title">
+                    <img
+                      src={users.image}
+                      className="img-fluid bg-white"
+                      style={{
+                        borderRadius: "50%",
+                        boxShadow: "0 0 10px black",
+                      }}
+                      alt="..."
+                    />
+
+                    <h4 className="card-title my-3 p-2 text-white fw-bold">
                       {users.firstName} {users.lastName}
-                    </h5>
+                    </h4>
                     <Link
                       to={`/Profile/${users.id}`}
-                      className="btn btn-warning"
+                      className="btn btn-danger"
                     >
                       Click To View Profile
                     </Link>
@@ -50,7 +85,7 @@ function Fullpage() {
 
   return (
     <>
-       <nav className="navbar navbar-expand-lg bg-primary-subtle">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
             Navbar
@@ -69,9 +104,9 @@ function Fullpage() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">
+                <a className="nav-link active" aria-current="page" href="/">
                   Home
-                </Link>
+                </a>
               </li>
 
               <li className="nav-item dropdown">
@@ -87,7 +122,12 @@ function Fullpage() {
                 <ul className="dropdown-menu">
                   {department.map((deptartment, index) => (
                     <li key={index}>
-                      <Link className="dropdown-item" path=":department" to={`/${deptartment.department}`}>{deptartment}</Link>
+                      <button
+                        className="dropdown-item"
+                        onClick={() => setSelectedDepartment(deptartment)}
+                      >
+                        {deptartment}
+                      </button>
                     </li>
                   ))}
                 </ul>
@@ -100,20 +140,18 @@ function Fullpage() {
             </ul>
             <form className="d-flex" role="search">
               <input
-                className="form-control me-2"
+                className="form-control"
                 type="search"
-                placeholder="Search"
-                aria-label="Search"
+                placeholder="Search by User ID"
+                value={searchQuery}
+                onChange={handleSearch}
               />
-              <button className="btn btn-outline-success" type="submit">
-                Search
-              </button>
             </form>
           </div>
         </div>
       </nav>
 
-      {location.pathname === '/' ? AllCard() : null}
+      {location.pathname === "/" ? AllCard() : null}
     </>
   );
 }

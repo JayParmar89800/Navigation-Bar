@@ -14,7 +14,7 @@ function App() {
           <Route path="/" element={<Fullpage />} />
 
           <Route exact path='/Profile/:id' element={<Profile />} />   
-
+/
           {/* <Route exact path='/Page/:id' element={<Page />} />    */}
         </Routes>
     </Main>

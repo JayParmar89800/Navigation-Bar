@@ -32,86 +32,68 @@ function Profile() {
         <div className="container py-5 h-100">
           <div className="row d-flex justify-content-center align-items-center h-100">
             <div className="col col-lg-6 mb-4 mb-lg-0">
-              <div className="card mb-3">
+              <div className="card mb-3 border-0">
                 <div className="row g-0">
                   <div
-                    className="col-md-4 gradient-custom text-center text-white"
-                    // style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;"
+                    className="col-md-4 gradient-custom text-center text-white p-4"
+                    style={{borderTopLeftRadius:'6.5rem' , borderBottomLeftRadius:'.5rem'}}
                   >
                     <img
                       src={filteredData.image}
                       alt="Avatar"
-                      className="img-fluid my-5"
-                    //   style="width: 80px;"
-                    />
-                    <h4>{filteredData.firstName} {filteredData.lastName}</h4>
+                      className="img-fluid my-5 bg-white"
+                      style={{borderRadius:'50%'}}
+                      />
+                    <h4 >{filteredData.firstName} {filteredData.lastName}</h4>
+                    <hr/>
                     <h5>{filteredData.company.department}</h5>
                     <i className="far fa-edit mb-5"></i>
                   </div>
-                  <div className="col-md-8 bg-dark-subtle">
+                  <div className="col-md-8 gradient-custom2 text-white" style={{ borderBottomRightRadius:'6.5rem'}}>
                     <div className="card-body p-4">
-                    <h3>Personal Information</h3>
+                    <h3 className="fw-bold text-warning">Personal Information</h3>
                       <hr className="mt-0 mb-4" />
                       <div className="row pt-1">
                         <div className="col-6 mb-3">
-                          <h6>Email</h6>
-                          <p className="text-muted">{filteredData.email}</p>
+                          <h6 className="fw-bold">Email</h6>
+                          <p >{filteredData.email}</p>
                         </div>
                         <div className="col-6 mb-3">
-                          <h6>Phone</h6>
-                          <p className="text-muted">{filteredData.phone}</p>
-                        </div>
-                      </div>
-                      <div className="row pt-1">
-                        <div className="col-6 mb-3">
-                          <h6>University</h6>
-                          <p className="text-muted">{filteredData.university}</p>
+                          <h6 className="fw-bold">Phone</h6>
+                          <p >{filteredData.phone}</p>
                         </div>
                         <div className="col-6 mb-3">
-                          <h6>Address</h6>
-                          <p className="text-muted">{filteredData.address.address},{filteredData.address.city}</p>
-                        </div>
-                      </div>
-                      <div className="row pt-1">
-                        <div className="col-6 mb-3">
-                          <h6>Age</h6>
-                          <p className="text-muted">{filteredData.age}</p>
+                          <h6 className="fw-bold">University</h6>
+                          <p >{filteredData.university}</p>
                         </div>
                         <div className="col-6 mb-3">
-                          <h6>Gender</h6>
-                          <p className="text-muted">{filteredData.gender}</p>
-                        </div>
-                      </div>
-                      <div className="row pt-1">
-                        <div className="col-6 mb-3">
-                          <h6>Height</h6>
-                          <p className="text-muted">{filteredData.height}</p>
+                          <h6 className="fw-bold">Address</h6>
+                          <p >{filteredData.address.address},{filteredData.address.city}</p>
                         </div>
                         <div className="col-6 mb-3">
-                        <h6>Weight</h6>
-                          <p className="text-muted">{filteredData.weight}</p>
-                        </div>
-                      </div>
-                      <div className="row pt-1">
-                        <div className="col-6 mb-3">
-                          <h6>Birth Date</h6>
-                          <p className="text-muted">{filteredData.birthDate}</p>
+                          <h6 className="fw-bold">Age</h6>
+                          <p >{filteredData.age}</p>
                         </div>
                         <div className="col-6 mb-3">
-                        <h6>Blood Group</h6>
-                          <p className="text-muted">{filteredData.bloodGroup}</p>
+                          <h6 className="fw-bold">Gender</h6>
+                          <p >{filteredData.gender}</p>
                         </div>
-                      </div>
-                      <div className="d-flex justify-content-start">
-                        <a href="#!">
-                          <i className="fab fa-facebook-f fa-lg me-3"></i>
-                        </a>
-                        <a href="#!">
-                          <i className="fab fa-twitter fa-lg me-3"></i>
-                        </a>
-                        <a href="#!">
-                          <i className="fab fa-instagram fa-lg"></i>
-                        </a>
+                        <div className="col-6 mb-3">
+                          <h6 className="fw-bold">Height</h6>
+                          <p >{filteredData.height}</p>
+                        </div>
+                        <div className="col-6 mb-3">
+                        <h6 className="fw-bold">Weight</h6>
+                          <p >{filteredData.weight}</p>
+                        </div>
+                        <div className="col-6 mb-3">
+                          <h6 className="fw-bold">Birth Date</h6>
+                          <p >{filteredData.birthDate}</p>
+                        </div>
+                        <div className="col-6 mb-3">
+                        <h6 className="fw-bold">Blood Group</h6>
+                          <p >{filteredData.bloodGroup}</p>
+                        </div>
                       </div>
                     </div>
                   </div>

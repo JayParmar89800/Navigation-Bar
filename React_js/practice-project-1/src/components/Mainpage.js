@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 
-function Fullpage() {
+function Mainpage() {
     const [user, setUser] = useState([]);
     const [department, setDepartment] = useState([]);
     const [selectedDepartment, setSelectedDepartment] = useState("");
@@ -152,4 +152,4 @@ function Fullpage() {
     );
   }
 
-export default Fullpage;
+export default Mainpage;

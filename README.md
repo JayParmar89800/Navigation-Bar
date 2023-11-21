@@ -2,4 +2,4 @@
 
  * Task : React Js 
 
- - Topic : create json file,fetch this json file data and show all data and also implement search functionality and also show data ascending & descending formate of joining date 
+ - Topic : Create new Business-card task and in this task make a 3 card design using css & bootstrap and also use navbar component from MUI library

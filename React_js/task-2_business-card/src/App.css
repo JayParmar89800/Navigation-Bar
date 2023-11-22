@@ -43,23 +43,58 @@
   background-repeat: no-repeat;
 
   background-size: cover;
-  height: 270px;
+  background-position: center;
+  min-height: 235px;
+  max-height: 100vh;
+  /* height: 270px; */
   box-shadow: 0 0 10px gray;
 }
 .card-bg2
 {
   background-image: url('../public/img/business_card_bg2.png');
   background-size: cover;
-  background-position: -5.5rem;
+  /* background-position: -5.5rem; */
+  background-position: center;
+
   background-repeat: no-repeat;
-  height: 270px;
   box-shadow: 0 0 10px gray;
+  min-height: 235px;
+  max-height: 100vh;
 }
 .card-bg3
 {
   background-image: url('../public/img/business_card_bg3.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 420px;
+  min-height: 420px;
+  max-height: 100vh;
+  box-shadow: 0 0 10px gray;
+}
+.card-bg4
+{
+  background: rgb(255,245,72);
+  background: linear-gradient(90deg, rgba(255,245,72,1) 0%, rgba(254,59,162,1) 35%, rgba(138,46,218,1) 100%);
+  min-height: 420px;
+  max-height: 100vh;
+  box-shadow: 0 0 10px gray;
+}
+.card-bg4_img_border
+{
+  background: rgb(255,245,72);
+  background: linear-gradient(90deg, rgba(138,46,218,1), rgba(254,59,162,1), rgba(255,245,72,1) 100%);
+}
+.card-bg4 .inner_card
+{
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+}
+.card-bg5
+{
+  background-image: url('../public/img/business_card_bg5.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 420px;
+  max-height: 100vh;
+  background-position: center;
   box-shadow: 0 0 10px gray;
 }

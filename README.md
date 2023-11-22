@@ -2,4 +2,4 @@
 
  * Task : React Js 
 
- - Topic : Create new Business-card task and in this task make a 3 card design using css & bootstrap and also use navbar component from MUI library
+ - Topic : Make 5 business card design complete with responsive 

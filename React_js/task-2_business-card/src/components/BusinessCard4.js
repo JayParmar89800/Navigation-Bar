@@ -6,10 +6,10 @@ import PropTypes from "prop-types";
 function BusinessCard4(formData) {
   return (
     <>
-     <div className='container-fluid pt-5 card-bg card-bg4 w-75 d-flex flex-column justify-content-center text-white '>   
+     <div className='container-fluid pt-5 card-bg card-bg4 w-75 d-flex flex-column justify-content-evenly text-white '>   
             <div className='d-flex flex-column bg-white text-black row-gap-1 position-relative inner_card' style={{paddingTop:'5rem'}}>
                 <div className='d-flex flex-column align-items-center position-absolute start-50 end-50 text-black' style={{top:'-4rem'}} >
-                <img src={formData.CompanyLogo?formData.CompanyLogo:companylogo} alt='logo not found' className='border border-1 rounded-circle' style={{height:'130px',width:'130px'}}/>
+                <img src={formData.CompanyLogo?formData.CompanyLogo:companylogo} alt='logo not found' className='border border-1 rounded-circle object-fit-cover' style={{height:'130px',width:'130px'}}/>
                 </div>
                 <p className='fw-bold fs-4 text-center'>
                 {formData.companyName}
@@ -34,6 +34,9 @@ function BusinessCard4(formData) {
                     </div>
                 </div>
                 </div>
+                <div className='text-center text-white fw-bold fst-italic border-top border-white'>
+                    " {formData.TagLine} "
+                </div>
         </div>
     </>
   )
@@ -42,14 +45,15 @@ function BusinessCard4(formData) {
 export default BusinessCard4;
 BusinessCard4.propTypes = {
     companyName: PropTypes.string,
-    contactNumber: PropTypes.string,
+    contactNumber: PropTypes.number,
     companyAddress: PropTypes.string,
     websiteName: PropTypes.string,
-
+    TagLine:PropTypes.string
 };
 BusinessCard4.defaultProps = {
     companyName:"Company Name",
     contactNumber:"123 4567 890",
     companyAddress:"47 Anytown Road Chennai Tamil Nadu 600 002 India",
-    websiteName:"www.xyx.com"
+    websiteName:"www.xyx.com",
+    TagLine:"A good beginning makes a good end."
 };

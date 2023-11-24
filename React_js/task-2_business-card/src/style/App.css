@@ -66,12 +66,12 @@
 
 .card-bg3 {
   background-image: url('../../public/img/business_card_bg3.jpg');
-  min-height: 420px;
+  min-height: 480px;
 }
 
 .card-bg4 {
   background: linear-gradient(90deg, rgba(255,245,72,1), rgba(254,59,162,1), rgba(138,46,218,1));
-  min-height: 420px;
+  min-height: 480px;
 }
 
 .card-bg4_img_border {
@@ -86,5 +86,5 @@
 .card-bg5 {
   background-image: url('../../public/img/business_card_bg5.jpg');
   background-position: center;
-  min-height: 420px;
+  min-height: 480px;
 }

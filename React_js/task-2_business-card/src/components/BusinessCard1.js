@@ -6,11 +6,11 @@ import PropTypes from "prop-types";
 function BusinessCard1(formData) {
   return (
     <>
-       <div className='container-fluid card-bg card-bg1 border py-2'>
+       <div className='container-fluid card-bg card-bg1 border py-2 d-flex flex-column justify-content-evenly'>
                 <div className='row '>
                     <div className='col-6 d-flex flex-column align-items-center justify-content-center'> 
                         <div className='d-flex align-items-center'>
-                        <img src={formData.CompanyLogo?formData.CompanyLogo:companylogo} alt='logo not found' className='border border-1 rounded-circle img-fluid' style={{height:'130px',width:'130px'}}/>
+                        <img src={formData.CompanyLogo?formData.CompanyLogo:companylogo} alt='logo not found' className='border border-1 rounded-circle img-fluid object-fit-cover' style={{height:'130px',width:'130px'}}/>
                         </div>
                         <div className='w-100'>
                         <p className='fw-bold h3 mb-0'>
@@ -38,6 +38,9 @@ function BusinessCard1(formData) {
                         </div>
                     </div>              
                 </div>
+                <div className='text-center text-warning fw-bold fst-italic border-top border-warning'>
+                    " {formData.TagLine} "
+                </div>
             </div>
     </>
   )
@@ -46,16 +49,17 @@ function BusinessCard1(formData) {
 export default BusinessCard1;
 BusinessCard1.propTypes = {
     companyName: PropTypes.string,
-    contactNumber: PropTypes.string,
+    contactNumber: PropTypes.number,
     companyAddress: PropTypes.string,
     websiteName: PropTypes.string,
-    CompanyLogo:PropTypes.string
-
+    CompanyLogo:PropTypes.string,
+    TagLine:PropTypes.string
 };
 BusinessCard1.defaultProps = {
     companyName:"Company Name",
     contactNumber:"123 4567 890",
     companyAddress:"47 Anytown Road Chennai Tamil Nadu 600 002 India",
-    websiteName:"www.xyx.com",
-    CompanyLogo:companylogo
+    websiteName:"www.xyz.com",
+    CompanyLogo:companylogo,
+    TagLine:"A good beginning makes a good end."
 };

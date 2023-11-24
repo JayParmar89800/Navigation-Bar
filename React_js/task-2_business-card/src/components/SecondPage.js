@@ -10,7 +10,7 @@ import { useParams } from 'react-router-dom';
 function SecondPage() {
 
     const { selectedCard } = useParams();
-    const [formData, setFormData] = useState({ companyName: '', companyAddress: '',websiteName:'',contactNumber:'' ,CompanyLogo:''});// Initialize text state with an empty string
+    const [formData, setFormData] = useState({ companyName: '', companyAddress: '',websiteName:'',contactNumber:'' ,CompanyLogo:'',TagLine:''});// Initialize text state with an empty string
 
     const handleImageChange = (event) => {
         const file = event.target.files[0];
@@ -66,6 +66,9 @@ function SecondPage() {
       
     const handleChange = (event, fieldName) => {
         const value = event.target.value;
+        if (fieldName === 'contactNumber' && isNaN(value)) {
+            return;
+        }
         setFormData((prevData) => ({
             ...prevData,
             [fieldName]: value,
@@ -76,7 +79,7 @@ function SecondPage() {
     <>
         <div className='container-fluid px-0 '>
             <div className='row mx-0'>
-                <div className='col-md-6 col-12 px-0'>
+                <div className='col-md-8 col-12 px-0'>
                 <section className="">
                     <div className="mask d-flex align-items-center gradient-custom-3">
                         <div className="container py-5">
@@ -108,7 +111,7 @@ function SecondPage() {
                                     </div>
 
                                     <div className="form-outline mb-4">
-                                        <input type="text" id="txt_tag_line" className="form-control form-control-lg" />
+                                        <input type="text" id="txt_tag_line"  value={formData.TagLine}  onChange={(e) => handleChange(e, 'TagLine')} className="form-control form-control-lg" />
                                         <label className="form-label" htmlFor="txt_tag_line">Tag Line</label>
                                     </div>
 
@@ -142,7 +145,7 @@ function SecondPage() {
                 </section>
                 </div>
                 
-                <div className='col-md-6 col-12 d-flex flex-column justify-content-center  gradient-custom-5'>
+                <div className='col-md-4 col-12 d-flex flex-column justify-content-center  gradient-custom-5'>
                     {renderSelectedComponent()}
                 </div>
             </div>
@@ -151,4 +154,4 @@ function SecondPage() {
   )
 }
 
-export default SecondPage
+export default SecondPage;

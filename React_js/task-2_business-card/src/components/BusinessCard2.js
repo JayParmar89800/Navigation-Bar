@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 function BusinessCard2(formData) {
   return (
     <>
-         <div className='container-fluid card-bg card-bg2 border'>
+         <div className='container-fluid card-bg card-bg2 border d-flex flex-column justify-content-evenly'>
                 <div className='row h-100'>
                     <div className='col-6 d-flex flex-column justify-content-evenly text-white'>
                         <p className='fw-bold fs-4'>
@@ -31,9 +31,12 @@ function BusinessCard2(formData) {
                     </div>  
                     <div className='col-6 d-flex flex-column align-items-end justify-content-center row-gap-3'>
                         <div className='d-flex align-items-center'>
-                        <img src={formData.CompanyLogo?formData.CompanyLogo:companylogo} alt='logo not found' className='border border-1 rounded-circle img-fluid' style={{height:'130px',width:'130px'}}/>
+                        <img src={formData.CompanyLogo?formData.CompanyLogo:companylogo} alt='logo not found' className='border border-1 rounded-circle img-fluid object-fit-cover' style={{height:'130px',width:'130px'}}/>
                         </div>
                     </div>            
+                </div>
+                <div className='text-center text-danger fw-bold fst-italic border-top border-danger'>
+                    " {formData.TagLine} "
                 </div>
         </div>
     
@@ -42,19 +45,20 @@ function BusinessCard2(formData) {
 }
 
 export default BusinessCard2;
+
 BusinessCard2.propTypes = {
     companyName: PropTypes.string,
-    contactNumber: PropTypes.string,
+    contactNumber: PropTypes.number,
     companyAddress: PropTypes.string,
     websiteName: PropTypes.string,
-    CompanyLogo:PropTypes.string
-
+    CompanyLogo:PropTypes.string,
+    TagLine:PropTypes.string
 };
 BusinessCard2.defaultProps = {
     companyName:"Company Name",
     contactNumber:"123 4567 890",
     companyAddress:"47 Anytown Road Chennai Tamil Nadu 600 002 India",
     websiteName:"www.xyx.com",
-    CompanyLogo:companylogo
-
+    CompanyLogo:companylogo,
+    TagLine:"A good beginning makes a good end."
 };

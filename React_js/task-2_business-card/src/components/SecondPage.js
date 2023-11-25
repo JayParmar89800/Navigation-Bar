@@ -79,7 +79,7 @@ function SecondPage() {
     <>
         <div className='container-fluid px-0 '>
             <div className='row mx-0'>
-                <div className='col-md-8 col-12 px-0'>
+                <div className='col-md-6 col-12 px-0'>
                 <section className="">
                     <div className="mask d-flex align-items-center gradient-custom-3">
                         <div className="container py-5">
@@ -145,7 +145,7 @@ function SecondPage() {
                 </section>
                 </div>
                 
-                <div className='col-md-4 col-12 d-flex flex-column justify-content-center  gradient-custom-5'>
+                <div className='col-md-6 col-12 d-flex flex-column justify-content-evenly align-items-center  gradient-custom-5'>
                     {renderSelectedComponent()}
                 </div>
             </div>

@@ -1,11 +1,35 @@
 import React from 'react';
 import companylogo from '../default_user.png';
 import PropTypes from "prop-types";
+import { useLocation } from 'react-router-dom';
 
 
+function BusinessCard1_1()
+{
+    return(
+        <>
+        <div className="horizontal_card">
+        <div className='container-fluid card-bg card-bg1 border py-2 d-flex flex-column justify-content-evenly'>
+            <div className='row position-relative'>
+                <div className='col-6 position-absolute end-0'>
+                    {/* <img src={formData.CompanyLogo?formData.CompanyLogo:companylogo} alt='logo not found' className='border border-1 rounded-circle img-fluid object-fit-cover' style={{height:'130px',width:'130px'}}/> */}
+                </div>
+            </div>
+                
+            </div>
+    </div>
+        </>
+    );
+}
 function BusinessCard1(formData) {
+
+    const location = useLocation();
+
   return (
     <>
+    {location.pathname !== "/" ? BusinessCard1_1() : null}
+
+    <div className="horizontal_card">
        <div className='container-fluid card-bg card-bg1 border py-2 d-flex flex-column justify-content-evenly'>
                 <div className='row '>
                     <div className='col-6 d-flex flex-column align-items-center justify-content-center'> 
@@ -42,6 +66,7 @@ function BusinessCard1(formData) {
                     " {formData.TagLine} "
                 </div>
             </div>
+    </div>
     </>
   )
 }
@@ -62,4 +87,13 @@ BusinessCard1.defaultProps = {
     websiteName:"www.xyz.com",
     CompanyLogo:companylogo,
     TagLine:"A good beginning makes a good end."
+};
+BusinessCard1_1.propTypes = {
+
+    CompanyLogo:PropTypes.string
+   
+};
+BusinessCard1_1.defaultProps = {
+  
+    CompanyLogo:companylogo
 };

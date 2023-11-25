@@ -2,4 +2,4 @@
 
  * Task : React Js 
 
- - Topic :  set default image & also set default value in all business card using PropTypes
+ - Topic : change 1 business card design & add this type of funcationality when any user select design in main page at that time show only front side design & when click the front side design at that time show both of side design 

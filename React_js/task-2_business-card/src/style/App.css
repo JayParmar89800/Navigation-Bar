@@ -41,6 +41,14 @@
     transform: rotate(360deg);
   }
 }
+.horizontal_card
+{
+  height: 260px;
+  min-width: 70%;
+  max-width: 100%;
+  display: grid;
+  place-items: center;
+}
 .bg-image
 {
     background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');
@@ -48,14 +56,14 @@
 .card-bg {
   background-size: cover;
   background-repeat: no-repeat;
-  max-height: 100vh;
+  /* max-height: 100vh; */
   box-shadow: 0 0 10px gray;
 }
 
 .card-bg1 {
-  background-image: url('../../public/img/business_card_bg1.jpg');
+  background-image: url('../../public/img/bg_design1.png');
   background-position: center;
-  min-height: 235px;
+  height: inherit;
 }
 
 .card-bg2 {

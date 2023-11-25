@@ -15,9 +15,11 @@ function Mainpage() {
     <div className="container ">
       <div className="row my-4 row-gap-5">
         <div className="col-md-6 col-lg-4 col-12" style={gridcss}>
+          
           <Link to="/SecondPage/BusinessCard1" target="_blank" className="nav-link">
             <BusinessCard1 />
           </Link>
+        
         </div>
         <div className="col-md-6 col-lg-4 col-12" style={gridcss}>
           <Link to="/Secondpage/BusinessCard2" target="_blank" className="nav-link">
